@@ -216,6 +216,11 @@ def _write_report(results: list, failures: list) -> None:
     total  = sum(1 for r in results if r["status"] in ("pass", "fail"))
     passed = total - len(failures)
 
+    skipped_period_mismatch = sum(1 for r in results if r["status"] == "period_mismatch")
+    skipped_edgar_not_found = sum(1 for r in results if r["status"] == "edgar_not_found")
+    skipped_edgar_error     = sum(1 for r in results if r["status"] == "edgar_error")
+    total_attempted = len(results)
+
     by_sector: dict[str, dict] = {}
     for r in results:
         if r["status"] not in ("pass", "fail"):
@@ -236,10 +241,16 @@ def _write_report(results: list, failures: list) -> None:
 
     report = {
         "summary": {
-            "total":           total,
-            "passed":          passed,
-            "failed":          len(failures),
+            "total":            total,
+            "passed":           passed,
+            "failed":           len(failures),
             "failure_rate_pct": round(len(failures) / total * 100, 1) if total else 0.0,
+            "skipped": {
+                "total":           total_attempted - total,
+                "period_mismatch": skipped_period_mismatch,
+                "edgar_not_found": skipped_edgar_not_found,
+                "edgar_error":     skipped_edgar_error,
+            },
         },
         "by_sector": by_sector,
         "failures":  failures,
@@ -316,6 +327,7 @@ def test_edgar_vs_yfinance_comprehensive():
                         yf_period_date = cache[cache_key].get("period_date")
                     else:
                         # cache miss: fetch live (slow, should not happen if cache populated)
+                        print(f"WARN: cache miss {cache_key} — fetching live from yfinance")
                         yf_m = yf_fn(ticker, curr_date)
 
                     # ── period-mismatch guard ────────────────────────────────
