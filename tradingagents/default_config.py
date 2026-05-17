@@ -88,6 +88,8 @@ DEFAULT_CONFIG = _apply_env_overrides({
     "look_back_days": 365,
     "financial_statement_frequency": "annual",
     "outcome_tracking_enabled": False,
+    "validate_financials": False,            # When True, cross-checks EDGAR vs yfinance; warns on >5% deviation
+    "validate_financials_threshold": 0.05,   # Fraction above which a DataValidation warning is emitted
     "holding_days": 252,
     # Search queries used by get_global_news for macro headlines. Extend or
     # replace to broaden geographic / sector coverage.
@@ -103,7 +105,7 @@ DEFAULT_CONFIG = _apply_env_overrides({
     "data_vendors": {
         "core_stock_apis": "yfinance",       # Options: alpha_vantage, yfinance
         "technical_indicators": "yfinance",  # Options: alpha_vantage, yfinance
-        "fundamental_data": "yfinance",      # Options: alpha_vantage, yfinance
+        "fundamental_data": "sec_edgar",     # Options: sec_edgar, alpha_vantage, yfinance
         "news_data": "yfinance",             # Options: alpha_vantage, yfinance
     },
     # Tool-level configuration (takes precedence over category-level)
