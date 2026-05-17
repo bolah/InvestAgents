@@ -15,20 +15,32 @@ def initialize_config():
 
 
 def set_config(config: Dict):
-    """Update the configuration with custom values.
+    """Replace the configuration with the given dict.
 
-    Dict-valued keys (e.g. ``data_vendors``) are merged one level deep so a
-    partial update like ``{"data_vendors": {"core_stock_apis": "alpha_vantage"}}``
-    keeps the other nested keys from the default; scalar keys are replaced.
+    The incoming dict fully replaces the current config — keys not present in
+    the incoming dict are removed.  Dict-valued keys (e.g. ``data_vendors``)
+    are merged one level deep relative to the *incoming* dict's own values, so
+    nested keys are still respected; but stale top-level keys from a previous
+    config are cleared.
+
+    This behaviour lets callers use ``set_config(deepcopy(DEFAULT_CONFIG))``
+    as a reliable full reset (e.g. in test fixtures) while preserving the
+    convenience of partial nested-dict updates in production callers that
+    always pass a full config object.
     """
     global _config
     initialize_config()
     incoming = deepcopy(config)
+    # Full replacement: start from a fresh dict built from the incoming keys only.
+    new_config: Dict = {}
     for key, value in incoming.items():
         if isinstance(value, dict) and isinstance(_config.get(key), dict):
-            _config[key].update(value)
+            merged = deepcopy(_config[key])
+            merged.update(value)
+            new_config[key] = merged
         else:
-            _config[key] = value
+            new_config[key] = value
+    _config = new_config
 
 
 def get_config() -> Dict:
