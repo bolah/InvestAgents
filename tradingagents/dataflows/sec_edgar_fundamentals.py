@@ -1,5 +1,6 @@
 import logging
 import os
+import time
 from datetime import datetime
 
 import edgar
@@ -9,6 +10,31 @@ from tradingagents.dataflows.stockstats_utils import filter_financials_by_date
 logger = logging.getLogger(__name__)
 
 _identity_set = False
+
+
+def _edgar_retry(func, max_retries=3, base_delay=2.0):
+    """Execute an edgartools call with exponential backoff on rate-limit / transient errors."""
+    for attempt in range(max_retries + 1):
+        try:
+            return func()
+        except Exception as exc:
+            # Retry on HTTP 429 (TooManyRequests) or transient network errors
+            msg = str(exc).lower()
+            is_transient = (
+                "429" in msg
+                or "too many requests" in msg
+                or "connection" in msg
+                or "timeout" in msg
+            )
+            if is_transient and attempt < max_retries:
+                delay = base_delay * (2 ** attempt)
+                logger.warning(
+                    "EDGAR rate limited / network error, retrying in %.0fs (attempt %d/%d): %s",
+                    delay, attempt + 1, max_retries, exc,
+                )
+                time.sleep(delay)
+            else:
+                raise
 
 
 class SECEdgarNotFoundError(Exception):
@@ -51,13 +77,15 @@ def _get_financials(ticker: str, freq: str, curr_date: str | None) -> tuple:
     form = "10-K" if freq.lower() == "annual" else "10-Q"
     end_date = curr_date or datetime.now().strftime("%Y-%m-%d")
     company = edgar.Company(ticker.upper())
-    filings = company.get_filings(form=form, date=("2000-01-01", end_date))
+    filings = _edgar_retry(
+        lambda: company.get_filings(form=form, date=("2000-01-01", end_date))
+    )
     if len(filings) == 0:
         raise SECEdgarNotFoundError(
             f"No {form} filings found for '{ticker}' on or before {end_date}"
         )
     filing = filings[0]  # edgartools returns filings ordered most-recent-first
-    obj = filing.obj()
+    obj = _edgar_retry(filing.obj)
     fin = getattr(obj, "financials", None)
     if fin is None:
         raise SECEdgarNoXBRLError(
@@ -69,7 +97,7 @@ def _get_financials(ticker: str, freq: str, curr_date: str | None) -> tuple:
 
 def _validate_financials(
     ticker: str,
-    curr_date: str,
+    curr_date: str | None,
     statement_type: str,
     fin,
     threshold: float,
@@ -82,6 +110,9 @@ def _validate_financials(
     import yfinance as yf
     import pandas as pd
 
+    # Resolve None to today so filter_financials_by_date anchors correctly
+    resolved_date = curr_date or datetime.now().strftime("%Y-%m-%d")
+
     def _yf_scalar(df: pd.DataFrame, *row_names: str) -> float | None:
         for name in row_names:
             if name in df.index:
@@ -93,7 +124,7 @@ def _validate_financials(
     try:
         ticker_obj = yf.Ticker(ticker.upper())
         if statement_type == "income_statement":
-            yf_df = filter_financials_by_date(ticker_obj.income_stmt, curr_date)
+            yf_df = filter_financials_by_date(ticker_obj.income_stmt, resolved_date)
             comparisons = [
                 ("revenue",    fin.get_revenue(),
                  _yf_scalar(yf_df, "Total Revenue", "Revenue")),
@@ -101,7 +132,7 @@ def _validate_financials(
                  _yf_scalar(yf_df, "Net Income", "Net Income Common Stockholders")),
             ]
         elif statement_type == "balance_sheet":
-            yf_df = filter_financials_by_date(ticker_obj.balance_sheet, curr_date)
+            yf_df = filter_financials_by_date(ticker_obj.balance_sheet, resolved_date)
             comparisons = [
                 ("total_assets",      fin.get_total_assets(),
                  _yf_scalar(yf_df, "Total Assets")),
@@ -110,7 +141,7 @@ def _validate_financials(
                             "Total Liabilities")),
             ]
         else:  # cashflow
-            yf_df = filter_financials_by_date(ticker_obj.cashflow, curr_date)
+            yf_df = filter_financials_by_date(ticker_obj.cashflow, resolved_date)
             edgar_ocf = fin.get_operating_cash_flow() or fin.get_free_cash_flow()
             comparisons = [
                 ("operating_cf", edgar_ocf,
