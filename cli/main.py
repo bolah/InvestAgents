@@ -220,6 +220,18 @@ class MessageBuffer:
                 report_parts.append(
                     f"### Fundamentals Analysis\n{self.report_sections['fundamentals_report']}"
                 )
+            if self.report_sections.get("valuation_report"):
+                report_parts.append(
+                    f"### Valuation Analysis\n{self.report_sections['valuation_report']}"
+                )
+            if self.report_sections.get("moat_report"):
+                report_parts.append(
+                    f"### Moat & Quality Analysis\n{self.report_sections['moat_report']}"
+                )
+            if self.report_sections.get("macro_report"):
+                report_parts.append(
+                    f"### Macro & Secular Analysis\n{self.report_sections['macro_report']}"
+                )
 
         # Research Team Reports
         if self.report_sections.get("investment_plan"):
