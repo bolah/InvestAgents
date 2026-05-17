@@ -141,3 +141,47 @@ def test_new_analyst_types_in_models():
     assert AnalystType.VALUATION.value == "valuation"
     assert AnalystType.MOAT.value == "moat"
     assert AnalystType.MACRO.value == "macro"
+
+
+@pytest.mark.unit
+def test_conditional_logic_moat_routes_to_tools_when_tool_calls():
+    from tradingagents.graph.conditional_logic import ConditionalLogic
+    from unittest.mock import MagicMock
+    cl = ConditionalLogic()
+    mock_msg = MagicMock()
+    mock_msg.tool_calls = [MagicMock()]
+    state = {"messages": [mock_msg]}
+    assert cl.should_continue_moat(state) == "tools_moat"
+
+
+@pytest.mark.unit
+def test_conditional_logic_moat_routes_to_clear_when_no_tool_calls():
+    from tradingagents.graph.conditional_logic import ConditionalLogic
+    from unittest.mock import MagicMock
+    cl = ConditionalLogic()
+    mock_msg = MagicMock()
+    mock_msg.tool_calls = []
+    state = {"messages": [mock_msg]}
+    assert cl.should_continue_moat(state) == "Msg Clear Moat"
+
+
+@pytest.mark.unit
+def test_conditional_logic_macro_routes_to_tools_when_tool_calls():
+    from tradingagents.graph.conditional_logic import ConditionalLogic
+    from unittest.mock import MagicMock
+    cl = ConditionalLogic()
+    mock_msg = MagicMock()
+    mock_msg.tool_calls = [MagicMock()]
+    state = {"messages": [mock_msg]}
+    assert cl.should_continue_macro(state) == "tools_macro"
+
+
+@pytest.mark.unit
+def test_conditional_logic_macro_routes_to_clear_when_no_tool_calls():
+    from tradingagents.graph.conditional_logic import ConditionalLogic
+    from unittest.mock import MagicMock
+    cl = ConditionalLogic()
+    mock_msg = MagicMock()
+    mock_msg.tool_calls = []
+    state = {"messages": [mock_msg]}
+    assert cl.should_continue_macro(state) == "Msg Clear Macro"

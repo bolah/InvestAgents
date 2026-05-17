@@ -58,6 +58,9 @@ class MessageBuffer:
         "social": "Sentiment Analyst",
         "news": "News Analyst",
         "fundamentals": "Fundamentals Analyst",
+        "valuation": "Valuation Analyst",
+        "moat": "Moat & Quality Analyst",
+        "macro": "Macro & Secular Analyst",
     }
 
     # Report section mapping: section -> (analyst_key for filtering, finalizing_agent)
@@ -68,6 +71,9 @@ class MessageBuffer:
         "sentiment_report": ("social", "Sentiment Analyst"),
         "news_report": ("news", "News Analyst"),
         "fundamentals_report": ("fundamentals", "Fundamentals Analyst"),
+        "valuation_report": ("valuation", "Valuation Analyst"),
+        "moat_report": ("moat", "Moat & Quality Analyst"),
+        "macro_report": ("macro", "Macro & Secular Analyst"),
         "investment_plan": (None, "Research Manager"),
         "trader_investment_plan": (None, "Trader"),
         "final_trade_decision": (None, "Portfolio Manager"),
@@ -176,6 +182,9 @@ class MessageBuffer:
                 "sentiment_report": "Social Sentiment",
                 "news_report": "News Analysis",
                 "fundamentals_report": "Fundamentals Analysis",
+                "valuation_report": "Valuation Analysis",
+                "moat_report": "Moat & Quality Analysis",
+                "macro_report": "Macro & Secular Analysis",
                 "investment_plan": "Research Team Decision",
                 "trader_investment_plan": "Trading Team Plan",
                 "final_trade_decision": "Portfolio Management Decision",
@@ -191,7 +200,8 @@ class MessageBuffer:
         report_parts = []
 
         # Analyst Team Reports - use .get() to handle missing sections
-        analyst_sections = ["market_report", "sentiment_report", "news_report", "fundamentals_report"]
+        analyst_sections = ["market_report", "sentiment_report", "news_report", "fundamentals_report",
+                            "valuation_report", "moat_report", "macro_report"]
         if any(self.report_sections.get(section) for section in analyst_sections):
             report_parts.append("## Analyst Team Reports")
             if self.report_sections.get("market_report"):
@@ -705,6 +715,18 @@ def save_report_to_disk(final_state, ticker: str, save_path: Path):
         analysts_dir.mkdir(exist_ok=True)
         (analysts_dir / "fundamentals.md").write_text(final_state["fundamentals_report"], encoding="utf-8")
         analyst_parts.append(("Fundamentals Analyst", final_state["fundamentals_report"]))
+    if final_state.get("valuation_report"):
+        analysts_dir.mkdir(exist_ok=True)
+        (analysts_dir / "valuation.md").write_text(final_state["valuation_report"], encoding="utf-8")
+        analyst_parts.append(("Valuation Analyst", final_state["valuation_report"]))
+    if final_state.get("moat_report"):
+        analysts_dir.mkdir(exist_ok=True)
+        (analysts_dir / "moat.md").write_text(final_state["moat_report"], encoding="utf-8")
+        analyst_parts.append(("Moat & Quality Analyst", final_state["moat_report"]))
+    if final_state.get("macro_report"):
+        analysts_dir.mkdir(exist_ok=True)
+        (analysts_dir / "macro.md").write_text(final_state["macro_report"], encoding="utf-8")
+        analyst_parts.append(("Macro & Secular Analyst", final_state["macro_report"]))
     if analyst_parts:
         content = "\n\n".join(f"### {name}\n{text}" for name, text in analyst_parts)
         sections.append(f"## I. Analyst Team Reports\n\n{content}")
