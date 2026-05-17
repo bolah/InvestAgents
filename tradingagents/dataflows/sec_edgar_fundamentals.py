@@ -27,6 +27,12 @@ def _ensure_identity() -> None:
         return
     identity = os.environ.get("EDGAR_IDENTITY")
     if not identity:
+        from tradingagents.dataflows.config import get_config
+        if not get_config().get("online_tools", True):
+            logger.warning(
+                "EDGAR_IDENTITY is not set; SEC EDGAR calls will fail if online_tools is enabled."
+            )
+            return
         raise EnvironmentError(
             "EDGAR_IDENTITY environment variable is not set. "
             "Set it to 'AppName your@email.com' per SEC polite-access guidelines."
@@ -35,7 +41,7 @@ def _ensure_identity() -> None:
     _identity_set = True
 
 
-def _get_financials(ticker: str, freq: str, curr_date: str):
+def _get_financials(ticker: str, freq: str, curr_date: str | None) -> tuple:
     """Return (Financials, filing_date, period_of_report) for the most recent filing <= curr_date.
 
     Uses SEC filing date as the look-ahead anchor: a filing with filing_date=2023-11-03
@@ -50,7 +56,7 @@ def _get_financials(ticker: str, freq: str, curr_date: str):
         raise SECEdgarNotFoundError(
             f"No {form} filings found for '{ticker}' on or before {end_date}"
         )
-    filing = filings[0]
+    filing = filings[0]  # edgartools returns filings ordered most-recent-first
     obj = filing.obj()
     fin = getattr(obj, "financials", None)
     if fin is None:
@@ -126,7 +132,7 @@ def _validate_financials(
 
 
 def get_income_statement(
-    ticker: str, freq: str = "quarterly", curr_date: str = None
+    ticker: str, freq: str = "quarterly", curr_date: str | None = None
 ) -> str:
     """Get income statement from SEC EDGAR XBRL filing as LLM-ready markdown."""
     from tradingagents.dataflows.config import get_config
@@ -152,7 +158,7 @@ def get_income_statement(
 
 
 def get_balance_sheet(
-    ticker: str, freq: str = "quarterly", curr_date: str = None
+    ticker: str, freq: str = "quarterly", curr_date: str | None = None
 ) -> str:
     """Get balance sheet from SEC EDGAR XBRL filing as LLM-ready markdown."""
     from tradingagents.dataflows.config import get_config
@@ -178,7 +184,7 @@ def get_balance_sheet(
 
 
 def get_cashflow(
-    ticker: str, freq: str = "quarterly", curr_date: str = None
+    ticker: str, freq: str = "quarterly", curr_date: str | None = None
 ) -> str:
     """Get cash flow statement from SEC EDGAR XBRL filing as LLM-ready markdown."""
     from tradingagents.dataflows.config import get_config

@@ -27,6 +27,9 @@ def set_config(config: Dict):
     as a reliable full reset (e.g. in test fixtures) while preserving the
     convenience of partial nested-dict updates in production callers that
     always pass a full config object.
+
+    Callers must always pass a complete config dict. Multiple sequential partial-key
+    calls will lose all keys not present in the most recent call.
     """
     global _config
     initialize_config()
