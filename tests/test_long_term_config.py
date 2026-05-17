@@ -55,3 +55,15 @@ def test_resolve_pending_entries_skipped_when_tracking_disabled(monkeypatch):
         graph.memory_log = MagicMock()
         graph._resolve_pending_entries("AAPL")
         graph.memory_log.get_pending_entries.assert_not_called()
+
+
+@pytest.mark.unit
+def test_market_analyst_system_message_is_long_term():
+    """Market analyst prompt must not contain short-term trading language."""
+    import inspect
+    import tradingagents.agents.analysts.market_analyst as m
+    src = inspect.getsource(m)
+    assert "Technical Signal Analyst" in src
+    assert "long-term position" in src
+    assert "falling knife" in src
+    assert "stop-loss" not in src.lower()
