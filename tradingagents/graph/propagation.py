@@ -21,6 +21,7 @@ class Propagator:
         trade_date: str,
         asset_type: str = "stock",
         past_context: str = "",
+        investment_horizon: str = "3-5 years",
     ) -> Dict[str, Any]:
         """Create the initial state for the agent graph."""
         return {
@@ -57,6 +58,10 @@ class Propagator:
             "fundamentals_report": "",
             "sentiment_report": "",
             "news_report": "",
+            "investment_horizon": investment_horizon,
+            "valuation_report": "",
+            "moat_report": "",
+            "macro_report": "",
         }
 
     def get_graph_args(self, callbacks: Optional[List] = None) -> Dict[str, Any]:

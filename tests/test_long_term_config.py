@@ -23,3 +23,14 @@ def test_agent_state_has_new_fields():
     assert "valuation_report" in annotations
     assert "moat_report" in annotations
     assert "macro_report" in annotations
+
+
+@pytest.mark.unit
+def test_propagator_initial_state_has_new_fields():
+    from tradingagents.graph.propagation import Propagator
+    p = Propagator()
+    state = p.create_initial_state("AAPL", "2026-01-01")
+    assert state["investment_horizon"] == "3-5 years"
+    assert state["valuation_report"] == ""
+    assert state["moat_report"] == ""
+    assert state["macro_report"] == ""
