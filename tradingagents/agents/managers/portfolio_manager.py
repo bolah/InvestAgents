@@ -57,6 +57,7 @@ def create_portfolio_manager(llm):
 - Research Manager's investment plan: **{research_plan}**
 - Trader's transaction proposal: **{trader_plan}**
 {lessons_line}- Investment horizon: **{investment_horizon}**. The final decision should reflect this multi-year holding period. Short-term price volatility is not a relevant risk factor at this horizon.
+
 **Risk Analysts Debate History:**
 {history}
 

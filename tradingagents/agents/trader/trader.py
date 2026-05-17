@@ -25,13 +25,14 @@ def create_trader(llm):
         asset_type = state.get("asset_type", "stock")
         instrument_context = build_instrument_context(company_name, asset_type)
         investment_plan = state["investment_plan"]
+        investment_horizon = state.get("investment_horizon", "3-5 years")
 
         messages = [
             {
                 "role": "system",
                 "content": (
                     "You are an investment analyst translating a research team's investment plan "
-                    "into a concrete investment decision for a long-term (3-5 year) horizon. "
+                    f"into a concrete investment decision for a long-term ({investment_horizon}) horizon. "
                     "Based on your analysis, provide a specific recommendation to buy, sell, or hold. "
                     "Anchor your reasoning in the analysts' reports and the research plan. "
                     "Your conviction score must reflect the quality and clarity of the long-term thesis, "

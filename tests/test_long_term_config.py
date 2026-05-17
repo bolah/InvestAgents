@@ -105,11 +105,13 @@ def test_sentiment_analyst_is_long_term():
 def test_researcher_prompts_include_new_reports():
     import inspect
     import tradingagents.agents.researchers.bull_researcher as b
-    src = inspect.getsource(b)
-    assert "valuation_report" in src
-    assert "moat_report" in src
-    assert "macro_report" in src
-    assert "investment_horizon" in src
+    import tradingagents.agents.researchers.bear_researcher as br
+    for mod, name in [(b, "bull"), (br, "bear")]:
+        src = inspect.getsource(mod)
+        assert "valuation_report" in src, f"{name}_researcher missing valuation_report"
+        assert "moat_report" in src, f"{name}_researcher missing moat_report"
+        assert "macro_report" in src, f"{name}_researcher missing macro_report"
+        assert "investment_horizon" in src, f"{name}_researcher missing investment_horizon"
 
 
 @pytest.mark.unit
