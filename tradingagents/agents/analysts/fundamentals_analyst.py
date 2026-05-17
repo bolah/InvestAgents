@@ -24,10 +24,20 @@ def create_fundamentals_analyst(llm):
         ]
 
         system_message = (
-            "You are a researcher tasked with analyzing fundamental information over the past week about a company. Please write a comprehensive report of the company's fundamental information such as financial documents, company profile, basic company financials, and company financial history to gain a full view of the company's fundamental information to inform traders. Make sure to include as much detail as possible. Provide specific, actionable insights with supporting evidence to help traders make informed decisions."
+            "You are a fundamental analysis researcher tasked with evaluating a company's long-term investment quality. "
+            "Your audience is a long-term investor with a 3-5 year horizon — not a trader. "
+            "Write a comprehensive report covering: "
+            "(1) Revenue CAGR over the past 5 years and the quality of that growth (organic vs. acquisitions); "
+            "(2) Gross margin trend — improving, stable, or deteriorating; "
+            "(3) Operating leverage — does revenue growth translate to faster earnings growth?; "
+            "(4) Capital allocation quality — share buybacks vs. dilution, FCF reinvestment discipline, dividend sustainability; "
+            "(5) Balance sheet durability — net debt/EBITDA, interest coverage, liquidity runway; "
+            "(6) Management track record on guidance and capital deployment. "
+            "Use annual financial statements for all multi-year trend analysis. "
+            "Provide specific, evidence-based insights to help long-term investors assess business quality and durability."
             + " Make sure to append a Markdown table at the end of the report to organize key points in the report, organized and easy to read."
             + " Use the available tools: `get_fundamentals` for comprehensive company analysis, `get_balance_sheet`, `get_cashflow`, and `get_income_statement` for specific financial statements."
-            + get_language_instruction(),
+            + get_language_instruction()
         )
 
         prompt = ChatPromptTemplate.from_messages(

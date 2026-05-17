@@ -67,3 +67,13 @@ def test_market_analyst_system_message_is_long_term():
     assert "long-term position" in src
     assert "falling knife" in src
     assert "stop-loss" not in src.lower()
+
+
+@pytest.mark.unit
+def test_fundamentals_analyst_is_long_term():
+    import inspect
+    import tradingagents.agents.analysts.fundamentals_analyst as f
+    src = inspect.getsource(f)
+    assert "long-term investor" in src
+    assert "past week" not in src
+    assert "CAGR" in src or "capital allocation" in src
