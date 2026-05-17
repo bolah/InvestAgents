@@ -1,49 +1,63 @@
 {
   "summary": {
-    "total": 8,
-    "passed": 5,
-    "failed": 3,
-    "failure_rate_pct": 37.5
+    "total": 329,
+    "passed": 322,
+    "failed": 7,
+    "failure_rate_pct": 2.1
   },
   "by_sector": {
+    "Technology": {
+      "passed": 51,
+      "failed": 0,
+      "avg_deviation_pct": 0.04
+    },
+    "Healthcare": {
+      "passed": 18,
+      "failed": 0,
+      "avg_deviation_pct": 0.0
+    },
+    "Financials": {
+      "passed": 19,
+      "failed": 0,
+      "avg_deviation_pct": 0.0
+    },
+    "Consumer_Discretionary": {
+      "passed": 43,
+      "failed": 0,
+      "avg_deviation_pct": 141.5
+    },
+    "Consumer_Staples": {
+      "passed": 40,
+      "failed": 0,
+      "avg_deviation_pct": 0.24
+    },
+    "Energy": {
+      "passed": 30,
+      "failed": 0,
+      "avg_deviation_pct": 116.27
+    },
     "Industrials": {
-      "passed": 5,
+      "passed": 47,
+      "failed": 4,
+      "avg_deviation_pct": 29.34
+    },
+    "Utilities": {
+      "passed": 19,
+      "failed": 0,
+      "avg_deviation_pct": 0.33
+    },
+    "Materials": {
+      "passed": 30,
       "failed": 3,
-      "avg_deviation_pct": 84.66
+      "avg_deviation_pct": 70.87
+    },
+    "Real_Estate": {
+      "passed": 25,
+      "failed": 0,
+      "avg_deviation_pct": 3.16
     }
   },
   "failures": [
-    {
-      "sector": "Industrials",
-      "ticker": "CAT",
-      "date": "2023-02-15",
-      "statement": "balance",
-      "filing_date": "2023-02-15",
-      "status": "fail",
-      "matched": 2,
-      "comparable": 4,
-      "deviations": {
-        "total_assets": 0.8715,
-        "total_liabilities": 0.1939,
-        "stockholders_equity": 0.0014,
-        "cash": 0.0
-      }
-    },
-    {
-      "sector": "Industrials",
-      "ticker": "CAT",
-      "date": "2023-02-15",
-      "statement": "cashflow",
-      "filing_date": "2023-02-15",
-      "status": "fail",
-      "matched": 1,
-      "comparable": 3,
-      "deviations": {
-        "operating_cf": 0.0,
-        "capital_expenditures": 1.0054,
-        "free_cash_flow": 0.2014
-      }
-    },
     {
       "sector": "Industrials",
       "ticker": "GE",
@@ -57,6 +71,96 @@
         "total_revenue": 0.6041,
         "net_income": 0.1507,
         "operating_income": 1.9212
+      }
+    },
+    {
+      "sector": "Industrials",
+      "ticker": "GE",
+      "date": "2023-02-15",
+      "statement": "cashflow",
+      "filing_date": "2023-02-10",
+      "status": "fail",
+      "matched": 1,
+      "comparable": 3,
+      "deviations": {
+        "operating_cf": 0.0002,
+        "capital_expenditures": 0.5171,
+        "free_cash_flow": 0.1562
+      }
+    },
+    {
+      "sector": "Industrials",
+      "ticker": "GE",
+      "date": "2024-02-15",
+      "statement": "income",
+      "filing_date": "2024-02-02",
+      "status": "fail",
+      "matched": 1,
+      "comparable": 3,
+      "deviations": {
+        "total_revenue": 0.4525,
+        "net_income": 0.0041,
+        "operating_income": 0.3383
+      }
+    },
+    {
+      "sector": "Industrials",
+      "ticker": "GE",
+      "date": "2024-02-15",
+      "statement": "cashflow",
+      "filing_date": "2024-02-02",
+      "status": "fail",
+      "matched": 1,
+      "comparable": 3,
+      "deviations": {
+        "operating_cf": 0.0019,
+        "capital_expenditures": 0.4596,
+        "free_cash_flow": 0.2073
+      }
+    },
+    {
+      "sector": "Materials",
+      "ticker": "DD",
+      "date": "2023-02-15",
+      "statement": "cashflow",
+      "filing_date": "2023-02-15",
+      "status": "fail",
+      "matched": 1,
+      "comparable": 3,
+      "deviations": {
+        "operating_cf": 1.1241,
+        "capital_expenditures": 0.109,
+        "free_cash_flow": 4.7871
+      }
+    },
+    {
+      "sector": "Materials",
+      "ticker": "DD",
+      "date": "2024-02-15",
+      "statement": "income",
+      "filing_date": "2024-02-15",
+      "status": "fail",
+      "matched": 1,
+      "comparable": 3,
+      "deviations": {
+        "total_revenue": 0.4519,
+        "net_income": 0.0844,
+        "operating_income": 7.0588
+      }
+    },
+    {
+      "sector": "Materials",
+      "ticker": "DD",
+      "date": "2024-02-15",
+      "statement": "cashflow",
+      "filing_date": "2024-02-15",
+      "status": "fail",
+      "matched": 0,
+      "comparable": 3,
+      "deviations": {
+        "operating_cf": 0.6143,
+        "capital_expenditures": 2.3328,
+        "free_cash_flow": 1.7748
       }
     }
   ]
