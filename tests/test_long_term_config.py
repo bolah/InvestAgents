@@ -88,3 +88,14 @@ def test_news_analyst_is_long_term():
     assert "traders" not in src
     assert "structural" in src or "long-term" in src
     assert "news_lookback_days" in src
+
+
+@pytest.mark.unit
+def test_sentiment_analyst_is_long_term():
+    import inspect
+    import tradingagents.agents.analysts.sentiment_analyst as s
+    src = inspect.getsource(s)
+    assert "_seven_days_back" not in src
+    assert "sentiment_lookback_days" in src
+    assert "durable narrative" in src or "enduring narrative" in src
+    assert "Short-term sentiment" in src
