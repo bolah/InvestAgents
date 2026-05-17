@@ -120,28 +120,76 @@ def _yf_cashflow(ticker: str, curr_date: str) -> dict:
 # ── EDGAR metric extraction ───────────────────────────────────────────────────
 
 def _edgar_income(fin) -> dict:
+    # GrossProfit$ anchored to avoid matching abstract concepts with the same prefix
+    gross_profit = fin._get_concept_value("income", [r"GrossProfit$"])
     return {
         "total_revenue":    fin.get_revenue(),
         "net_income":       fin.get_net_income(),
-        "gross_profit":     fin.get_operating_income(),
+        "gross_profit":     gross_profit,
         "operating_income": fin.get_operating_income(),
     }
 
 
 def _edgar_balance(fin) -> dict:
+    # Use us-gaap:Assets / us-gaap:Liabilities XBRL concepts for consolidated totals.
+    # get_total_assets() / get_total_liabilities() can map to wrong rows on companies
+    # with complex segment disclosures (e.g. CAT maps to "Total current assets").
+    # The `us-gaap[_:]` prefix avoids company-specific prefixes (e.g. jpm_TradingAssets)
+    # that also end in "Assets" and would be matched by a bare "Assets$" pattern.
+    total_assets = fin._get_concept_value("balance", [r"us-gaap[_:]Assets$"])
+    total_liabilities = fin._get_concept_value("balance", [r"us-gaap[_:]Liabilities$"])
+    # Use XBRL concept search so we get cash-and-equivalents, not current assets
+    cash = fin._get_concept_value(
+        "balance",
+        [r"CashAndCashEquivalentsAtCarryingValue$", r"CashAndCashEquivalents$"],
+    )
     return {
-        "total_assets":        fin.get_total_assets(),
-        "total_liabilities":   fin.get_total_liabilities(),
+        "total_assets":        total_assets,
+        "total_liabilities":   total_liabilities,
         "stockholders_equity": fin.get_stockholders_equity(),
-        "cash":                fin.get_current_assets(),
+        "cash":                cash,
     }
 
 
 def _edgar_cashflow(fin) -> dict:
+    # Use XBRL concept search with $ anchor to skip abstract header rows that
+    # share the same prefix (e.g. NetCashProvidedByUsedInOperatingActivitiesAbstract).
+    # Also try the ContinuingOperations variant used by conglomerates with discontinued ops.
+    operating_cf = fin._get_concept_value(
+        "cashflow",
+        [
+            r"NetCashProvidedByUsedInOperatingActivities$",
+            r"NetCashProvidedByUsedInOperatingActivitiesContinuingOperations$",
+        ],
+    )
+
+    # EDGAR reports capex as a positive outflow; yfinance uses negative convention.
+    # Some companies (e.g. CAT) split capex into two XBRL lines:
+    # PaymentsToAcquirePropertyPlantAndEquipment (machinery segment) and
+    # PaymentsToAcquireEquipmentOnLease (Financial Products leased assets).
+    # Sum both to match yfinance's consolidated capex figure.
+    capex_ppe    = fin._get_concept_value("cashflow", [r"PaymentsToAcquirePropertyPlantAndEquipment$"])
+    capex_leased = fin._get_concept_value("cashflow", [r"PaymentsToAcquireEquipmentOnLease$"])
+    if capex_ppe is not None and capex_leased is not None:
+        capex_raw = capex_ppe + capex_leased
+    elif capex_ppe is not None:
+        capex_raw = capex_ppe
+    else:
+        capex_raw = fin.get_capital_expenditures()
+    capital_expenditures = -capex_raw if capex_raw is not None else None
+
+    # Compute FCF directly as OCF − capex (always, matching yfinance's convention).
+    # get_free_cash_flow() is unreliable for conglomerates with discontinued ops
+    # (e.g. RTX returns −capex instead of OCF−capex); just derive it consistently.
+    if operating_cf is not None and capex_raw is not None:
+        free_cash_flow = operating_cf - capex_raw  # OCF − capex (positive outflow)
+    else:
+        free_cash_flow = None
+
     return {
-        "operating_cf":         fin.get_operating_cash_flow(),
-        "capital_expenditures": fin.get_capital_expenditures(),
-        "free_cash_flow":       fin.get_free_cash_flow(),
+        "operating_cf":         operating_cf,
+        "capital_expenditures": capital_expenditures,
+        "free_cash_flow":       free_cash_flow,
     }
 
 
@@ -262,11 +310,34 @@ def test_edgar_vs_yfinance_comprehensive():
 
                     # ── yfinance (from cache) ──
                     cache_key = f"{ticker}_{stmt_type}_{curr_date}"
+                    yf_period_date = None
                     if cache_key in cache:
-                        yf_m = cache[cache_key]["metrics"]
+                        yf_m           = cache[cache_key]["metrics"]
+                        yf_period_date = cache[cache_key].get("period_date")
                     else:
                         # cache miss: fetch live (slow, should not happen if cache populated)
                         yf_m = yf_fn(ticker, curr_date)
+
+                    # ── period-mismatch guard ────────────────────────────────
+                    # EDGAR returns the last *filed* 10-K as of curr_date.
+                    # yfinance returns data by period-end date, ignoring filing lag.
+                    # When a company files its 10-K in mid-February (after the test
+                    # date), EDGAR sees FY-1 while yfinance already sees FY data
+                    # because the period ended ≤ curr_date.  Skip those cases so
+                    # they don't inflate the failure rate.
+                    if yf_period_date and period:
+                        edgar_fy = period[:7]   # "YYYY-MM"
+                        yf_fy    = yf_period_date[:7]
+                        if edgar_fy != yf_fy:
+                            results.append({
+                                "sector": sector, "ticker": ticker,
+                                "date": curr_date, "statement": stmt_type,
+                                "filing_date": filing_date,
+                                "status": "period_mismatch",
+                                "edgar_period": period,
+                                "yf_period": yf_period_date,
+                            })
+                            continue
 
                     # ── compare ──
                     matched    = 0

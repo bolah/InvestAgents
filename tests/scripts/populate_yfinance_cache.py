@@ -51,29 +51,33 @@ def _safe_float(df: pd.DataFrame, col, *row_names: str):
     return None
 
 
-def _income_metrics(ticker: str, curr_date: str) -> dict:
+def _income_metrics(ticker: str, curr_date: str) -> tuple[dict, str | None]:
+    """Returns (metrics_dict, period_date_str) where period_date_str is the
+    fiscal-period-end date of the selected column (YYYY-MM-DD), or None."""
     try:
         df = filter_financials_by_date(yf.Ticker(ticker).income_stmt, curr_date)
         if df.empty:
-            return {}
+            return {}, None
         col = df.columns[0]
+        period = col.strftime("%Y-%m-%d") if hasattr(col, "strftime") else str(col)[:10]
         return {
             "total_revenue":    _safe_float(df, col, "Total Revenue", "Revenue"),
             "net_income":       _safe_float(df, col, "Net Income", "Net Income Common Stockholders"),
             "gross_profit":     _safe_float(df, col, "Gross Profit"),
             "operating_income": _safe_float(df, col, "Operating Income", "EBIT"),
-        }
+        }, period
     except Exception as e:
         print(f"    [WARN] income {ticker} {curr_date}: {e}")
-        return {}
+        return {}, None
 
 
-def _balance_metrics(ticker: str, curr_date: str) -> dict:
+def _balance_metrics(ticker: str, curr_date: str) -> tuple[dict, str | None]:
     try:
         df = filter_financials_by_date(yf.Ticker(ticker).balance_sheet, curr_date)
         if df.empty:
-            return {}
+            return {}, None
         col = df.columns[0]
+        period = col.strftime("%Y-%m-%d") if hasattr(col, "strftime") else str(col)[:10]
         return {
             "total_assets":       _safe_float(df, col, "Total Assets"),
             "total_liabilities":  _safe_float(df, col,
@@ -83,26 +87,27 @@ def _balance_metrics(ticker: str, curr_date: str) -> dict:
                                                "Common Stock Equity"),
             "cash":               _safe_float(df, col, "Cash And Cash Equivalents",
                                               "Cash Cash Equivalents And Short Term Investments"),
-        }
+        }, period
     except Exception as e:
         print(f"    [WARN] balance {ticker} {curr_date}: {e}")
-        return {}
+        return {}, None
 
 
-def _cashflow_metrics(ticker: str, curr_date: str) -> dict:
+def _cashflow_metrics(ticker: str, curr_date: str) -> tuple[dict, str | None]:
     try:
         df = filter_financials_by_date(yf.Ticker(ticker).cashflow, curr_date)
         if df.empty:
-            return {}
+            return {}, None
         col = df.columns[0]
+        period = col.strftime("%Y-%m-%d") if hasattr(col, "strftime") else str(col)[:10]
         return {
             "operating_cf":        _safe_float(df, col, "Operating Cash Flow"),
             "capital_expenditures": _safe_float(df, col, "Capital Expenditure"),
             "free_cash_flow":       _safe_float(df, col, "Free Cash Flow"),
-        }
+        }, period
     except Exception as e:
         print(f"    [WARN] cashflow {ticker} {curr_date}: {e}")
-        return {}
+        return {}, None
 
 
 EXTRACTORS = {
@@ -129,14 +134,16 @@ def main():
         for curr_date in TEST_DATES:
             for stmt_type, fn in EXTRACTORS.items():
                 key = f"{ticker}_{stmt_type}_{curr_date}"
-                if key in cache:
+                existing = cache.get(key, {})
+                # Re-fetch if period_date is missing from an existing entry
+                if existing and "period_date" in existing:
                     done += 1
                     skipped += 1
                     continue
-                metrics = fn(ticker, curr_date)
-                cache[key] = {"metrics": metrics}
+                metrics, period_date = fn(ticker, curr_date)
+                cache[key] = {"metrics": metrics, "period_date": period_date}
                 done += 1
-                print(f"  [{done}/{total}] {key}: {[k for k, v in metrics.items() if v is not None]}")
+                print(f"  [{done}/{total}] {key} (period={period_date}): {[k for k, v in metrics.items() if v is not None]}")
                 time.sleep(0.4)  # polite to yfinance rate limits
 
     with open(CACHE_FILE, "w") as f:
