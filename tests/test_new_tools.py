@@ -61,29 +61,23 @@ def test_get_quality_metrics_returns_string():
 @pytest.mark.unit
 def test_web_search_tool_returns_string_on_ddgs_unavailable():
     """web_search_tool must not raise even if duckduckgo_search is unavailable."""
-    import sys
-    from unittest.mock import patch
-    with patch.dict(sys.modules, {"duckduckgo_search": None}):
-        # Re-import to trigger the import failure path
-        if "tradingagents.agents.utils.web_tools" in sys.modules:
-            del sys.modules["tradingagents.agents.utils.web_tools"]
-        from tradingagents.agents.utils.web_tools import web_search_tool
-        result = web_search_tool.func("test query")
+    import tradingagents.agents.utils.web_tools as web_tools_module
+    with patch.object(web_tools_module, "_DDGS_AVAILABLE", False):
+        result = web_tools_module.web_search_tool.func("test query")
         assert isinstance(result, str)
 
 
 @pytest.mark.unit
 def test_web_search_tool_returns_formatted_results():
     """web_search_tool returns title + snippet per result when DDGS works."""
-    from unittest.mock import patch, MagicMock
+    import tradingagents.agents.utils.web_tools as web_tools_module
     mock_results = [
         {"title": "AI boom drives cloud growth", "body": "Cloud providers see 30% YoY growth..."},
         {"title": "Regulatory scrutiny on big tech", "body": "EU antitrust investigations expand..."},
     ]
-    with patch("tradingagents.agents.utils.web_tools.DDGS") as mock_ddgs:
+    with patch.object(web_tools_module, "_DDGS_AVAILABLE", True), \
+         patch.object(web_tools_module, "DDGS", create=True) as mock_ddgs:
         mock_ddgs.return_value.__enter__.return_value.text.return_value = mock_results
-        from tradingagents.agents.utils import web_tools
-        import importlib; importlib.reload(web_tools)
-        result = web_tools.web_search_tool.func("cloud computing trends 2026", max_results=2)
+        result = web_tools_module.web_search_tool.func("cloud computing trends 2026", max_results=2)
         assert "AI boom drives cloud growth" in result
         assert "Regulatory scrutiny" in result
