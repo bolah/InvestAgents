@@ -2,7 +2,6 @@
 
 import copy
 import logging
-import os
 
 import pandas as pd
 import pytest
@@ -277,14 +276,16 @@ class TestValidationFlag:
 class TestValidationWarnings:
 
     def _make_income_df(self, revenue: float, net_income: float) -> pd.DataFrame:
-        df = pd.DataFrame({
+        return pd.DataFrame({
             pd.Timestamp("2023-09-30"): {
                 "Total Revenue": revenue,
                 "Net Income": net_income,
             }
-        }).T
-        return df
+        })
+        # index = metric names, columns = Timestamps — matching yfinance income_stmt format
 
+    # Patch the top-level module: _validate_financials uses a local `import yfinance as yf`,
+    # so patching yfinance.Ticker works because the local import binds to the same module object.
     @patch("yfinance.Ticker")
     def test_warns_on_revenue_deviation_above_threshold(self, mock_ticker_cls, caplog):
         """10% revenue deviation triggers a DataValidation warning."""
@@ -304,6 +305,8 @@ class TestValidationWarnings:
         assert "[DataValidation]" in caplog.text
         assert "revenue" in caplog.text
 
+    # Patch the top-level module: _validate_financials uses a local `import yfinance as yf`,
+    # so patching yfinance.Ticker works because the local import binds to the same module object.
     @patch("yfinance.Ticker")
     def test_no_warning_when_deviation_below_threshold(self, mock_ticker_cls, caplog):
         """3% deviation (below 5% threshold) must not produce a warning."""
