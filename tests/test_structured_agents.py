@@ -16,7 +16,7 @@ from tradingagents.agents.schemas import (
     PortfolioRating,
     ResearchPlan,
     TraderAction,
-    TraderProposal,
+    InvestmentProposal,
     render_research_plan,
     render_trader_proposal,
 )
@@ -31,36 +31,48 @@ from tradingagents.agents.trader.trader import create_trader
 @pytest.mark.unit
 class TestRenderTraderProposal:
     def test_minimal_required_fields(self):
-        p = TraderProposal(action=TraderAction.HOLD, reasoning="Balanced setup; no edge.")
+        p = InvestmentProposal(
+            action=TraderAction.HOLD,
+            reasoning="Balanced setup; no edge.",
+            conviction_score=5,
+            thesis_horizon="3-5 years",
+            key_catalysts="1. Earnings growth. 2. Margin expansion.",
+        )
         md = render_trader_proposal(p)
         assert "**Action**: Hold" in md
         assert "**Reasoning**: Balanced setup; no edge." in md
-        # The trailing FINAL TRANSACTION PROPOSAL line is preserved for the
-        # analyst stop-signal text and any external code that greps for it.
+        assert "**Conviction Score**: 5" in md
+        assert "**Thesis Horizon**: 3-5 years" in md
         assert "FINAL TRANSACTION PROPOSAL: **HOLD**" in md
 
-    def test_optional_fields_included_when_present(self):
-        p = TraderProposal(
+    def test_all_fields_rendered(self):
+        p = InvestmentProposal(
             action=TraderAction.BUY,
-            reasoning="Strong technicals + fundamentals.",
-            entry_price=189.5,
-            stop_loss=178.0,
-            position_sizing="6% of portfolio",
+            reasoning="Strong moat and valuation.",
+            conviction_score=8,
+            thesis_horizon="5 years",
+            key_catalysts="1. Cloud growth. 2. AI monetization.",
+            position_sizing="5% of portfolio",
         )
         md = render_trader_proposal(p)
         assert "**Action**: Buy" in md
-        assert "**Entry Price**: 189.5" in md
-        assert "**Stop Loss**: 178.0" in md
-        assert "**Position Sizing**: 6% of portfolio" in md
+        assert "**Conviction Score**: 8" in md
+        assert "**Thesis Horizon**: 5 years" in md
+        assert "**Key Catalysts**: 1. Cloud growth" in md
+        assert "**Position Sizing**: 5% of portfolio" in md
         assert "FINAL TRANSACTION PROPOSAL: **BUY**" in md
 
-    def test_optional_fields_omitted_when_absent(self):
-        p = TraderProposal(action=TraderAction.SELL, reasoning="Guidance cut.")
+    def test_no_entry_price_or_stop_loss_fields(self):
+        p = InvestmentProposal(
+            action=TraderAction.SELL,
+            reasoning="Structural decline.",
+            conviction_score=7,
+            thesis_horizon="2 years",
+            key_catalysts="1. Margin compression. 2. Market share loss.",
+        )
         md = render_trader_proposal(p)
         assert "Entry Price" not in md
         assert "Stop Loss" not in md
-        assert "Position Sizing" not in md
-        assert "FINAL TRANSACTION PROPOSAL: **SELL**" in md
 
 
 @pytest.mark.unit
@@ -99,14 +111,17 @@ def _make_trader_state():
     }
 
 
-def _structured_trader_llm(captured: dict, proposal: TraderProposal | None = None):
+def _structured_trader_llm(captured: dict, proposal: InvestmentProposal | None = None):
     """Build a MagicMock LLM whose with_structured_output binding captures the
-    prompt and returns a real TraderProposal so render_trader_proposal works.
+    prompt and returns a real InvestmentProposal so render_trader_proposal works.
     """
     if proposal is None:
-        proposal = TraderProposal(
+        proposal = InvestmentProposal(
             action=TraderAction.BUY,
             reasoning="Strong setup.",
+            conviction_score=7,
+            thesis_horizon="3-5 years",
+            key_catalysts="1. Revenue growth. 2. Market expansion.",
         )
     structured = MagicMock()
     structured.invoke.side_effect = lambda prompt: (
@@ -121,11 +136,12 @@ def _structured_trader_llm(captured: dict, proposal: TraderProposal | None = Non
 class TestTraderAgent:
     def test_structured_path_produces_rendered_markdown(self):
         captured = {}
-        proposal = TraderProposal(
+        proposal = InvestmentProposal(
             action=TraderAction.BUY,
             reasoning="AI capex cycle intact; institutional flows constructive.",
-            entry_price=189.5,
-            stop_loss=178.0,
+            conviction_score=8,
+            thesis_horizon="3-5 years",
+            key_catalysts="1. AI infrastructure spend. 2. Data center growth.",
             position_sizing="6% of portfolio",
         )
         llm = _structured_trader_llm(captured, proposal)
@@ -133,7 +149,7 @@ class TestTraderAgent:
         result = trader(_make_trader_state())
         plan = result["trader_investment_plan"]
         assert "**Action**: Buy" in plan
-        assert "**Entry Price**: 189.5" in plan
+        assert "**Conviction Score**: 8" in plan
         assert "FINAL TRANSACTION PROPOSAL: **BUY**" in plan
         # The same rendered markdown is also added to messages for downstream agents.
         assert plan in result["messages"][0].content

@@ -92,6 +92,7 @@ def _structured_pm_llm(captured: dict, decision: PortfolioDecision | None = None
             rating=PortfolioRating.HOLD,
             executive_summary="Hold the position; await catalyst.",
             investment_thesis="Balanced view; neither side carried the debate.",
+            time_horizon="3-5 years",
         )
     structured = MagicMock()
     structured.invoke.side_effect = lambda prompt: (

@@ -6,7 +6,7 @@ import functools
 
 from langchain_core.messages import AIMessage
 
-from tradingagents.agents.schemas import TraderProposal, render_trader_proposal
+from tradingagents.agents.schemas import InvestmentProposal, render_trader_proposal
 from tradingagents.agents.utils.agent_utils import (
     build_instrument_context,
     get_language_instruction,
@@ -18,7 +18,7 @@ from tradingagents.agents.utils.structured import (
 
 
 def create_trader(llm):
-    structured_llm = bind_structured(llm, TraderProposal, "Trader")
+    structured_llm = bind_structured(llm, InvestmentProposal, "Trader")
 
     def trader_node(state, name):
         company_name = state["company_of_interest"]

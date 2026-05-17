@@ -84,7 +84,7 @@ class ResearchPlan(BaseModel):
     )
     strategic_actions: str = Field(
         description=(
-            "Concrete steps for the trader to implement the recommendation, "
+            "Concrete steps for the **investor** to implement the recommendation, "
             "including position sizing guidance consistent with the rating."
         ),
     )
@@ -106,13 +106,12 @@ def render_research_plan(plan: ResearchPlan) -> str:
 # ---------------------------------------------------------------------------
 
 
-class TraderProposal(BaseModel):
-    """Structured transaction proposal produced by the Trader.
+class InvestmentProposal(BaseModel):
+    """Structured transaction proposal produced by the Trader for a long-term investment horizon.
 
     The trader reads the Research Manager's investment plan and the analyst
-    reports, then turns them into a concrete transaction: what action to
-    take, the reasoning that justifies it, and the practical levels for
-    entry, stop-loss, and sizing.
+    reports, then produces a concrete transaction: what action to take,
+    the conviction behind it, the thesis horizon, and the catalysts to watch.
     """
 
     action: TraderAction = Field(
@@ -124,13 +123,20 @@ class TraderProposal(BaseModel):
             "the research plan. Two to four sentences."
         ),
     )
-    entry_price: Optional[float] = Field(
-        default=None,
-        description="Optional entry price target in the instrument's quote currency.",
+    conviction_score: int = Field(
+        description=(
+            "Conviction level 1-10. 7+ = meaningful position size. "
+            "Below 5 = insufficient clarity to invest."
+        ),
     )
-    stop_loss: Optional[float] = Field(
-        default=None,
-        description="Optional stop-loss price in the instrument's quote currency.",
+    thesis_horizon: str = Field(
+        description="Expected timeframe for thesis to play out, e.g. '3-5 years'.",
+    )
+    key_catalysts: str = Field(
+        description=(
+            "2-3 concrete milestones or events that would validate or invalidate "
+            "the thesis. Be specific."
+        ),
     )
     position_sizing: Optional[str] = Field(
         default=None,
@@ -138,8 +144,8 @@ class TraderProposal(BaseModel):
     )
 
 
-def render_trader_proposal(proposal: TraderProposal) -> str:
-    """Render a TraderProposal to markdown.
+def render_trader_proposal(proposal: InvestmentProposal) -> str:
+    """Render an InvestmentProposal to markdown.
 
     The trailing ``FINAL TRANSACTION PROPOSAL: **BUY/HOLD/SELL**`` line is
     preserved for backward compatibility with the analyst stop-signal text
@@ -149,11 +155,13 @@ def render_trader_proposal(proposal: TraderProposal) -> str:
         f"**Action**: {proposal.action.value}",
         "",
         f"**Reasoning**: {proposal.reasoning}",
+        "",
+        f"**Conviction Score**: {proposal.conviction_score}/10",
+        "",
+        f"**Thesis Horizon**: {proposal.thesis_horizon}",
+        "",
+        f"**Key Catalysts**: {proposal.key_catalysts}",
     ]
-    if proposal.entry_price is not None:
-        parts.extend(["", f"**Entry Price**: {proposal.entry_price}"])
-    if proposal.stop_loss is not None:
-        parts.extend(["", f"**Stop Loss**: {proposal.stop_loss}"])
     if proposal.position_sizing:
         parts.extend(["", f"**Position Sizing**: {proposal.position_sizing}"])
     parts.extend([
@@ -185,8 +193,8 @@ class PortfolioDecision(BaseModel):
     )
     executive_summary: str = Field(
         description=(
-            "A concise action plan covering entry strategy, position sizing, "
-            "key risk levels, and time horizon. Two to four sentences."
+            "A concise action plan covering investment thesis, conviction level, "
+            "expected catalysts, and holding horizon. Two to four sentences."
         ),
     )
     investment_thesis: str = Field(
@@ -200,9 +208,8 @@ class PortfolioDecision(BaseModel):
         default=None,
         description="Optional target price in the instrument's quote currency.",
     )
-    time_horizon: Optional[str] = Field(
-        default=None,
-        description="Optional recommended holding period, e.g. '3-6 months'.",
+    time_horizon: str = Field(
+        description="Recommended holding period, e.g. '3-5 years'.",
     )
 
 
