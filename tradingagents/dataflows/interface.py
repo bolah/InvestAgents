@@ -23,6 +23,13 @@ from .alpha_vantage import (
     get_global_news as get_alpha_vantage_global_news,
 )
 from .alpha_vantage_common import AlphaVantageRateLimitError
+from .sec_edgar_fundamentals import (
+    get_balance_sheet as get_sec_edgar_balance_sheet,
+    get_cashflow as get_sec_edgar_cashflow,
+    get_income_statement as get_sec_edgar_income_statement,
+    SECEdgarNotFoundError,
+    SECEdgarNoXBRLError,
+)
 
 # Configuration and routing logic
 from .config import get_config
@@ -63,6 +70,7 @@ TOOLS_CATEGORIES = {
 VENDOR_LIST = [
     "yfinance",
     "alpha_vantage",
+    "sec_edgar",
 ]
 
 # Mapping of methods to their vendor-specific implementations
@@ -83,14 +91,17 @@ VENDOR_METHODS = {
         "yfinance": get_yfinance_fundamentals,
     },
     "get_balance_sheet": {
+        "sec_edgar": get_sec_edgar_balance_sheet,
         "alpha_vantage": get_alpha_vantage_balance_sheet,
         "yfinance": get_yfinance_balance_sheet,
     },
     "get_cashflow": {
+        "sec_edgar": get_sec_edgar_cashflow,
         "alpha_vantage": get_alpha_vantage_cashflow,
         "yfinance": get_yfinance_cashflow,
     },
     "get_income_statement": {
+        "sec_edgar": get_sec_edgar_income_statement,
         "alpha_vantage": get_alpha_vantage_income_statement,
         "yfinance": get_yfinance_income_statement,
     },
@@ -156,7 +167,7 @@ def route_to_vendor(method: str, *args, **kwargs):
 
         try:
             return impl_func(*args, **kwargs)
-        except AlphaVantageRateLimitError:
-            continue  # Only rate limits trigger fallback
+        except (AlphaVantageRateLimitError, SECEdgarNotFoundError, SECEdgarNoXBRLError):
+            continue  # Vendor-level errors trigger fallback to next vendor
 
     raise RuntimeError(f"No available vendor for '{method}'")
