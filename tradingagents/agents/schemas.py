@@ -124,6 +124,8 @@ class InvestmentProposal(BaseModel):
         ),
     )
     conviction_score: int = Field(
+        ge=1,
+        le=10,
         description=(
             "Conviction level 1-10. 7+ = meaningful position size. "
             "Below 5 = insufficient clarity to invest."
@@ -230,6 +232,5 @@ def render_pm_decision(decision: PortfolioDecision) -> str:
     ]
     if decision.price_target is not None:
         parts.extend(["", f"**Price Target**: {decision.price_target}"])
-    if decision.time_horizon:
-        parts.extend(["", f"**Time Horizon**: {decision.time_horizon}"])
+    parts.extend(["", f"**Time Horizon**: {decision.time_horizon}"])
     return "\n".join(parts)
