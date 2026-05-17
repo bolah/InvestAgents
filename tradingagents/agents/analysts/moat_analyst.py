@@ -14,7 +14,8 @@ from tradingagents.agents.utils.core_stock_tools import get_quality_metrics
 def create_moat_analyst(llm):
     def moat_analyst_node(state):
         current_date = state["trade_date"]
-        instrument_context = build_instrument_context(state["company_of_interest"])
+        asset_type = state.get("asset_type", "stock")
+        instrument_context = build_instrument_context(state["company_of_interest"], asset_type)
 
         tools = [
             get_quality_metrics,

@@ -22,7 +22,7 @@ def test_create_macro_analyst_importable():
 
 @pytest.mark.unit
 def test_valuation_analyst_node_returns_valuation_report():
-    from unittest.mock import MagicMock, patch
+    from unittest.mock import MagicMock
     from tradingagents.agents.analysts.valuation_analyst import create_valuation_analyst
 
     mock_llm = MagicMock()
