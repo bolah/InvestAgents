@@ -1,0 +1,4428 @@
+{
+  "AAPL_income_2022-02-15": {
+    "metrics": {
+      "total_revenue": null,
+      "net_income": null,
+      "gross_profit": null,
+      "operating_income": null
+    }
+  },
+  "AAPL_balance_2022-02-15": {
+    "metrics": {
+      "total_assets": null,
+      "total_liabilities": null,
+      "stockholders_equity": null,
+      "cash": null
+    }
+  },
+  "AAPL_cashflow_2022-02-15": {
+    "metrics": {
+      "operating_cf": null,
+      "capital_expenditures": null,
+      "free_cash_flow": null
+    }
+  },
+  "AAPL_income_2022-08-15": {
+    "metrics": {
+      "total_revenue": null,
+      "net_income": null,
+      "gross_profit": null,
+      "operating_income": null
+    }
+  },
+  "AAPL_balance_2022-08-15": {
+    "metrics": {
+      "total_assets": null,
+      "total_liabilities": null,
+      "stockholders_equity": null,
+      "cash": null
+    }
+  },
+  "AAPL_cashflow_2022-08-15": {
+    "metrics": {
+      "operating_cf": null,
+      "capital_expenditures": null,
+      "free_cash_flow": null
+    }
+  },
+  "AAPL_income_2023-02-15": {
+    "metrics": {
+      "total_revenue": 394328000000.0,
+      "net_income": 99803000000.0,
+      "gross_profit": 170782000000.0,
+      "operating_income": 119437000000.0
+    }
+  },
+  "AAPL_balance_2023-02-15": {
+    "metrics": {
+      "total_assets": 352755000000.0,
+      "total_liabilities": 302083000000.0,
+      "stockholders_equity": 50672000000.0,
+      "cash": 23646000000.0
+    }
+  },
+  "AAPL_cashflow_2023-02-15": {
+    "metrics": {
+      "operating_cf": 122151000000.0,
+      "capital_expenditures": -10708000000.0,
+      "free_cash_flow": 111443000000.0
+    }
+  },
+  "AAPL_income_2024-02-15": {
+    "metrics": {
+      "total_revenue": 383285000000.0,
+      "net_income": 96995000000.0,
+      "gross_profit": 169148000000.0,
+      "operating_income": 114301000000.0
+    }
+  },
+  "AAPL_balance_2024-02-15": {
+    "metrics": {
+      "total_assets": 352583000000.0,
+      "total_liabilities": 290437000000.0,
+      "stockholders_equity": 62146000000.0,
+      "cash": 29965000000.0
+    }
+  },
+  "AAPL_cashflow_2024-02-15": {
+    "metrics": {
+      "operating_cf": 110543000000.0,
+      "capital_expenditures": -10959000000.0,
+      "free_cash_flow": 99584000000.0
+    }
+  },
+  "MSFT_income_2022-02-15": {
+    "metrics": {}
+  },
+  "MSFT_balance_2022-02-15": {
+    "metrics": {
+      "total_assets": null,
+      "total_liabilities": null,
+      "stockholders_equity": null,
+      "cash": null
+    }
+  },
+  "MSFT_cashflow_2022-02-15": {
+    "metrics": {
+      "operating_cf": null,
+      "capital_expenditures": null,
+      "free_cash_flow": null
+    }
+  },
+  "MSFT_income_2022-08-15": {
+    "metrics": {
+      "total_revenue": 198270000000.0,
+      "net_income": 72738000000.0,
+      "gross_profit": 135620000000.0,
+      "operating_income": 83383000000.0
+    }
+  },
+  "MSFT_balance_2022-08-15": {
+    "metrics": {
+      "total_assets": 364840000000.0,
+      "total_liabilities": 198298000000.0,
+      "stockholders_equity": 166542000000.0,
+      "cash": 13931000000.0
+    }
+  },
+  "MSFT_cashflow_2022-08-15": {
+    "metrics": {
+      "operating_cf": 89035000000.0,
+      "capital_expenditures": -23886000000.0,
+      "free_cash_flow": 65149000000.0
+    }
+  },
+  "MSFT_income_2023-02-15": {
+    "metrics": {
+      "total_revenue": 198270000000.0,
+      "net_income": 72738000000.0,
+      "gross_profit": 135620000000.0,
+      "operating_income": 83383000000.0
+    }
+  },
+  "MSFT_balance_2023-02-15": {
+    "metrics": {
+      "total_assets": 364840000000.0,
+      "total_liabilities": 198298000000.0,
+      "stockholders_equity": 166542000000.0,
+      "cash": 13931000000.0
+    }
+  },
+  "MSFT_cashflow_2023-02-15": {
+    "metrics": {
+      "operating_cf": 89035000000.0,
+      "capital_expenditures": -23886000000.0,
+      "free_cash_flow": 65149000000.0
+    }
+  },
+  "MSFT_income_2024-02-15": {
+    "metrics": {
+      "total_revenue": 211915000000.0,
+      "net_income": 72361000000.0,
+      "gross_profit": 146052000000.0,
+      "operating_income": 88523000000.0
+    }
+  },
+  "MSFT_balance_2024-02-15": {
+    "metrics": {
+      "total_assets": 411976000000.0,
+      "total_liabilities": 205753000000.0,
+      "stockholders_equity": 206223000000.0,
+      "cash": 34704000000.0
+    }
+  },
+  "MSFT_cashflow_2024-02-15": {
+    "metrics": {
+      "operating_cf": 87582000000.0,
+      "capital_expenditures": -28107000000.0,
+      "free_cash_flow": 59475000000.0
+    }
+  },
+  "NVDA_income_2022-02-15": {
+    "metrics": {
+      "total_revenue": null,
+      "net_income": null,
+      "gross_profit": null,
+      "operating_income": null
+    }
+  },
+  "NVDA_balance_2022-02-15": {
+    "metrics": {
+      "total_assets": null,
+      "total_liabilities": null,
+      "stockholders_equity": null,
+      "cash": null
+    }
+  },
+  "NVDA_cashflow_2022-02-15": {
+    "metrics": {
+      "operating_cf": null,
+      "capital_expenditures": null,
+      "free_cash_flow": null
+    }
+  },
+  "NVDA_income_2022-08-15": {
+    "metrics": {
+      "total_revenue": null,
+      "net_income": null,
+      "gross_profit": null,
+      "operating_income": null
+    }
+  },
+  "NVDA_balance_2022-08-15": {
+    "metrics": {
+      "total_assets": null,
+      "total_liabilities": null,
+      "stockholders_equity": null,
+      "cash": null
+    }
+  },
+  "NVDA_cashflow_2022-08-15": {
+    "metrics": {
+      "operating_cf": null,
+      "capital_expenditures": null,
+      "free_cash_flow": null
+    }
+  },
+  "NVDA_income_2023-02-15": {
+    "metrics": {
+      "total_revenue": 26974000000.0,
+      "net_income": 4368000000.0,
+      "gross_profit": 15356000000.0,
+      "operating_income": 5577000000.0
+    }
+  },
+  "NVDA_balance_2023-02-15": {
+    "metrics": {
+      "total_assets": 41182000000.0,
+      "total_liabilities": 19081000000.0,
+      "stockholders_equity": 22101000000.0,
+      "cash": 3389000000.0
+    }
+  },
+  "NVDA_cashflow_2023-02-15": {
+    "metrics": {
+      "operating_cf": 5641000000.0,
+      "capital_expenditures": -1833000000.0,
+      "free_cash_flow": 3808000000.0
+    }
+  },
+  "NVDA_income_2024-02-15": {
+    "metrics": {
+      "total_revenue": 60922000000.0,
+      "net_income": 29760000000.0,
+      "gross_profit": 44301000000.0,
+      "operating_income": 32972000000.0
+    }
+  },
+  "NVDA_balance_2024-02-15": {
+    "metrics": {
+      "total_assets": 65728000000.0,
+      "total_liabilities": 22750000000.0,
+      "stockholders_equity": 42978000000.0,
+      "cash": 7280000000.0
+    }
+  },
+  "NVDA_cashflow_2024-02-15": {
+    "metrics": {
+      "operating_cf": 28090000000.0,
+      "capital_expenditures": -1069000000.0,
+      "free_cash_flow": 27021000000.0
+    }
+  },
+  "GOOGL_income_2022-02-15": {
+    "metrics": {}
+  },
+  "GOOGL_balance_2022-02-15": {
+    "metrics": {
+      "total_assets": null,
+      "total_liabilities": null,
+      "stockholders_equity": null,
+      "cash": null
+    }
+  },
+  "GOOGL_cashflow_2022-02-15": {
+    "metrics": {
+      "operating_cf": null,
+      "capital_expenditures": null,
+      "free_cash_flow": null
+    }
+  },
+  "GOOGL_income_2022-08-15": {
+    "metrics": {}
+  },
+  "GOOGL_balance_2022-08-15": {
+    "metrics": {
+      "total_assets": null,
+      "total_liabilities": null,
+      "stockholders_equity": null,
+      "cash": null
+    }
+  },
+  "GOOGL_cashflow_2022-08-15": {
+    "metrics": {
+      "operating_cf": null,
+      "capital_expenditures": null,
+      "free_cash_flow": null
+    }
+  },
+  "GOOGL_income_2023-02-15": {
+    "metrics": {
+      "total_revenue": 282836000000.0,
+      "net_income": 59972000000.0,
+      "gross_profit": 156633000000.0,
+      "operating_income": 74842000000.0
+    }
+  },
+  "GOOGL_balance_2023-02-15": {
+    "metrics": {
+      "total_assets": 365264000000.0,
+      "total_liabilities": null,
+      "stockholders_equity": 256144000000.0,
+      "cash": 21879000000.0
+    }
+  },
+  "GOOGL_cashflow_2023-02-15": {
+    "metrics": {
+      "operating_cf": 91495000000.0,
+      "capital_expenditures": -31485000000.0,
+      "free_cash_flow": 60010000000.0
+    }
+  },
+  "GOOGL_income_2024-02-15": {
+    "metrics": {
+      "total_revenue": 307394000000.0,
+      "net_income": 73795000000.0,
+      "gross_profit": 174062000000.0,
+      "operating_income": 84293000000.0
+    }
+  },
+  "GOOGL_balance_2024-02-15": {
+    "metrics": {
+      "total_assets": 402392000000.0,
+      "total_liabilities": null,
+      "stockholders_equity": 283379000000.0,
+      "cash": 24048000000.0
+    }
+  },
+  "GOOGL_cashflow_2024-02-15": {
+    "metrics": {
+      "operating_cf": 101746000000.0,
+      "capital_expenditures": -32251000000.0,
+      "free_cash_flow": 69495000000.0
+    }
+  },
+  "META_income_2022-02-15": {
+    "metrics": {
+      "total_revenue": null,
+      "net_income": null,
+      "gross_profit": null,
+      "operating_income": null
+    }
+  },
+  "META_balance_2022-02-15": {
+    "metrics": {
+      "total_assets": null,
+      "total_liabilities": null,
+      "stockholders_equity": null,
+      "cash": null
+    }
+  },
+  "META_cashflow_2022-02-15": {
+    "metrics": {
+      "operating_cf": null,
+      "capital_expenditures": null,
+      "free_cash_flow": null
+    }
+  },
+  "META_income_2022-08-15": {
+    "metrics": {
+      "total_revenue": null,
+      "net_income": null,
+      "gross_profit": null,
+      "operating_income": null
+    }
+  },
+  "META_balance_2022-08-15": {
+    "metrics": {
+      "total_assets": null,
+      "total_liabilities": null,
+      "stockholders_equity": null,
+      "cash": null
+    }
+  },
+  "META_cashflow_2022-08-15": {
+    "metrics": {
+      "operating_cf": null,
+      "capital_expenditures": null,
+      "free_cash_flow": null
+    }
+  },
+  "META_income_2023-02-15": {
+    "metrics": {
+      "total_revenue": 116609000000.0,
+      "net_income": 23200000000.0,
+      "gross_profit": 91360000000.0,
+      "operating_income": 28944000000.0
+    }
+  },
+  "META_balance_2023-02-15": {
+    "metrics": {
+      "total_assets": 185727000000.0,
+      "total_liabilities": 60014000000.0,
+      "stockholders_equity": 125713000000.0,
+      "cash": 14681000000.0
+    }
+  },
+  "META_cashflow_2023-02-15": {
+    "metrics": {
+      "operating_cf": 50475000000.0,
+      "capital_expenditures": -31186000000.0,
+      "free_cash_flow": 19289000000.0
+    }
+  },
+  "META_income_2024-02-15": {
+    "metrics": {
+      "total_revenue": 134902000000.0,
+      "net_income": 39098000000.0,
+      "gross_profit": 108943000000.0,
+      "operating_income": 46751000000.0
+    }
+  },
+  "META_balance_2024-02-15": {
+    "metrics": {
+      "total_assets": 229623000000.0,
+      "total_liabilities": 76455000000.0,
+      "stockholders_equity": 153168000000.0,
+      "cash": 41862000000.0
+    }
+  },
+  "META_cashflow_2024-02-15": {
+    "metrics": {
+      "operating_cf": 71113000000.0,
+      "capital_expenditures": -27045000000.0,
+      "free_cash_flow": 44068000000.0
+    }
+  },
+  "JNJ_income_2022-02-15": {
+    "metrics": {
+      "total_revenue": null,
+      "net_income": null,
+      "gross_profit": null,
+      "operating_income": null
+    }
+  },
+  "JNJ_balance_2022-02-15": {
+    "metrics": {
+      "total_assets": null,
+      "total_liabilities": null,
+      "stockholders_equity": null,
+      "cash": null
+    }
+  },
+  "JNJ_cashflow_2022-02-15": {
+    "metrics": {}
+  },
+  "JNJ_income_2022-08-15": {
+    "metrics": {
+      "total_revenue": null,
+      "net_income": null,
+      "gross_profit": null,
+      "operating_income": null
+    }
+  },
+  "JNJ_balance_2022-08-15": {
+    "metrics": {
+      "total_assets": null,
+      "total_liabilities": null,
+      "stockholders_equity": null,
+      "cash": null
+    }
+  },
+  "JNJ_cashflow_2022-08-15": {
+    "metrics": {}
+  },
+  "JNJ_income_2023-02-15": {
+    "metrics": {
+      "total_revenue": 79990000000.0,
+      "net_income": 17941000000.0,
+      "gross_profit": 55394000000.0,
+      "operating_income": 21013000000.0
+    }
+  },
+  "JNJ_balance_2023-02-15": {
+    "metrics": {
+      "total_assets": 187378000000.0,
+      "total_liabilities": 110574000000.0,
+      "stockholders_equity": 76804000000.0,
+      "cash": 12889000000.0
+    }
+  },
+  "JNJ_cashflow_2023-02-15": {
+    "metrics": {
+      "operating_cf": 21194000000.0,
+      "capital_expenditures": -4009000000.0,
+      "free_cash_flow": 17185000000.0
+    }
+  },
+  "JNJ_income_2024-02-15": {
+    "metrics": {
+      "total_revenue": 85159000000.0,
+      "net_income": 35153000000.0,
+      "gross_profit": 58606000000.0,
+      "operating_income": 22009000000.0
+    }
+  },
+  "JNJ_balance_2024-02-15": {
+    "metrics": {
+      "total_assets": 167558000000.0,
+      "total_liabilities": 98784000000.0,
+      "stockholders_equity": 68774000000.0,
+      "cash": 21859000000.0
+    }
+  },
+  "JNJ_cashflow_2024-02-15": {
+    "metrics": {
+      "operating_cf": 22791000000.0,
+      "capital_expenditures": -5013000000.0,
+      "free_cash_flow": 17778000000.0
+    }
+  },
+  "UNH_income_2022-02-15": {
+    "metrics": {
+      "total_revenue": null,
+      "net_income": null,
+      "gross_profit": null,
+      "operating_income": null
+    }
+  },
+  "UNH_balance_2022-02-15": {
+    "metrics": {
+      "total_assets": null,
+      "total_liabilities": null,
+      "stockholders_equity": null,
+      "cash": null
+    }
+  },
+  "UNH_cashflow_2022-02-15": {
+    "metrics": {
+      "operating_cf": null,
+      "capital_expenditures": null,
+      "free_cash_flow": null
+    }
+  },
+  "UNH_income_2022-08-15": {
+    "metrics": {
+      "total_revenue": null,
+      "net_income": null,
+      "gross_profit": null,
+      "operating_income": null
+    }
+  },
+  "UNH_balance_2022-08-15": {
+    "metrics": {
+      "total_assets": null,
+      "total_liabilities": null,
+      "stockholders_equity": null,
+      "cash": null
+    }
+  },
+  "UNH_cashflow_2022-08-15": {
+    "metrics": {
+      "operating_cf": null,
+      "capital_expenditures": null,
+      "free_cash_flow": null
+    }
+  },
+  "UNH_income_2023-02-15": {
+    "metrics": {
+      "total_revenue": 324162000000.0,
+      "net_income": 20120000000.0,
+      "gross_profit": 79617000000.0,
+      "operating_income": 28435000000.0
+    }
+  },
+  "UNH_balance_2023-02-15": {
+    "metrics": {
+      "total_assets": 245705000000.0,
+      "total_liabilities": 159358000000.0,
+      "stockholders_equity": 77772000000.0,
+      "cash": 23365000000.0
+    }
+  },
+  "UNH_cashflow_2023-02-15": {
+    "metrics": {
+      "operating_cf": 26206000000.0,
+      "capital_expenditures": -2802000000.0,
+      "free_cash_flow": 23404000000.0
+    }
+  },
+  "UNH_income_2024-02-15": {
+    "metrics": {
+      "total_revenue": 371622000000.0,
+      "net_income": 22381000000.0,
+      "gross_profit": 90958000000.0,
+      "operating_income": 32358000000.0
+    }
+  },
+  "UNH_balance_2024-02-15": {
+    "metrics": {
+      "total_assets": 273720000000.0,
+      "total_liabilities": 174801000000.0,
+      "stockholders_equity": 88756000000.0,
+      "cash": 25427000000.0
+    }
+  },
+  "UNH_cashflow_2024-02-15": {
+    "metrics": {
+      "operating_cf": 29068000000.0,
+      "capital_expenditures": -3386000000.0,
+      "free_cash_flow": 25682000000.0
+    }
+  },
+  "LLY_income_2022-02-15": {
+    "metrics": {
+      "total_revenue": null,
+      "net_income": null,
+      "gross_profit": null,
+      "operating_income": null
+    }
+  },
+  "LLY_balance_2022-02-15": {
+    "metrics": {
+      "total_assets": null,
+      "total_liabilities": null,
+      "stockholders_equity": null,
+      "cash": null
+    }
+  },
+  "LLY_cashflow_2022-02-15": {
+    "metrics": {
+      "operating_cf": null,
+      "capital_expenditures": null,
+      "free_cash_flow": null
+    }
+  },
+  "LLY_income_2022-08-15": {
+    "metrics": {
+      "total_revenue": null,
+      "net_income": null,
+      "gross_profit": null,
+      "operating_income": null
+    }
+  },
+  "LLY_balance_2022-08-15": {
+    "metrics": {
+      "total_assets": null,
+      "total_liabilities": null,
+      "stockholders_equity": null,
+      "cash": null
+    }
+  },
+  "LLY_cashflow_2022-08-15": {
+    "metrics": {
+      "operating_cf": null,
+      "capital_expenditures": null,
+      "free_cash_flow": null
+    }
+  },
+  "LLY_income_2023-02-15": {
+    "metrics": {
+      "total_revenue": 28541400000.0,
+      "net_income": 6244800000.0,
+      "gross_profit": 21911600000.0,
+      "operating_income": 8280400000.0
+    }
+  },
+  "LLY_balance_2023-02-15": {
+    "metrics": {
+      "total_assets": 49489800000.0,
+      "total_liabilities": 38714400000.0,
+      "stockholders_equity": 10649800000.0,
+      "cash": 2067000000.0
+    }
+  },
+  "LLY_cashflow_2023-02-15": {
+    "metrics": {
+      "operating_cf": 7585700000.0,
+      "capital_expenditures": -2985300000.0,
+      "free_cash_flow": 4600400000.0
+    }
+  },
+  "LLY_income_2024-02-15": {
+    "metrics": {
+      "total_revenue": 34124000000.0,
+      "net_income": 5240000000.0,
+      "gross_profit": 27042000000.0,
+      "operating_income": 10325000000.0
+    }
+  },
+  "LLY_balance_2024-02-15": {
+    "metrics": {
+      "total_assets": 64006300000.0,
+      "total_liabilities": 53142600000.0,
+      "stockholders_equity": 10771900000.0,
+      "cash": 2818600000.0
+    }
+  },
+  "LLY_cashflow_2024-02-15": {
+    "metrics": {
+      "operating_cf": 4240000000.0,
+      "capital_expenditures": -7392000000.0,
+      "free_cash_flow": -3152000000.0
+    }
+  },
+  "PFE_income_2022-02-15": {
+    "metrics": {
+      "total_revenue": null,
+      "net_income": null,
+      "gross_profit": null,
+      "operating_income": null
+    }
+  },
+  "PFE_balance_2022-02-15": {
+    "metrics": {
+      "total_assets": null,
+      "total_liabilities": null,
+      "stockholders_equity": null,
+      "cash": null
+    }
+  },
+  "PFE_cashflow_2022-02-15": {
+    "metrics": {
+      "operating_cf": null,
+      "capital_expenditures": null,
+      "free_cash_flow": null
+    }
+  },
+  "PFE_income_2022-08-15": {
+    "metrics": {
+      "total_revenue": null,
+      "net_income": null,
+      "gross_profit": null,
+      "operating_income": null
+    }
+  },
+  "PFE_balance_2022-08-15": {
+    "metrics": {
+      "total_assets": null,
+      "total_liabilities": null,
+      "stockholders_equity": null,
+      "cash": null
+    }
+  },
+  "PFE_cashflow_2022-08-15": {
+    "metrics": {
+      "operating_cf": null,
+      "capital_expenditures": null,
+      "free_cash_flow": null
+    }
+  },
+  "PFE_income_2023-02-15": {
+    "metrics": {
+      "total_revenue": 101175000000.0,
+      "net_income": 31372000000.0,
+      "gross_profit": 66831000000.0,
+      "operating_income": 37164000000.0
+    }
+  },
+  "PFE_balance_2023-02-15": {
+    "metrics": {
+      "total_assets": 197205000000.0,
+      "total_liabilities": 101289000000.0,
+      "stockholders_equity": 95661000000.0,
+      "cash": 416000000.0
+    }
+  },
+  "PFE_cashflow_2023-02-15": {
+    "metrics": {
+      "operating_cf": 29267000000.0,
+      "capital_expenditures": -3236000000.0,
+      "free_cash_flow": 26031000000.0
+    }
+  },
+  "PFE_income_2024-02-15": {
+    "metrics": {
+      "total_revenue": 59554000000.0,
+      "net_income": 2119000000.0,
+      "gross_profit": 34600000000.0,
+      "operating_income": 4223000000.0
+    }
+  },
+  "PFE_balance_2024-02-15": {
+    "metrics": {
+      "total_assets": 226501000000.0,
+      "total_liabilities": 137213000000.0,
+      "stockholders_equity": 89014000000.0,
+      "cash": 2853000000.0
+    }
+  },
+  "PFE_cashflow_2024-02-15": {
+    "metrics": {
+      "operating_cf": 8700000000.0,
+      "capital_expenditures": -3907000000.0,
+      "free_cash_flow": 4793000000.0
+    }
+  },
+  "ABBV_income_2022-02-15": {
+    "metrics": {}
+  },
+  "ABBV_balance_2022-02-15": {
+    "metrics": {
+      "total_assets": null,
+      "total_liabilities": null,
+      "stockholders_equity": null,
+      "cash": null
+    }
+  },
+  "ABBV_cashflow_2022-02-15": {
+    "metrics": {
+      "operating_cf": null,
+      "capital_expenditures": null,
+      "free_cash_flow": null
+    }
+  },
+  "ABBV_income_2022-08-15": {
+    "metrics": {}
+  },
+  "ABBV_balance_2022-08-15": {
+    "metrics": {
+      "total_assets": null,
+      "total_liabilities": null,
+      "stockholders_equity": null,
+      "cash": null
+    }
+  },
+  "ABBV_cashflow_2022-08-15": {
+    "metrics": {
+      "operating_cf": null,
+      "capital_expenditures": null,
+      "free_cash_flow": null
+    }
+  },
+  "ABBV_income_2023-02-15": {
+    "metrics": {
+      "total_revenue": 58054000000.0,
+      "net_income": 11836000000.0,
+      "gross_profit": 40640000000.0,
+      "operating_income": 18814000000.0
+    }
+  },
+  "ABBV_balance_2023-02-15": {
+    "metrics": {
+      "total_assets": 138805000000.0,
+      "total_liabilities": 121518000000.0,
+      "stockholders_equity": 17254000000.0,
+      "cash": 9201000000.0
+    }
+  },
+  "ABBV_cashflow_2023-02-15": {
+    "metrics": {
+      "operating_cf": 24943000000.0,
+      "capital_expenditures": -695000000.0,
+      "free_cash_flow": 24248000000.0
+    }
+  },
+  "ABBV_income_2024-02-15": {
+    "metrics": {
+      "total_revenue": 54318000000.0,
+      "net_income": 4863000000.0,
+      "gross_profit": 33903000000.0,
+      "operating_income": 13535000000.0
+    }
+  },
+  "ABBV_balance_2024-02-15": {
+    "metrics": {
+      "total_assets": 134711000000.0,
+      "total_liabilities": 124314000000.0,
+      "stockholders_equity": 10360000000.0,
+      "cash": 12814000000.0
+    }
+  },
+  "ABBV_cashflow_2024-02-15": {
+    "metrics": {
+      "operating_cf": 22839000000.0,
+      "capital_expenditures": -777000000.0,
+      "free_cash_flow": 22062000000.0
+    }
+  },
+  "JPM_income_2022-02-15": {
+    "metrics": {}
+  },
+  "JPM_balance_2022-02-15": {
+    "metrics": {}
+  },
+  "JPM_cashflow_2022-02-15": {
+    "metrics": {
+      "operating_cf": null,
+      "capital_expenditures": null,
+      "free_cash_flow": null
+    }
+  },
+  "JPM_income_2022-08-15": {
+    "metrics": {}
+  },
+  "JPM_balance_2022-08-15": {
+    "metrics": {}
+  },
+  "JPM_cashflow_2022-08-15": {
+    "metrics": {
+      "operating_cf": null,
+      "capital_expenditures": null,
+      "free_cash_flow": null
+    }
+  },
+  "JPM_income_2023-02-15": {
+    "metrics": {
+      "total_revenue": 127727000000.0,
+      "net_income": 37676000000.0,
+      "gross_profit": null,
+      "operating_income": null
+    }
+  },
+  "JPM_balance_2023-02-15": {
+    "metrics": {
+      "total_assets": 3665743000000.0,
+      "total_liabilities": 3373411000000.0,
+      "stockholders_equity": 292332000000.0,
+      "cash": 567234000000.0
+    }
+  },
+  "JPM_cashflow_2023-02-15": {
+    "metrics": {
+      "operating_cf": 107119000000.0,
+      "capital_expenditures": null,
+      "free_cash_flow": 107119000000.0
+    }
+  },
+  "JPM_income_2024-02-15": {
+    "metrics": {
+      "total_revenue": 154952000000.0,
+      "net_income": 49552000000.0,
+      "gross_profit": null,
+      "operating_income": null
+    }
+  },
+  "JPM_balance_2024-02-15": {
+    "metrics": {
+      "total_assets": 3875393000000.0,
+      "total_liabilities": 3547515000000.0,
+      "stockholders_equity": 327878000000.0,
+      "cash": 624151000000.0
+    }
+  },
+  "JPM_cashflow_2024-02-15": {
+    "metrics": {
+      "operating_cf": 12974000000.0,
+      "capital_expenditures": null,
+      "free_cash_flow": 12974000000.0
+    }
+  },
+  "BAC_income_2022-02-15": {
+    "metrics": {
+      "total_revenue": null,
+      "net_income": null,
+      "gross_profit": null,
+      "operating_income": null
+    }
+  },
+  "BAC_balance_2022-02-15": {
+    "metrics": {
+      "total_assets": null,
+      "total_liabilities": null,
+      "stockholders_equity": null,
+      "cash": null
+    }
+  },
+  "BAC_cashflow_2022-02-15": {
+    "metrics": {
+      "operating_cf": null,
+      "capital_expenditures": null,
+      "free_cash_flow": null
+    }
+  },
+  "BAC_income_2022-08-15": {
+    "metrics": {
+      "total_revenue": null,
+      "net_income": null,
+      "gross_profit": null,
+      "operating_income": null
+    }
+  },
+  "BAC_balance_2022-08-15": {
+    "metrics": {
+      "total_assets": null,
+      "total_liabilities": null,
+      "stockholders_equity": null,
+      "cash": null
+    }
+  },
+  "BAC_cashflow_2022-08-15": {
+    "metrics": {
+      "operating_cf": null,
+      "capital_expenditures": null,
+      "free_cash_flow": null
+    }
+  },
+  "BAC_income_2023-02-15": {
+    "metrics": {
+      "total_revenue": 94950000000.0,
+      "net_income": 27528000000.0,
+      "gross_profit": null,
+      "operating_income": null
+    }
+  },
+  "BAC_balance_2023-02-15": {
+    "metrics": {
+      "total_assets": 3051375000000.0,
+      "total_liabilities": 2778178000000.0,
+      "stockholders_equity": 273197000000.0,
+      "cash": 237462000000.0
+    }
+  },
+  "BAC_cashflow_2023-02-15": {
+    "metrics": {
+      "operating_cf": -6327000000.0,
+      "capital_expenditures": null,
+      "free_cash_flow": -6327000000.0
+    }
+  },
+  "BAC_income_2024-02-15": {
+    "metrics": {
+      "total_revenue": 102769000000.0,
+      "net_income": 26305000000.0,
+      "gross_profit": null,
+      "operating_income": null
+    }
+  },
+  "BAC_balance_2024-02-15": {
+    "metrics": {
+      "total_assets": 3180151000000.0,
+      "total_liabilities": 2888505000000.0,
+      "stockholders_equity": 291646000000.0,
+      "cash": 341419000000.0
+    }
+  },
+  "BAC_cashflow_2024-02-15": {
+    "metrics": {
+      "operating_cf": 44982000000.0,
+      "capital_expenditures": null,
+      "free_cash_flow": 44982000000.0
+    }
+  },
+  "WFC_income_2022-02-15": {
+    "metrics": {
+      "total_revenue": null,
+      "net_income": null,
+      "gross_profit": null,
+      "operating_income": null
+    }
+  },
+  "WFC_balance_2022-02-15": {
+    "metrics": {
+      "total_assets": null,
+      "total_liabilities": null,
+      "stockholders_equity": null,
+      "cash": null
+    }
+  },
+  "WFC_cashflow_2022-02-15": {
+    "metrics": {
+      "operating_cf": null,
+      "capital_expenditures": null,
+      "free_cash_flow": null
+    }
+  },
+  "WFC_income_2022-08-15": {
+    "metrics": {
+      "total_revenue": null,
+      "net_income": null,
+      "gross_profit": null,
+      "operating_income": null
+    }
+  },
+  "WFC_balance_2022-08-15": {
+    "metrics": {
+      "total_assets": null,
+      "total_liabilities": null,
+      "stockholders_equity": null,
+      "cash": null
+    }
+  },
+  "WFC_cashflow_2022-08-15": {
+    "metrics": {
+      "operating_cf": null,
+      "capital_expenditures": null,
+      "free_cash_flow": null
+    }
+  },
+  "WFC_income_2023-02-15": {
+    "metrics": {
+      "total_revenue": 74368000000.0,
+      "net_income": 13677000000.0,
+      "gross_profit": null,
+      "operating_income": null
+    }
+  },
+  "WFC_balance_2023-02-15": {
+    "metrics": {
+      "total_assets": 1881020000000.0,
+      "total_liabilities": 1698807000000.0,
+      "stockholders_equity": 180227000000.0,
+      "cash": 159157000000.0
+    }
+  },
+  "WFC_cashflow_2023-02-15": {
+    "metrics": {
+      "operating_cf": 27048000000.0,
+      "capital_expenditures": null,
+      "free_cash_flow": 27048000000.0
+    }
+  },
+  "WFC_income_2024-02-15": {
+    "metrics": {
+      "total_revenue": 82597000000.0,
+      "net_income": 19142000000.0,
+      "gross_profit": null,
+      "operating_income": null
+    }
+  },
+  "WFC_balance_2024-02-15": {
+    "metrics": {
+      "total_assets": 1932468000000.0,
+      "total_liabilities": 1745025000000.0,
+      "stockholders_equity": 185735000000.0,
+      "cash": 237219000000.0
+    }
+  },
+  "WFC_cashflow_2024-02-15": {
+    "metrics": {
+      "operating_cf": 40358000000.0,
+      "capital_expenditures": null,
+      "free_cash_flow": 40358000000.0
+    }
+  },
+  "GS_income_2022-02-15": {
+    "metrics": {}
+  },
+  "GS_balance_2022-02-15": {
+    "metrics": {
+      "total_assets": null,
+      "total_liabilities": null,
+      "stockholders_equity": null,
+      "cash": null
+    }
+  },
+  "GS_cashflow_2022-02-15": {
+    "metrics": {
+      "operating_cf": null,
+      "capital_expenditures": null,
+      "free_cash_flow": null
+    }
+  },
+  "GS_income_2022-08-15": {
+    "metrics": {}
+  },
+  "GS_balance_2022-08-15": {
+    "metrics": {
+      "total_assets": null,
+      "total_liabilities": null,
+      "stockholders_equity": null,
+      "cash": null
+    }
+  },
+  "GS_cashflow_2022-08-15": {
+    "metrics": {
+      "operating_cf": null,
+      "capital_expenditures": null,
+      "free_cash_flow": null
+    }
+  },
+  "GS_income_2023-02-15": {
+    "metrics": {
+      "total_revenue": 47365000000.0,
+      "net_income": 11261000000.0,
+      "gross_profit": null,
+      "operating_income": null
+    }
+  },
+  "GS_balance_2023-02-15": {
+    "metrics": {
+      "total_assets": 1441799000000.0,
+      "total_liabilities": 1324610000000.0,
+      "stockholders_equity": 117189000000.0,
+      "cash": 241825000000.0
+    }
+  },
+  "GS_cashflow_2023-02-15": {
+    "metrics": {
+      "operating_cf": 8708000000.0,
+      "capital_expenditures": -3748000000.0,
+      "free_cash_flow": 4960000000.0
+    }
+  },
+  "GS_income_2024-02-15": {
+    "metrics": {
+      "total_revenue": 46254000000.0,
+      "net_income": 8516000000.0,
+      "gross_profit": null,
+      "operating_income": null
+    }
+  },
+  "GS_balance_2024-02-15": {
+    "metrics": {
+      "total_assets": 1641594000000.0,
+      "total_liabilities": 1524689000000.0,
+      "stockholders_equity": 116905000000.0,
+      "cash": 241577000000.0
+    }
+  },
+  "GS_cashflow_2024-02-15": {
+    "metrics": {
+      "operating_cf": -12587000000.0,
+      "capital_expenditures": -2316000000.0,
+      "free_cash_flow": -14903000000.0
+    }
+  },
+  "MS_income_2022-02-15": {
+    "metrics": {
+      "total_revenue": null,
+      "net_income": null,
+      "gross_profit": null,
+      "operating_income": null
+    }
+  },
+  "MS_balance_2022-02-15": {
+    "metrics": {}
+  },
+  "MS_cashflow_2022-02-15": {
+    "metrics": {
+      "operating_cf": null,
+      "capital_expenditures": null,
+      "free_cash_flow": null
+    }
+  },
+  "MS_income_2022-08-15": {
+    "metrics": {
+      "total_revenue": null,
+      "net_income": null,
+      "gross_profit": null,
+      "operating_income": null
+    }
+  },
+  "MS_balance_2022-08-15": {
+    "metrics": {}
+  },
+  "MS_cashflow_2022-08-15": {
+    "metrics": {
+      "operating_cf": null,
+      "capital_expenditures": null,
+      "free_cash_flow": null
+    }
+  },
+  "MS_income_2023-02-15": {
+    "metrics": {
+      "total_revenue": 50210000000.0,
+      "net_income": 11029000000.0,
+      "gross_profit": null,
+      "operating_income": null
+    }
+  },
+  "MS_balance_2023-02-15": {
+    "metrics": {
+      "total_assets": 1180231000000.0,
+      "total_liabilities": 1079000000000.0,
+      "stockholders_equity": 100141000000.0,
+      "cash": 92747000000.0
+    }
+  },
+  "MS_cashflow_2023-02-15": {
+    "metrics": {
+      "operating_cf": -6397000000.0,
+      "capital_expenditures": -3078000000.0,
+      "free_cash_flow": -9475000000.0
+    }
+  },
+  "MS_income_2024-02-15": {
+    "metrics": {
+      "total_revenue": 50667000000.0,
+      "net_income": 9087000000.0,
+      "gross_profit": null,
+      "operating_income": null
+    }
+  },
+  "MS_balance_2024-02-15": {
+    "metrics": {
+      "total_assets": 1193693000000.0,
+      "total_liabilities": 1093711000000.0,
+      "stockholders_equity": 99038000000.0,
+      "cash": 58661000000.0
+    }
+  },
+  "MS_cashflow_2024-02-15": {
+    "metrics": {
+      "operating_cf": -33536000000.0,
+      "capital_expenditures": -3412000000.0,
+      "free_cash_flow": -36948000000.0
+    }
+  },
+  "AMZN_income_2022-02-15": {
+    "metrics": {}
+  },
+  "AMZN_balance_2022-02-15": {
+    "metrics": {
+      "total_assets": null,
+      "total_liabilities": null,
+      "stockholders_equity": null,
+      "cash": null
+    }
+  },
+  "AMZN_cashflow_2022-02-15": {
+    "metrics": {
+      "operating_cf": null,
+      "capital_expenditures": null,
+      "free_cash_flow": null
+    }
+  },
+  "AMZN_income_2022-08-15": {
+    "metrics": {}
+  },
+  "AMZN_balance_2022-08-15": {
+    "metrics": {
+      "total_assets": null,
+      "total_liabilities": null,
+      "stockholders_equity": null,
+      "cash": null
+    }
+  },
+  "AMZN_cashflow_2022-08-15": {
+    "metrics": {
+      "operating_cf": null,
+      "capital_expenditures": null,
+      "free_cash_flow": null
+    }
+  },
+  "AMZN_income_2023-02-15": {
+    "metrics": {
+      "total_revenue": 513983000000.0,
+      "net_income": -2722000000.0,
+      "gross_profit": 225152000000.0,
+      "operating_income": 12248000000.0
+    }
+  },
+  "AMZN_balance_2023-02-15": {
+    "metrics": {
+      "total_assets": 462675000000.0,
+      "total_liabilities": 316632000000.0,
+      "stockholders_equity": 146043000000.0,
+      "cash": 53888000000.0
+    }
+  },
+  "AMZN_cashflow_2023-02-15": {
+    "metrics": {
+      "operating_cf": 46752000000.0,
+      "capital_expenditures": -63645000000.0,
+      "free_cash_flow": -16893000000.0
+    }
+  },
+  "AMZN_income_2024-02-15": {
+    "metrics": {
+      "total_revenue": 574785000000.0,
+      "net_income": 30425000000.0,
+      "gross_profit": 270046000000.0,
+      "operating_income": 36852000000.0
+    }
+  },
+  "AMZN_balance_2024-02-15": {
+    "metrics": {
+      "total_assets": 527854000000.0,
+      "total_liabilities": 325979000000.0,
+      "stockholders_equity": 201875000000.0,
+      "cash": 73387000000.0
+    }
+  },
+  "AMZN_cashflow_2024-02-15": {
+    "metrics": {
+      "operating_cf": 84946000000.0,
+      "capital_expenditures": -52729000000.0,
+      "free_cash_flow": 32217000000.0
+    }
+  },
+  "TSLA_income_2022-02-15": {
+    "metrics": {
+      "total_revenue": null,
+      "net_income": null,
+      "gross_profit": null,
+      "operating_income": null
+    }
+  },
+  "TSLA_balance_2022-02-15": {
+    "metrics": {
+      "total_assets": null,
+      "total_liabilities": null,
+      "stockholders_equity": null,
+      "cash": null
+    }
+  },
+  "TSLA_cashflow_2022-02-15": {
+    "metrics": {
+      "operating_cf": null,
+      "capital_expenditures": null,
+      "free_cash_flow": null
+    }
+  },
+  "TSLA_income_2022-08-15": {
+    "metrics": {
+      "total_revenue": null,
+      "net_income": null,
+      "gross_profit": null,
+      "operating_income": null
+    }
+  },
+  "TSLA_balance_2022-08-15": {
+    "metrics": {
+      "total_assets": null,
+      "total_liabilities": null,
+      "stockholders_equity": null,
+      "cash": null
+    }
+  },
+  "TSLA_cashflow_2022-08-15": {
+    "metrics": {
+      "operating_cf": null,
+      "capital_expenditures": null,
+      "free_cash_flow": null
+    }
+  },
+  "TSLA_income_2023-02-15": {
+    "metrics": {
+      "total_revenue": 81462000000.0,
+      "net_income": 12583000000.0,
+      "gross_profit": 20853000000.0,
+      "operating_income": 13832000000.0
+    }
+  },
+  "TSLA_balance_2023-02-15": {
+    "metrics": {
+      "total_assets": 82338000000.0,
+      "total_liabilities": 36440000000.0,
+      "stockholders_equity": 44704000000.0,
+      "cash": 16253000000.0
+    }
+  },
+  "TSLA_cashflow_2023-02-15": {
+    "metrics": {
+      "operating_cf": 14724000000.0,
+      "capital_expenditures": -7172000000.0,
+      "free_cash_flow": 7552000000.0
+    }
+  },
+  "TSLA_income_2024-02-15": {
+    "metrics": {
+      "total_revenue": 96773000000.0,
+      "net_income": 14999000000.0,
+      "gross_profit": 17660000000.0,
+      "operating_income": 8891000000.0
+    }
+  },
+  "TSLA_balance_2024-02-15": {
+    "metrics": {
+      "total_assets": 106618000000.0,
+      "total_liabilities": 43009000000.0,
+      "stockholders_equity": 62634000000.0,
+      "cash": 16398000000.0
+    }
+  },
+  "TSLA_cashflow_2024-02-15": {
+    "metrics": {
+      "operating_cf": 13256000000.0,
+      "capital_expenditures": -8899000000.0,
+      "free_cash_flow": 4357000000.0
+    }
+  },
+  "HD_income_2022-02-15": {
+    "metrics": {
+      "total_revenue": null,
+      "net_income": null,
+      "gross_profit": null,
+      "operating_income": null
+    }
+  },
+  "HD_balance_2022-02-15": {
+    "metrics": {
+      "total_assets": null,
+      "total_liabilities": null,
+      "stockholders_equity": null,
+      "cash": null
+    }
+  },
+  "HD_cashflow_2022-02-15": {
+    "metrics": {
+      "operating_cf": null,
+      "capital_expenditures": null,
+      "free_cash_flow": null
+    }
+  },
+  "HD_income_2022-08-15": {
+    "metrics": {
+      "total_revenue": null,
+      "net_income": null,
+      "gross_profit": null,
+      "operating_income": null
+    }
+  },
+  "HD_balance_2022-08-15": {
+    "metrics": {
+      "total_assets": null,
+      "total_liabilities": null,
+      "stockholders_equity": null,
+      "cash": null
+    }
+  },
+  "HD_cashflow_2022-08-15": {
+    "metrics": {
+      "operating_cf": null,
+      "capital_expenditures": null,
+      "free_cash_flow": null
+    }
+  },
+  "HD_income_2023-02-15": {
+    "metrics": {
+      "total_revenue": 157403000000.0,
+      "net_income": 17105000000.0,
+      "gross_profit": 52778000000.0,
+      "operating_income": 24039000000.0
+    }
+  },
+  "HD_balance_2023-02-15": {
+    "metrics": {
+      "total_assets": 76445000000.0,
+      "total_liabilities": 74883000000.0,
+      "stockholders_equity": 1562000000.0,
+      "cash": 2757000000.0
+    }
+  },
+  "HD_cashflow_2023-02-15": {
+    "metrics": {
+      "operating_cf": 14615000000.0,
+      "capital_expenditures": -3119000000.0,
+      "free_cash_flow": 11496000000.0
+    }
+  },
+  "HD_income_2024-02-15": {
+    "metrics": {
+      "total_revenue": 152669000000.0,
+      "net_income": 15143000000.0,
+      "gross_profit": 50960000000.0,
+      "operating_income": 21689000000.0
+    }
+  },
+  "HD_balance_2024-02-15": {
+    "metrics": {
+      "total_assets": 76530000000.0,
+      "total_liabilities": 75486000000.0,
+      "stockholders_equity": 1044000000.0,
+      "cash": 3760000000.0
+    }
+  },
+  "HD_cashflow_2024-02-15": {
+    "metrics": {
+      "operating_cf": 21172000000.0,
+      "capital_expenditures": -3226000000.0,
+      "free_cash_flow": 17946000000.0
+    }
+  },
+  "MCD_income_2022-02-15": {
+    "metrics": {}
+  },
+  "MCD_balance_2022-02-15": {
+    "metrics": {
+      "total_assets": null,
+      "total_liabilities": null,
+      "stockholders_equity": null,
+      "cash": null
+    }
+  },
+  "MCD_cashflow_2022-02-15": {
+    "metrics": {
+      "operating_cf": null,
+      "capital_expenditures": null,
+      "free_cash_flow": null
+    }
+  },
+  "MCD_income_2022-08-15": {
+    "metrics": {}
+  },
+  "MCD_balance_2022-08-15": {
+    "metrics": {
+      "total_assets": null,
+      "total_liabilities": null,
+      "stockholders_equity": null,
+      "cash": null
+    }
+  },
+  "MCD_cashflow_2022-08-15": {
+    "metrics": {
+      "operating_cf": null,
+      "capital_expenditures": null,
+      "free_cash_flow": null
+    }
+  },
+  "MCD_income_2023-02-15": {
+    "metrics": {
+      "total_revenue": 23182000000.0,
+      "net_income": 6177000000.0,
+      "gross_profit": 13207000000.0,
+      "operating_income": 10345000000.0
+    }
+  },
+  "MCD_balance_2023-02-15": {
+    "metrics": {
+      "total_assets": 50435600000.0,
+      "total_liabilities": 56439000000.0,
+      "stockholders_equity": -6003400000.0,
+      "cash": 2583800000.0
+    }
+  },
+  "MCD_cashflow_2023-02-15": {
+    "metrics": {
+      "operating_cf": 7387000000.0,
+      "capital_expenditures": -1899000000.0,
+      "free_cash_flow": 5488000000.0
+    }
+  },
+  "MCD_income_2024-02-15": {
+    "metrics": {
+      "total_revenue": 25495000000.0,
+      "net_income": 8469000000.0,
+      "gross_profit": 14564000000.0,
+      "operating_income": 11747000000.0
+    }
+  },
+  "MCD_balance_2024-02-15": {
+    "metrics": {
+      "total_assets": 56147000000.0,
+      "total_liabilities": 60854000000.0,
+      "stockholders_equity": -4706000000.0,
+      "cash": 4579000000.0
+    }
+  },
+  "MCD_cashflow_2024-02-15": {
+    "metrics": {
+      "operating_cf": 9612000000.0,
+      "capital_expenditures": -2357000000.0,
+      "free_cash_flow": 7255000000.0
+    }
+  },
+  "NKE_income_2022-02-15": {
+    "metrics": {
+      "total_revenue": null,
+      "net_income": null,
+      "gross_profit": null,
+      "operating_income": null
+    }
+  },
+  "NKE_balance_2022-02-15": {
+    "metrics": {
+      "total_assets": null,
+      "total_liabilities": null,
+      "stockholders_equity": null,
+      "cash": null
+    }
+  },
+  "NKE_cashflow_2022-02-15": {
+    "metrics": {
+      "operating_cf": null,
+      "capital_expenditures": null,
+      "free_cash_flow": null
+    }
+  },
+  "NKE_income_2022-08-15": {
+    "metrics": {
+      "total_revenue": 46710000000.0,
+      "net_income": 6046000000.0,
+      "gross_profit": 21479000000.0,
+      "operating_income": 6675000000.0
+    }
+  },
+  "NKE_balance_2022-08-15": {
+    "metrics": {
+      "total_assets": 40321000000.0,
+      "total_liabilities": 25040000000.0,
+      "stockholders_equity": 15281000000.0,
+      "cash": 8574000000.0
+    }
+  },
+  "NKE_cashflow_2022-08-15": {
+    "metrics": {
+      "operating_cf": 5188000000.0,
+      "capital_expenditures": -758000000.0,
+      "free_cash_flow": 4430000000.0
+    }
+  },
+  "NKE_income_2023-02-15": {
+    "metrics": {
+      "total_revenue": 46710000000.0,
+      "net_income": 6046000000.0,
+      "gross_profit": 21479000000.0,
+      "operating_income": 6675000000.0
+    }
+  },
+  "NKE_balance_2023-02-15": {
+    "metrics": {
+      "total_assets": 40321000000.0,
+      "total_liabilities": 25040000000.0,
+      "stockholders_equity": 15281000000.0,
+      "cash": 8574000000.0
+    }
+  },
+  "NKE_cashflow_2023-02-15": {
+    "metrics": {
+      "operating_cf": 5188000000.0,
+      "capital_expenditures": -758000000.0,
+      "free_cash_flow": 4430000000.0
+    }
+  },
+  "NKE_income_2024-02-15": {
+    "metrics": {
+      "total_revenue": 51217000000.0,
+      "net_income": 5070000000.0,
+      "gross_profit": 22292000000.0,
+      "operating_income": 5915000000.0
+    }
+  },
+  "NKE_balance_2024-02-15": {
+    "metrics": {
+      "total_assets": 37531000000.0,
+      "total_liabilities": 23527000000.0,
+      "stockholders_equity": 14004000000.0,
+      "cash": 7441000000.0
+    }
+  },
+  "NKE_cashflow_2024-02-15": {
+    "metrics": {
+      "operating_cf": 5841000000.0,
+      "capital_expenditures": -969000000.0,
+      "free_cash_flow": 4872000000.0
+    }
+  },
+  "PG_income_2022-02-15": {
+    "metrics": {}
+  },
+  "PG_balance_2022-02-15": {
+    "metrics": {
+      "total_assets": null,
+      "total_liabilities": null,
+      "stockholders_equity": null,
+      "cash": null
+    }
+  },
+  "PG_cashflow_2022-02-15": {
+    "metrics": {
+      "operating_cf": null,
+      "capital_expenditures": null,
+      "free_cash_flow": null
+    }
+  },
+  "PG_income_2022-08-15": {
+    "metrics": {
+      "total_revenue": 80187000000.0,
+      "net_income": 14742000000.0,
+      "gross_profit": 38030000000.0,
+      "operating_income": 17813000000.0
+    }
+  },
+  "PG_balance_2022-08-15": {
+    "metrics": {
+      "total_assets": 117208000000.0,
+      "total_liabilities": 70354000000.0,
+      "stockholders_equity": 46589000000.0,
+      "cash": 7214000000.0
+    }
+  },
+  "PG_cashflow_2022-08-15": {
+    "metrics": {
+      "operating_cf": 16723000000.0,
+      "capital_expenditures": -3156000000.0,
+      "free_cash_flow": 13567000000.0
+    }
+  },
+  "PG_income_2023-02-15": {
+    "metrics": {
+      "total_revenue": 80187000000.0,
+      "net_income": 14742000000.0,
+      "gross_profit": 38030000000.0,
+      "operating_income": 17813000000.0
+    }
+  },
+  "PG_balance_2023-02-15": {
+    "metrics": {
+      "total_assets": 117208000000.0,
+      "total_liabilities": 70354000000.0,
+      "stockholders_equity": 46589000000.0,
+      "cash": 7214000000.0
+    }
+  },
+  "PG_cashflow_2023-02-15": {
+    "metrics": {
+      "operating_cf": 16723000000.0,
+      "capital_expenditures": -3156000000.0,
+      "free_cash_flow": 13567000000.0
+    }
+  },
+  "PG_income_2024-02-15": {
+    "metrics": {
+      "total_revenue": 82006000000.0,
+      "net_income": 14653000000.0,
+      "gross_profit": 39246000000.0,
+      "operating_income": 18134000000.0
+    }
+  },
+  "PG_balance_2024-02-15": {
+    "metrics": {
+      "total_assets": 120829000000.0,
+      "total_liabilities": 73764000000.0,
+      "stockholders_equity": 46777000000.0,
+      "cash": 8246000000.0
+    }
+  },
+  "PG_cashflow_2024-02-15": {
+    "metrics": {
+      "operating_cf": 16848000000.0,
+      "capital_expenditures": -3062000000.0,
+      "free_cash_flow": 13786000000.0
+    }
+  },
+  "KO_income_2022-02-15": {
+    "metrics": {
+      "total_revenue": null,
+      "net_income": null,
+      "gross_profit": null,
+      "operating_income": null
+    }
+  },
+  "KO_balance_2022-02-15": {
+    "metrics": {
+      "total_assets": null,
+      "total_liabilities": null,
+      "stockholders_equity": null,
+      "cash": null
+    }
+  },
+  "KO_cashflow_2022-02-15": {
+    "metrics": {}
+  },
+  "KO_income_2022-08-15": {
+    "metrics": {
+      "total_revenue": null,
+      "net_income": null,
+      "gross_profit": null,
+      "operating_income": null
+    }
+  },
+  "KO_balance_2022-08-15": {
+    "metrics": {
+      "total_assets": null,
+      "total_liabilities": null,
+      "stockholders_equity": null,
+      "cash": null
+    }
+  },
+  "KO_cashflow_2022-08-15": {
+    "metrics": {}
+  },
+  "KO_income_2023-02-15": {
+    "metrics": {
+      "total_revenue": 43004000000.0,
+      "net_income": 9542000000.0,
+      "gross_profit": 25004000000.0,
+      "operating_income": 12042000000.0
+    }
+  },
+  "KO_balance_2023-02-15": {
+    "metrics": {
+      "total_assets": 92763000000.0,
+      "total_liabilities": 66937000000.0,
+      "stockholders_equity": 24105000000.0,
+      "cash": 9519000000.0
+    }
+  },
+  "KO_cashflow_2023-02-15": {
+    "metrics": {
+      "operating_cf": 11018000000.0,
+      "capital_expenditures": -1484000000.0,
+      "free_cash_flow": 9534000000.0
+    }
+  },
+  "KO_income_2024-02-15": {
+    "metrics": {
+      "total_revenue": 45754000000.0,
+      "net_income": 10714000000.0,
+      "gross_profit": 27234000000.0,
+      "operating_income": 13098000000.0
+    }
+  },
+  "KO_balance_2024-02-15": {
+    "metrics": {
+      "total_assets": 97703000000.0,
+      "total_liabilities": 70223000000.0,
+      "stockholders_equity": 25941000000.0,
+      "cash": 9366000000.0
+    }
+  },
+  "KO_cashflow_2024-02-15": {
+    "metrics": {
+      "operating_cf": 11599000000.0,
+      "capital_expenditures": -1852000000.0,
+      "free_cash_flow": 9747000000.0
+    }
+  },
+  "PEP_income_2022-02-15": {
+    "metrics": {
+      "total_revenue": null,
+      "net_income": null,
+      "gross_profit": null,
+      "operating_income": null
+    }
+  },
+  "PEP_balance_2022-02-15": {
+    "metrics": {
+      "total_assets": null,
+      "total_liabilities": null,
+      "stockholders_equity": null,
+      "cash": null
+    }
+  },
+  "PEP_cashflow_2022-02-15": {
+    "metrics": {
+      "operating_cf": null,
+      "capital_expenditures": null,
+      "free_cash_flow": null
+    }
+  },
+  "PEP_income_2022-08-15": {
+    "metrics": {
+      "total_revenue": null,
+      "net_income": null,
+      "gross_profit": null,
+      "operating_income": null
+    }
+  },
+  "PEP_balance_2022-08-15": {
+    "metrics": {
+      "total_assets": null,
+      "total_liabilities": null,
+      "stockholders_equity": null,
+      "cash": null
+    }
+  },
+  "PEP_cashflow_2022-08-15": {
+    "metrics": {
+      "operating_cf": null,
+      "capital_expenditures": null,
+      "free_cash_flow": null
+    }
+  },
+  "PEP_income_2023-02-15": {
+    "metrics": {
+      "total_revenue": 86392000000.0,
+      "net_income": 8910000000.0,
+      "gross_profit": 45816000000.0,
+      "operating_income": 11357000000.0
+    }
+  },
+  "PEP_balance_2023-02-15": {
+    "metrics": {
+      "total_assets": 92187000000.0,
+      "total_liabilities": 74914000000.0,
+      "stockholders_equity": 17149000000.0,
+      "cash": 4954000000.0
+    }
+  },
+  "PEP_cashflow_2023-02-15": {
+    "metrics": {
+      "operating_cf": 10811000000.0,
+      "capital_expenditures": -5207000000.0,
+      "free_cash_flow": 5604000000.0
+    }
+  },
+  "PEP_income_2024-02-15": {
+    "metrics": {
+      "total_revenue": 91471000000.0,
+      "net_income": 9074000000.0,
+      "gross_profit": 49590000000.0,
+      "operating_income": 12913000000.0
+    }
+  },
+  "PEP_balance_2024-02-15": {
+    "metrics": {
+      "total_assets": 100495000000.0,
+      "total_liabilities": 81858000000.0,
+      "stockholders_equity": 18503000000.0,
+      "cash": 9711000000.0
+    }
+  },
+  "PEP_cashflow_2024-02-15": {
+    "metrics": {
+      "operating_cf": 13442000000.0,
+      "capital_expenditures": -5518000000.0,
+      "free_cash_flow": 7924000000.0
+    }
+  },
+  "WMT_income_2022-02-15": {
+    "metrics": {
+      "total_revenue": null,
+      "net_income": null,
+      "gross_profit": null,
+      "operating_income": null
+    }
+  },
+  "WMT_balance_2022-02-15": {
+    "metrics": {
+      "total_assets": null,
+      "total_liabilities": null,
+      "stockholders_equity": null,
+      "cash": null
+    }
+  },
+  "WMT_cashflow_2022-02-15": {
+    "metrics": {
+      "operating_cf": null,
+      "capital_expenditures": null,
+      "free_cash_flow": null
+    }
+  },
+  "WMT_income_2022-08-15": {
+    "metrics": {
+      "total_revenue": null,
+      "net_income": null,
+      "gross_profit": null,
+      "operating_income": null
+    }
+  },
+  "WMT_balance_2022-08-15": {
+    "metrics": {
+      "total_assets": null,
+      "total_liabilities": null,
+      "stockholders_equity": null,
+      "cash": null
+    }
+  },
+  "WMT_cashflow_2022-08-15": {
+    "metrics": {
+      "operating_cf": null,
+      "capital_expenditures": null,
+      "free_cash_flow": null
+    }
+  },
+  "WMT_income_2023-02-15": {
+    "metrics": {
+      "total_revenue": 611289000000.0,
+      "net_income": 11680000000.0,
+      "gross_profit": 147568000000.0,
+      "operating_income": 20428000000.0
+    }
+  },
+  "WMT_balance_2023-02-15": {
+    "metrics": {
+      "total_assets": 243197000000.0,
+      "total_liabilities": 159206000000.0,
+      "stockholders_equity": 76693000000.0,
+      "cash": 8625000000.0
+    }
+  },
+  "WMT_cashflow_2023-02-15": {
+    "metrics": {
+      "operating_cf": 28841000000.0,
+      "capital_expenditures": -16857000000.0,
+      "free_cash_flow": 11984000000.0
+    }
+  },
+  "WMT_income_2024-02-15": {
+    "metrics": {
+      "total_revenue": 648125000000.0,
+      "net_income": 15511000000.0,
+      "gross_profit": 157983000000.0,
+      "operating_income": 27012000000.0
+    }
+  },
+  "WMT_balance_2024-02-15": {
+    "metrics": {
+      "total_assets": 252399000000.0,
+      "total_liabilities": 161828000000.0,
+      "stockholders_equity": 83861000000.0,
+      "cash": 9867000000.0
+    }
+  },
+  "WMT_cashflow_2024-02-15": {
+    "metrics": {
+      "operating_cf": 35726000000.0,
+      "capital_expenditures": -20606000000.0,
+      "free_cash_flow": 15120000000.0
+    }
+  },
+  "COST_income_2022-02-15": {
+    "metrics": {
+      "total_revenue": null,
+      "net_income": null,
+      "gross_profit": null,
+      "operating_income": null
+    }
+  },
+  "COST_balance_2022-02-15": {
+    "metrics": {
+      "total_assets": null,
+      "total_liabilities": null,
+      "stockholders_equity": null,
+      "cash": null
+    }
+  },
+  "COST_cashflow_2022-02-15": {
+    "metrics": {
+      "operating_cf": null,
+      "capital_expenditures": null,
+      "free_cash_flow": null
+    }
+  },
+  "COST_income_2022-08-15": {
+    "metrics": {
+      "total_revenue": null,
+      "net_income": null,
+      "gross_profit": null,
+      "operating_income": null
+    }
+  },
+  "COST_balance_2022-08-15": {
+    "metrics": {
+      "total_assets": null,
+      "total_liabilities": null,
+      "stockholders_equity": null,
+      "cash": null
+    }
+  },
+  "COST_cashflow_2022-08-15": {
+    "metrics": {
+      "operating_cf": null,
+      "capital_expenditures": null,
+      "free_cash_flow": null
+    }
+  },
+  "COST_income_2023-02-15": {
+    "metrics": {
+      "total_revenue": 226954000000.0,
+      "net_income": 5844000000.0,
+      "gross_profit": 27572000000.0,
+      "operating_income": 7793000000.0
+    }
+  },
+  "COST_balance_2023-02-15": {
+    "metrics": {
+      "total_assets": 64166000000.0,
+      "total_liabilities": 43519000000.0,
+      "stockholders_equity": 20642000000.0,
+      "cash": 10203000000.0
+    }
+  },
+  "COST_cashflow_2023-02-15": {
+    "metrics": {
+      "operating_cf": 7392000000.0,
+      "capital_expenditures": -3891000000.0,
+      "free_cash_flow": 3501000000.0
+    }
+  },
+  "COST_income_2024-02-15": {
+    "metrics": {
+      "total_revenue": 242290000000.0,
+      "net_income": 6292000000.0,
+      "gross_profit": 29704000000.0,
+      "operating_income": 8114000000.0
+    }
+  },
+  "COST_balance_2024-02-15": {
+    "metrics": {
+      "total_assets": 68994000000.0,
+      "total_liabilities": 43936000000.0,
+      "stockholders_equity": 25058000000.0,
+      "cash": 13700000000.0
+    }
+  },
+  "COST_cashflow_2024-02-15": {
+    "metrics": {
+      "operating_cf": 11068000000.0,
+      "capital_expenditures": -4323000000.0,
+      "free_cash_flow": 6745000000.0
+    }
+  },
+  "XOM_income_2022-02-15": {
+    "metrics": {
+      "total_revenue": null,
+      "net_income": null,
+      "gross_profit": null,
+      "operating_income": null
+    }
+  },
+  "XOM_balance_2022-02-15": {
+    "metrics": {}
+  },
+  "XOM_cashflow_2022-02-15": {
+    "metrics": {
+      "operating_cf": null,
+      "capital_expenditures": null,
+      "free_cash_flow": null
+    }
+  },
+  "XOM_income_2022-08-15": {
+    "metrics": {
+      "total_revenue": null,
+      "net_income": null,
+      "gross_profit": null,
+      "operating_income": null
+    }
+  },
+  "XOM_balance_2022-08-15": {
+    "metrics": {}
+  },
+  "XOM_cashflow_2022-08-15": {
+    "metrics": {
+      "operating_cf": null,
+      "capital_expenditures": null,
+      "free_cash_flow": null
+    }
+  },
+  "XOM_income_2023-02-15": {
+    "metrics": {
+      "total_revenue": 398675000000.0,
+      "net_income": 55740000000.0,
+      "gross_profit": 103067000000.0,
+      "operating_income": 64028000000.0
+    }
+  },
+  "XOM_balance_2023-02-15": {
+    "metrics": {
+      "total_assets": 369067000000.0,
+      "total_liabilities": 166594000000.0,
+      "stockholders_equity": 195049000000.0,
+      "cash": 29640000000.0
+    }
+  },
+  "XOM_cashflow_2023-02-15": {
+    "metrics": {
+      "operating_cf": 76797000000.0,
+      "capital_expenditures": -18407000000.0,
+      "free_cash_flow": 58390000000.0
+    }
+  },
+  "XOM_income_2024-02-15": {
+    "metrics": {
+      "total_revenue": 334697000000.0,
+      "net_income": 36010000000.0,
+      "gross_profit": 84142000000.0,
+      "operating_income": 44461000000.0
+    }
+  },
+  "XOM_balance_2024-02-15": {
+    "metrics": {
+      "total_assets": 376317000000.0,
+      "total_liabilities": 163779000000.0,
+      "stockholders_equity": 204802000000.0,
+      "cash": 31539000000.0
+    }
+  },
+  "XOM_cashflow_2024-02-15": {
+    "metrics": {
+      "operating_cf": 55369000000.0,
+      "capital_expenditures": -21919000000.0,
+      "free_cash_flow": 33450000000.0
+    }
+  },
+  "CVX_income_2022-02-15": {
+    "metrics": {}
+  },
+  "CVX_balance_2022-02-15": {
+    "metrics": {
+      "total_assets": null,
+      "total_liabilities": null,
+      "stockholders_equity": null,
+      "cash": null
+    }
+  },
+  "CVX_cashflow_2022-02-15": {
+    "metrics": {
+      "operating_cf": null,
+      "capital_expenditures": null,
+      "free_cash_flow": null
+    }
+  },
+  "CVX_income_2022-08-15": {
+    "metrics": {}
+  },
+  "CVX_balance_2022-08-15": {
+    "metrics": {
+      "total_assets": null,
+      "total_liabilities": null,
+      "stockholders_equity": null,
+      "cash": null
+    }
+  },
+  "CVX_cashflow_2022-08-15": {
+    "metrics": {
+      "operating_cf": null,
+      "capital_expenditures": null,
+      "free_cash_flow": null
+    }
+  },
+  "CVX_income_2023-02-15": {
+    "metrics": {
+      "total_revenue": 235717000000.0,
+      "net_income": 35465000000.0,
+      "gross_profit": 73982000000.0,
+      "operating_income": 39950000000.0
+    }
+  },
+  "CVX_balance_2023-02-15": {
+    "metrics": {
+      "total_assets": 257709000000.0,
+      "total_liabilities": 97467000000.0,
+      "stockholders_equity": 159282000000.0,
+      "cash": 17678000000.0
+    }
+  },
+  "CVX_cashflow_2023-02-15": {
+    "metrics": {
+      "operating_cf": 49602000000.0,
+      "capital_expenditures": -11974000000.0,
+      "free_cash_flow": 37628000000.0
+    }
+  },
+  "CVX_income_2024-02-15": {
+    "metrics": {
+      "total_revenue": 196913000000.0,
+      "net_income": 21369000000.0,
+      "gross_profit": 60391000000.0,
+      "operating_income": 26229000000.0
+    }
+  },
+  "CVX_balance_2024-02-15": {
+    "metrics": {
+      "total_assets": 261632000000.0,
+      "total_liabilities": 99703000000.0,
+      "stockholders_equity": 160957000000.0,
+      "cash": 8178000000.0
+    }
+  },
+  "CVX_cashflow_2024-02-15": {
+    "metrics": {
+      "operating_cf": 35609000000.0,
+      "capital_expenditures": -15829000000.0,
+      "free_cash_flow": 19780000000.0
+    }
+  },
+  "COP_income_2022-02-15": {
+    "metrics": {
+      "total_revenue": null,
+      "net_income": null,
+      "gross_profit": null,
+      "operating_income": null
+    }
+  },
+  "COP_balance_2022-02-15": {
+    "metrics": {
+      "total_assets": null,
+      "total_liabilities": null,
+      "stockholders_equity": null,
+      "cash": null
+    }
+  },
+  "COP_cashflow_2022-02-15": {
+    "metrics": {
+      "operating_cf": null,
+      "capital_expenditures": null,
+      "free_cash_flow": null
+    }
+  },
+  "COP_income_2022-08-15": {
+    "metrics": {
+      "total_revenue": null,
+      "net_income": null,
+      "gross_profit": null,
+      "operating_income": null
+    }
+  },
+  "COP_balance_2022-08-15": {
+    "metrics": {
+      "total_assets": null,
+      "total_liabilities": null,
+      "stockholders_equity": null,
+      "cash": null
+    }
+  },
+  "COP_cashflow_2022-08-15": {
+    "metrics": {
+      "operating_cf": null,
+      "capital_expenditures": null,
+      "free_cash_flow": null
+    }
+  },
+  "COP_income_2023-02-15": {
+    "metrics": {
+      "total_revenue": 78494000000.0,
+      "net_income": 18680000000.0,
+      "gross_profit": 30013000000.0,
+      "operating_income": 25462000000.0
+    }
+  },
+  "COP_balance_2023-02-15": {
+    "metrics": {
+      "total_assets": 93829000000.0,
+      "total_liabilities": 45826000000.0,
+      "stockholders_equity": 48003000000.0,
+      "cash": 6458000000.0
+    }
+  },
+  "COP_cashflow_2023-02-15": {
+    "metrics": {
+      "operating_cf": 28314000000.0,
+      "capital_expenditures": -10159000000.0,
+      "free_cash_flow": 18155000000.0
+    }
+  },
+  "COP_income_2024-02-15": {
+    "metrics": {
+      "total_revenue": 56141000000.0,
+      "net_income": 10957000000.0,
+      "gross_profit": 18203000000.0,
+      "operating_income": 15026000000.0
+    }
+  },
+  "COP_balance_2024-02-15": {
+    "metrics": {
+      "total_assets": 95924000000.0,
+      "total_liabilities": 46645000000.0,
+      "stockholders_equity": 49279000000.0,
+      "cash": 5635000000.0
+    }
+  },
+  "COP_cashflow_2024-02-15": {
+    "metrics": {
+      "operating_cf": 19965000000.0,
+      "capital_expenditures": -11248000000.0,
+      "free_cash_flow": 8717000000.0
+    }
+  },
+  "SLB_income_2022-02-15": {
+    "metrics": {
+      "total_revenue": null,
+      "net_income": null,
+      "gross_profit": null,
+      "operating_income": null
+    }
+  },
+  "SLB_balance_2022-02-15": {
+    "metrics": {
+      "total_assets": null,
+      "total_liabilities": null,
+      "stockholders_equity": null,
+      "cash": null
+    }
+  },
+  "SLB_cashflow_2022-02-15": {
+    "metrics": {
+      "operating_cf": null,
+      "capital_expenditures": null,
+      "free_cash_flow": null
+    }
+  },
+  "SLB_income_2022-08-15": {
+    "metrics": {
+      "total_revenue": null,
+      "net_income": null,
+      "gross_profit": null,
+      "operating_income": null
+    }
+  },
+  "SLB_balance_2022-08-15": {
+    "metrics": {
+      "total_assets": null,
+      "total_liabilities": null,
+      "stockholders_equity": null,
+      "cash": null
+    }
+  },
+  "SLB_cashflow_2022-08-15": {
+    "metrics": {
+      "operating_cf": null,
+      "capital_expenditures": null,
+      "free_cash_flow": null
+    }
+  },
+  "SLB_income_2023-02-15": {
+    "metrics": {
+      "total_revenue": 28091000000.0,
+      "net_income": 3441000000.0,
+      "gross_profit": 5161000000.0,
+      "operating_income": 4151000000.0
+    }
+  },
+  "SLB_balance_2023-02-15": {
+    "metrics": {
+      "total_assets": 43135000000.0,
+      "total_liabilities": 25146000000.0,
+      "stockholders_equity": 17685000000.0,
+      "cash": 1655000000.0
+    }
+  },
+  "SLB_cashflow_2023-02-15": {
+    "metrics": {
+      "operating_cf": 3720000000.0,
+      "capital_expenditures": -1715000000.0,
+      "free_cash_flow": 2005000000.0
+    }
+  },
+  "SLB_income_2024-02-15": {
+    "metrics": {
+      "total_revenue": 33135000000.0,
+      "net_income": 4203000000.0,
+      "gross_profit": 6563000000.0,
+      "operating_income": 5488000000.0
+    }
+  },
+  "SLB_balance_2024-02-15": {
+    "metrics": {
+      "total_assets": 47957000000.0,
+      "total_liabilities": 26598000000.0,
+      "stockholders_equity": 20189000000.0,
+      "cash": 2900000000.0
+    }
+  },
+  "SLB_cashflow_2024-02-15": {
+    "metrics": {
+      "operating_cf": 6637000000.0,
+      "capital_expenditures": -2092000000.0,
+      "free_cash_flow": 4545000000.0
+    }
+  },
+  "EOG_income_2022-02-15": {
+    "metrics": {
+      "total_revenue": null,
+      "net_income": null,
+      "gross_profit": null,
+      "operating_income": null
+    }
+  },
+  "EOG_balance_2022-02-15": {
+    "metrics": {
+      "total_assets": null,
+      "total_liabilities": null,
+      "stockholders_equity": null,
+      "cash": null
+    }
+  },
+  "EOG_cashflow_2022-02-15": {
+    "metrics": {}
+  },
+  "EOG_income_2022-08-15": {
+    "metrics": {
+      "total_revenue": null,
+      "net_income": null,
+      "gross_profit": null,
+      "operating_income": null
+    }
+  },
+  "EOG_balance_2022-08-15": {
+    "metrics": {
+      "total_assets": null,
+      "total_liabilities": null,
+      "stockholders_equity": null,
+      "cash": null
+    }
+  },
+  "EOG_cashflow_2022-08-15": {
+    "metrics": {}
+  },
+  "EOG_income_2023-02-15": {
+    "metrics": {
+      "total_revenue": 29492000000.0,
+      "net_income": 7759000000.0,
+      "gross_profit": 23032000000.0,
+      "operating_income": 14256000000.0
+    }
+  },
+  "EOG_balance_2023-02-15": {
+    "metrics": {
+      "total_assets": 41371000000.0,
+      "total_liabilities": 16592000000.0,
+      "stockholders_equity": 24779000000.0,
+      "cash": 5972000000.0
+    }
+  },
+  "EOG_cashflow_2023-02-15": {
+    "metrics": {
+      "operating_cf": 11093000000.0,
+      "capital_expenditures": -5000000000.0,
+      "free_cash_flow": 6093000000.0
+    }
+  },
+  "EOG_income_2024-02-15": {
+    "metrics": {
+      "total_revenue": 23182000000.0,
+      "net_income": 7594000000.0,
+      "gross_profit": 16616000000.0,
+      "operating_income": 8892000000.0
+    }
+  },
+  "EOG_balance_2024-02-15": {
+    "metrics": {
+      "total_assets": 43857000000.0,
+      "total_liabilities": 15767000000.0,
+      "stockholders_equity": 28090000000.0,
+      "cash": 5278000000.0
+    }
+  },
+  "EOG_cashflow_2024-02-15": {
+    "metrics": {
+      "operating_cf": 11340000000.0,
+      "capital_expenditures": -6185000000.0,
+      "free_cash_flow": 5155000000.0
+    }
+  },
+  "CAT_income_2022-02-15": {
+    "metrics": {
+      "total_revenue": null,
+      "net_income": null,
+      "gross_profit": null,
+      "operating_income": null
+    }
+  },
+  "CAT_balance_2022-02-15": {
+    "metrics": {
+      "total_assets": null,
+      "total_liabilities": null,
+      "stockholders_equity": null,
+      "cash": null
+    }
+  },
+  "CAT_cashflow_2022-02-15": {
+    "metrics": {
+      "operating_cf": null,
+      "capital_expenditures": null,
+      "free_cash_flow": null
+    }
+  },
+  "CAT_income_2022-08-15": {
+    "metrics": {
+      "total_revenue": null,
+      "net_income": null,
+      "gross_profit": null,
+      "operating_income": null
+    }
+  },
+  "CAT_balance_2022-08-15": {
+    "metrics": {
+      "total_assets": null,
+      "total_liabilities": null,
+      "stockholders_equity": null,
+      "cash": null
+    }
+  },
+  "CAT_cashflow_2022-08-15": {
+    "metrics": {
+      "operating_cf": null,
+      "capital_expenditures": null,
+      "free_cash_flow": null
+    }
+  },
+  "CAT_income_2023-02-15": {
+    "metrics": {
+      "total_revenue": 59427000000.0,
+      "net_income": 6705000000.0,
+      "gross_profit": 17512000000.0,
+      "operating_income": 8829000000.0
+    }
+  },
+  "CAT_balance_2023-02-15": {
+    "metrics": {
+      "total_assets": 81943000000.0,
+      "total_liabilities": 66052000000.0,
+      "stockholders_equity": 15869000000.0,
+      "cash": 7004000000.0
+    }
+  },
+  "CAT_cashflow_2023-02-15": {
+    "metrics": {
+      "operating_cf": 7766000000.0,
+      "capital_expenditures": -2599000000.0,
+      "free_cash_flow": 5167000000.0
+    }
+  },
+  "CAT_income_2024-02-15": {
+    "metrics": {
+      "total_revenue": 67060000000.0,
+      "net_income": 10335000000.0,
+      "gross_profit": 23263000000.0,
+      "operating_income": 12966000000.0
+    }
+  },
+  "CAT_balance_2024-02-15": {
+    "metrics": {
+      "total_assets": 87476000000.0,
+      "total_liabilities": 67973000000.0,
+      "stockholders_equity": 19494000000.0,
+      "cash": 6978000000.0
+    }
+  },
+  "CAT_cashflow_2024-02-15": {
+    "metrics": {
+      "operating_cf": 12885000000.0,
+      "capital_expenditures": -3092000000.0,
+      "free_cash_flow": 9793000000.0
+    }
+  },
+  "HON_income_2022-02-15": {
+    "metrics": {
+      "total_revenue": null,
+      "net_income": null,
+      "gross_profit": null,
+      "operating_income": null
+    }
+  },
+  "HON_balance_2022-02-15": {
+    "metrics": {
+      "total_assets": null,
+      "total_liabilities": null,
+      "stockholders_equity": null,
+      "cash": null
+    }
+  },
+  "HON_cashflow_2022-02-15": {
+    "metrics": {
+      "operating_cf": null,
+      "capital_expenditures": null,
+      "free_cash_flow": null
+    }
+  },
+  "HON_income_2022-08-15": {
+    "metrics": {
+      "total_revenue": null,
+      "net_income": null,
+      "gross_profit": null,
+      "operating_income": null
+    }
+  },
+  "HON_balance_2022-08-15": {
+    "metrics": {
+      "total_assets": null,
+      "total_liabilities": null,
+      "stockholders_equity": null,
+      "cash": null
+    }
+  },
+  "HON_cashflow_2022-08-15": {
+    "metrics": {
+      "operating_cf": null,
+      "capital_expenditures": null,
+      "free_cash_flow": null
+    }
+  },
+  "HON_income_2023-02-15": {
+    "metrics": {
+      "total_revenue": 35466000000.0,
+      "net_income": 4966000000.0,
+      "gross_profit": 13119000000.0,
+      "operating_income": 6427000000.0
+    }
+  },
+  "HON_balance_2023-02-15": {
+    "metrics": {
+      "total_assets": 62275000000.0,
+      "total_liabilities": 44949000000.0,
+      "stockholders_equity": 16697000000.0,
+      "cash": 9627000000.0
+    }
+  },
+  "HON_cashflow_2023-02-15": {
+    "metrics": {
+      "operating_cf": 5274000000.0,
+      "capital_expenditures": -766000000.0,
+      "free_cash_flow": 4508000000.0
+    }
+  },
+  "HON_income_2024-02-15": {
+    "metrics": {
+      "total_revenue": 33009000000.0,
+      "net_income": 5658000000.0,
+      "gross_profit": 12372000000.0,
+      "operating_income": 6110000000.0
+    }
+  },
+  "HON_balance_2024-02-15": {
+    "metrics": {
+      "total_assets": 61525000000.0,
+      "total_liabilities": 45084000000.0,
+      "stockholders_equity": 15856000000.0,
+      "cash": 7925000000.0
+    }
+  },
+  "HON_cashflow_2024-02-15": {
+    "metrics": {
+      "operating_cf": 5340000000.0,
+      "capital_expenditures": -741000000.0,
+      "free_cash_flow": 4599000000.0
+    }
+  },
+  "GE_income_2022-02-15": {
+    "metrics": {
+      "total_revenue": null,
+      "net_income": null,
+      "gross_profit": null,
+      "operating_income": null
+    }
+  },
+  "GE_balance_2022-02-15": {
+    "metrics": {
+      "total_assets": null,
+      "total_liabilities": null,
+      "stockholders_equity": null,
+      "cash": null
+    }
+  },
+  "GE_cashflow_2022-02-15": {
+    "metrics": {
+      "operating_cf": null,
+      "capital_expenditures": null,
+      "free_cash_flow": null
+    }
+  },
+  "GE_income_2022-08-15": {
+    "metrics": {
+      "total_revenue": null,
+      "net_income": null,
+      "gross_profit": null,
+      "operating_income": null
+    }
+  },
+  "GE_balance_2022-08-15": {
+    "metrics": {
+      "total_assets": null,
+      "total_liabilities": null,
+      "stockholders_equity": null,
+      "cash": null
+    }
+  },
+  "GE_cashflow_2022-08-15": {
+    "metrics": {
+      "operating_cf": null,
+      "capital_expenditures": null,
+      "free_cash_flow": null
+    }
+  },
+  "GE_income_2023-02-15": {
+    "metrics": {
+      "total_revenue": 29139000000.0,
+      "net_income": 336000000.0,
+      "gross_profit": 7560000000.0,
+      "operating_income": 3596000000.0
+    }
+  },
+  "GE_balance_2023-02-15": {
+    "metrics": {
+      "total_assets": 188851000000.0,
+      "total_liabilities": 153939000000.0,
+      "stockholders_equity": 33696000000.0,
+      "cash": 15810000000.0
+    }
+  },
+  "GE_cashflow_2023-02-15": {
+    "metrics": {
+      "operating_cf": 5917000000.0,
+      "capital_expenditures": -662000000.0,
+      "free_cash_flow": 5255000000.0
+    }
+  },
+  "GE_income_2024-02-15": {
+    "metrics": {
+      "total_revenue": 35348000000.0,
+      "net_income": 9482000000.0,
+      "gross_profit": 9523000000.0,
+      "operating_income": 4717000000.0
+    }
+  },
+  "GE_balance_2024-02-15": {
+    "metrics": {
+      "total_assets": 173300000000.0,
+      "total_liabilities": 144695000000.0,
+      "stockholders_equity": 27403000000.0,
+      "cash": 15204000000.0
+    }
+  },
+  "GE_cashflow_2024-02-15": {
+    "metrics": {
+      "operating_cf": 5189000000.0,
+      "capital_expenditures": -862000000.0,
+      "free_cash_flow": 4327000000.0
+    }
+  },
+  "UNP_income_2022-02-15": {
+    "metrics": {
+      "total_revenue": null,
+      "net_income": null,
+      "gross_profit": null,
+      "operating_income": null
+    }
+  },
+  "UNP_balance_2022-02-15": {
+    "metrics": {}
+  },
+  "UNP_cashflow_2022-02-15": {
+    "metrics": {
+      "operating_cf": null,
+      "capital_expenditures": null,
+      "free_cash_flow": null
+    }
+  },
+  "UNP_income_2022-08-15": {
+    "metrics": {
+      "total_revenue": null,
+      "net_income": null,
+      "gross_profit": null,
+      "operating_income": null
+    }
+  },
+  "UNP_balance_2022-08-15": {
+    "metrics": {}
+  },
+  "UNP_cashflow_2022-08-15": {
+    "metrics": {
+      "operating_cf": null,
+      "capital_expenditures": null,
+      "free_cash_flow": null
+    }
+  },
+  "UNP_income_2023-02-15": {
+    "metrics": {
+      "total_revenue": 24875000000.0,
+      "net_income": 6998000000.0,
+      "gross_profit": 11205000000.0,
+      "operating_income": 9917000000.0
+    }
+  },
+  "UNP_balance_2023-02-15": {
+    "metrics": {
+      "total_assets": 65449000000.0,
+      "total_liabilities": 53286000000.0,
+      "stockholders_equity": 12163000000.0,
+      "cash": 973000000.0
+    }
+  },
+  "UNP_cashflow_2023-02-15": {
+    "metrics": {
+      "operating_cf": 9362000000.0,
+      "capital_expenditures": -3620000000.0,
+      "free_cash_flow": 5742000000.0
+    }
+  },
+  "UNP_income_2024-02-15": {
+    "metrics": {
+      "total_revenue": 24119000000.0,
+      "net_income": 6379000000.0,
+      "gross_profit": 10529000000.0,
+      "operating_income": 9082000000.0
+    }
+  },
+  "UNP_balance_2024-02-15": {
+    "metrics": {
+      "total_assets": 67132000000.0,
+      "total_liabilities": 52344000000.0,
+      "stockholders_equity": 14788000000.0,
+      "cash": 1055000000.0
+    }
+  },
+  "UNP_cashflow_2024-02-15": {
+    "metrics": {
+      "operating_cf": 8379000000.0,
+      "capital_expenditures": -3606000000.0,
+      "free_cash_flow": 4773000000.0
+    }
+  },
+  "RTX_income_2022-02-15": {
+    "metrics": {
+      "total_revenue": null,
+      "net_income": null,
+      "gross_profit": null,
+      "operating_income": null
+    }
+  },
+  "RTX_balance_2022-02-15": {
+    "metrics": {
+      "total_assets": null,
+      "total_liabilities": null,
+      "stockholders_equity": null,
+      "cash": null
+    }
+  },
+  "RTX_cashflow_2022-02-15": {
+    "metrics": {
+      "operating_cf": null,
+      "capital_expenditures": null,
+      "free_cash_flow": null
+    }
+  },
+  "RTX_income_2022-08-15": {
+    "metrics": {
+      "total_revenue": null,
+      "net_income": null,
+      "gross_profit": null,
+      "operating_income": null
+    }
+  },
+  "RTX_balance_2022-08-15": {
+    "metrics": {
+      "total_assets": null,
+      "total_liabilities": null,
+      "stockholders_equity": null,
+      "cash": null
+    }
+  },
+  "RTX_cashflow_2022-08-15": {
+    "metrics": {
+      "operating_cf": null,
+      "capital_expenditures": null,
+      "free_cash_flow": null
+    }
+  },
+  "RTX_income_2023-02-15": {
+    "metrics": {
+      "total_revenue": 67074000000.0,
+      "net_income": 5197000000.0,
+      "gross_profit": 13668000000.0,
+      "operating_income": 5504000000.0
+    }
+  },
+  "RTX_balance_2023-02-15": {
+    "metrics": {
+      "total_assets": 158864000000.0,
+      "total_liabilities": 84650000000.0,
+      "stockholders_equity": 72632000000.0,
+      "cash": 6220000000.0
+    }
+  },
+  "RTX_cashflow_2023-02-15": {
+    "metrics": {
+      "operating_cf": 7168000000.0,
+      "capital_expenditures": -2775000000.0,
+      "free_cash_flow": 4393000000.0
+    }
+  },
+  "RTX_income_2024-02-15": {
+    "metrics": {
+      "total_revenue": 68920000000.0,
+      "net_income": 3195000000.0,
+      "gross_profit": 12089000000.0,
+      "operating_income": 3561000000.0
+    }
+  },
+  "RTX_balance_2024-02-15": {
+    "metrics": {
+      "total_assets": 161869000000.0,
+      "total_liabilities": 100424000000.0,
+      "stockholders_equity": 59798000000.0,
+      "cash": 6587000000.0
+    }
+  },
+  "RTX_cashflow_2024-02-15": {
+    "metrics": {
+      "operating_cf": 7883000000.0,
+      "capital_expenditures": -3166000000.0,
+      "free_cash_flow": 4717000000.0
+    }
+  },
+  "NEE_income_2022-02-15": {
+    "metrics": {
+      "total_revenue": null,
+      "net_income": null,
+      "gross_profit": null,
+      "operating_income": null
+    }
+  },
+  "NEE_balance_2022-02-15": {
+    "metrics": {
+      "total_assets": null,
+      "total_liabilities": null,
+      "stockholders_equity": null,
+      "cash": null
+    }
+  },
+  "NEE_cashflow_2022-02-15": {
+    "metrics": {
+      "operating_cf": null,
+      "capital_expenditures": null,
+      "free_cash_flow": null
+    }
+  },
+  "NEE_income_2022-08-15": {
+    "metrics": {
+      "total_revenue": null,
+      "net_income": null,
+      "gross_profit": null,
+      "operating_income": null
+    }
+  },
+  "NEE_balance_2022-08-15": {
+    "metrics": {
+      "total_assets": null,
+      "total_liabilities": null,
+      "stockholders_equity": null,
+      "cash": null
+    }
+  },
+  "NEE_cashflow_2022-08-15": {
+    "metrics": {
+      "operating_cf": null,
+      "capital_expenditures": null,
+      "free_cash_flow": null
+    }
+  },
+  "NEE_income_2023-02-15": {
+    "metrics": {
+      "total_revenue": 20956000000.0,
+      "net_income": 4147000000.0,
+      "gross_profit": 10139000000.0,
+      "operating_income": 3559000000.0
+    }
+  },
+  "NEE_balance_2023-02-15": {
+    "metrics": {
+      "total_assets": 158935000000.0,
+      "total_liabilities": 109499000000.0,
+      "stockholders_equity": 39229000000.0,
+      "cash": 1601000000.0
+    }
+  },
+  "NEE_cashflow_2023-02-15": {
+    "metrics": {
+      "operating_cf": 8262000000.0,
+      "capital_expenditures": -9742000000.0,
+      "free_cash_flow": -1480000000.0
+    }
+  },
+  "NEE_income_2024-02-15": {
+    "metrics": {
+      "total_revenue": 28114000000.0,
+      "net_income": 7310000000.0,
+      "gross_profit": 17976000000.0,
+      "operating_income": 9832000000.0
+    }
+  },
+  "NEE_balance_2024-02-15": {
+    "metrics": {
+      "total_assets": 177489000000.0,
+      "total_liabilities": 118465000000.0,
+      "stockholders_equity": 47468000000.0,
+      "cash": 2690000000.0
+    }
+  },
+  "NEE_cashflow_2024-02-15": {
+    "metrics": {
+      "operating_cf": 11301000000.0,
+      "capital_expenditures": -9548000000.0,
+      "free_cash_flow": 1753000000.0
+    }
+  },
+  "DUK_income_2022-02-15": {
+    "metrics": {}
+  },
+  "DUK_balance_2022-02-15": {
+    "metrics": {
+      "total_assets": null,
+      "total_liabilities": null,
+      "stockholders_equity": null,
+      "cash": null
+    }
+  },
+  "DUK_cashflow_2022-02-15": {
+    "metrics": {
+      "operating_cf": null,
+      "capital_expenditures": null,
+      "free_cash_flow": null
+    }
+  },
+  "DUK_income_2022-08-15": {
+    "metrics": {}
+  },
+  "DUK_balance_2022-08-15": {
+    "metrics": {
+      "total_assets": null,
+      "total_liabilities": null,
+      "stockholders_equity": null,
+      "cash": null
+    }
+  },
+  "DUK_cashflow_2022-08-15": {
+    "metrics": {
+      "operating_cf": null,
+      "capital_expenditures": null,
+      "free_cash_flow": null
+    }
+  },
+  "DUK_income_2023-02-15": {
+    "metrics": {
+      "total_revenue": 28768000000.0,
+      "net_income": 2550000000.0,
+      "gross_profit": 12976000000.0,
+      "operating_income": 6424000000.0
+    }
+  },
+  "DUK_balance_2023-02-15": {
+    "metrics": {
+      "total_assets": 178086000000.0,
+      "total_liabilities": 126233000000.0,
+      "stockholders_equity": 49322000000.0,
+      "cash": 409000000.0
+    }
+  },
+  "DUK_cashflow_2023-02-15": {
+    "metrics": {
+      "operating_cf": 5927000000.0,
+      "capital_expenditures": -11367000000.0,
+      "free_cash_flow": -5440000000.0
+    }
+  },
+  "DUK_income_2024-02-15": {
+    "metrics": {
+      "total_revenue": 29060000000.0,
+      "net_income": 2841000000.0,
+      "gross_profit": 13756000000.0,
+      "operating_income": 7103000000.0
+    }
+  },
+  "DUK_balance_2024-02-15": {
+    "metrics": {
+      "total_assets": 176893000000.0,
+      "total_liabilities": 126707000000.0,
+      "stockholders_equity": 49111000000.0,
+      "cash": 253000000.0
+    }
+  },
+  "DUK_cashflow_2024-02-15": {
+    "metrics": {
+      "operating_cf": 9878000000.0,
+      "capital_expenditures": -12604000000.0,
+      "free_cash_flow": -2726000000.0
+    }
+  },
+  "SO_income_2022-02-15": {
+    "metrics": {
+      "total_revenue": null,
+      "net_income": null,
+      "gross_profit": null,
+      "operating_income": null
+    }
+  },
+  "SO_balance_2022-02-15": {
+    "metrics": {
+      "total_assets": null,
+      "total_liabilities": null,
+      "stockholders_equity": null,
+      "cash": null
+    }
+  },
+  "SO_cashflow_2022-02-15": {
+    "metrics": {
+      "operating_cf": null,
+      "capital_expenditures": null,
+      "free_cash_flow": null
+    }
+  },
+  "SO_income_2022-08-15": {
+    "metrics": {
+      "total_revenue": null,
+      "net_income": null,
+      "gross_profit": null,
+      "operating_income": null
+    }
+  },
+  "SO_balance_2022-08-15": {
+    "metrics": {
+      "total_assets": null,
+      "total_liabilities": null,
+      "stockholders_equity": null,
+      "cash": null
+    }
+  },
+  "SO_cashflow_2022-08-15": {
+    "metrics": {
+      "operating_cf": null,
+      "capital_expenditures": null,
+      "free_cash_flow": null
+    }
+  },
+  "SO_income_2023-02-15": {
+    "metrics": {
+      "total_revenue": 29279000000.0,
+      "net_income": 3535000000.0,
+      "gross_profit": 10627000000.0,
+      "operating_income": 5370000000.0
+    }
+  },
+  "SO_balance_2023-02-15": {
+    "metrics": {
+      "total_assets": 134891000000.0,
+      "total_liabilities": 100359000000.0,
+      "stockholders_equity": 30408000000.0,
+      "cash": 1917000000.0
+    }
+  },
+  "SO_cashflow_2023-02-15": {
+    "metrics": {
+      "operating_cf": 6302000000.0,
+      "capital_expenditures": -7923000000.0,
+      "free_cash_flow": -1621000000.0
+    }
+  },
+  "SO_income_2024-02-15": {
+    "metrics": {
+      "total_revenue": 25253000000.0,
+      "net_income": 3976000000.0,
+      "gross_profit": 11776000000.0,
+      "operating_income": 5826000000.0
+    }
+  },
+  "SO_balance_2024-02-15": {
+    "metrics": {
+      "total_assets": 139331000000.0,
+      "total_liabilities": 104106000000.0,
+      "stockholders_equity": 31444000000.0,
+      "cash": 748000000.0
+    }
+  },
+  "SO_cashflow_2024-02-15": {
+    "metrics": {
+      "operating_cf": 7553000000.0,
+      "capital_expenditures": -9095000000.0,
+      "free_cash_flow": -1542000000.0
+    }
+  },
+  "D_income_2022-02-15": {
+    "metrics": {
+      "total_revenue": null,
+      "net_income": null,
+      "gross_profit": null,
+      "operating_income": null
+    }
+  },
+  "D_balance_2022-02-15": {
+    "metrics": {
+      "total_assets": null,
+      "total_liabilities": null,
+      "stockholders_equity": null,
+      "cash": null
+    }
+  },
+  "D_cashflow_2022-02-15": {
+    "metrics": {
+      "operating_cf": null,
+      "capital_expenditures": null,
+      "free_cash_flow": null
+    }
+  },
+  "D_income_2022-08-15": {
+    "metrics": {
+      "total_revenue": null,
+      "net_income": null,
+      "gross_profit": null,
+      "operating_income": null
+    }
+  },
+  "D_balance_2022-08-15": {
+    "metrics": {
+      "total_assets": null,
+      "total_liabilities": null,
+      "stockholders_equity": null,
+      "cash": null
+    }
+  },
+  "D_cashflow_2022-08-15": {
+    "metrics": {
+      "operating_cf": null,
+      "capital_expenditures": null,
+      "free_cash_flow": null
+    }
+  },
+  "D_income_2023-02-15": {
+    "metrics": {
+      "total_revenue": 13938000000.0,
+      "net_income": 1191000000.0,
+      "gross_profit": 6377000000.0,
+      "operating_income": 3260000000.0
+    }
+  },
+  "D_balance_2023-02-15": {
+    "metrics": {
+      "total_assets": 104795000000.0,
+      "total_liabilities": 77136000000.0,
+      "stockholders_equity": 27659000000.0,
+      "cash": 119000000.0
+    }
+  },
+  "D_cashflow_2023-02-15": {
+    "metrics": {
+      "operating_cf": 3700000000.0,
+      "capital_expenditures": -7591000000.0,
+      "free_cash_flow": -3891000000.0
+    }
+  },
+  "D_income_2024-02-15": {
+    "metrics": {
+      "total_revenue": 14393000000.0,
+      "net_income": 1962000000.0,
+      "gross_profit": 6985000000.0,
+      "operating_income": 3721000000.0
+    }
+  },
+  "D_balance_2024-02-15": {
+    "metrics": {
+      "total_assets": 109080000000.0,
+      "total_liabilities": 81513000000.0,
+      "stockholders_equity": 27567000000.0,
+      "cash": 184000000.0
+    }
+  },
+  "D_cashflow_2024-02-15": {
+    "metrics": {
+      "operating_cf": 6572000000.0,
+      "capital_expenditures": -10211000000.0,
+      "free_cash_flow": -3639000000.0
+    }
+  },
+  "AEP_income_2022-02-15": {
+    "metrics": {
+      "total_revenue": null,
+      "net_income": null,
+      "gross_profit": null,
+      "operating_income": null
+    }
+  },
+  "AEP_balance_2022-02-15": {
+    "metrics": {
+      "total_assets": null,
+      "total_liabilities": null,
+      "stockholders_equity": null,
+      "cash": null
+    }
+  },
+  "AEP_cashflow_2022-02-15": {
+    "metrics": {
+      "operating_cf": null,
+      "capital_expenditures": null,
+      "free_cash_flow": null
+    }
+  },
+  "AEP_income_2022-08-15": {
+    "metrics": {
+      "total_revenue": null,
+      "net_income": null,
+      "gross_profit": null,
+      "operating_income": null
+    }
+  },
+  "AEP_balance_2022-08-15": {
+    "metrics": {
+      "total_assets": null,
+      "total_liabilities": null,
+      "stockholders_equity": null,
+      "cash": null
+    }
+  },
+  "AEP_cashflow_2022-08-15": {
+    "metrics": {
+      "operating_cf": null,
+      "capital_expenditures": null,
+      "free_cash_flow": null
+    }
+  },
+  "AEP_income_2023-02-15": {
+    "metrics": {
+      "total_revenue": 19639500000.0,
+      "net_income": 2307200000.0,
+      "gross_profit": 11292200000.0,
+      "operating_income": 3778500000.0
+    }
+  },
+  "AEP_balance_2023-02-15": {
+    "metrics": {
+      "total_assets": 93403300000.0,
+      "total_liabilities": 69280900000.0,
+      "stockholders_equity": 23893400000.0,
+      "cash": 509400000.0
+    }
+  },
+  "AEP_cashflow_2023-02-15": {
+    "metrics": {
+      "operating_cf": 5288000000.0,
+      "capital_expenditures": -6772400000.0,
+      "free_cash_flow": -1484400000.0
+    }
+  },
+  "AEP_income_2024-02-15": {
+    "metrics": {
+      "total_revenue": 18982000000.0,
+      "net_income": 2208000000.0,
+      "gross_profit": 11128000000.0,
+      "operating_income": 3735000000.0
+    }
+  },
+  "AEP_balance_2024-02-15": {
+    "metrics": {
+      "total_assets": 96684000000.0,
+      "total_liabilities": 71398100000.0,
+      "stockholders_equity": 25246700000.0,
+      "cash": 330100000.0
+    }
+  },
+  "AEP_cashflow_2024-02-15": {
+    "metrics": {
+      "operating_cf": 5012000000.0,
+      "capital_expenditures": -7506000000.0,
+      "free_cash_flow": -2494000000.0
+    }
+  },
+  "LIN_income_2022-02-15": {
+    "metrics": {
+      "total_revenue": null,
+      "net_income": null,
+      "gross_profit": null,
+      "operating_income": null
+    }
+  },
+  "LIN_balance_2022-02-15": {
+    "metrics": {
+      "total_assets": null,
+      "total_liabilities": null,
+      "stockholders_equity": null,
+      "cash": null
+    }
+  },
+  "LIN_cashflow_2022-02-15": {
+    "metrics": {
+      "operating_cf": null,
+      "capital_expenditures": null,
+      "free_cash_flow": null
+    }
+  },
+  "LIN_income_2022-08-15": {
+    "metrics": {
+      "total_revenue": null,
+      "net_income": null,
+      "gross_profit": null,
+      "operating_income": null
+    }
+  },
+  "LIN_balance_2022-08-15": {
+    "metrics": {
+      "total_assets": null,
+      "total_liabilities": null,
+      "stockholders_equity": null,
+      "cash": null
+    }
+  },
+  "LIN_cashflow_2022-08-15": {
+    "metrics": {
+      "operating_cf": null,
+      "capital_expenditures": null,
+      "free_cash_flow": null
+    }
+  },
+  "LIN_income_2023-02-15": {
+    "metrics": {
+      "total_revenue": 33364000000.0,
+      "net_income": 4147000000.0,
+      "gross_profit": 13914000000.0,
+      "operating_income": 6460000000.0
+    }
+  },
+  "LIN_balance_2023-02-15": {
+    "metrics": {
+      "total_assets": 79658000000.0,
+      "total_liabilities": 38271000000.0,
+      "stockholders_equity": 40028000000.0,
+      "cash": 5436000000.0
+    }
+  },
+  "LIN_cashflow_2023-02-15": {
+    "metrics": {
+      "operating_cf": 8864000000.0,
+      "capital_expenditures": -3173000000.0,
+      "free_cash_flow": 5691000000.0
+    }
+  },
+  "LIN_income_2024-02-15": {
+    "metrics": {
+      "total_revenue": 32854000000.0,
+      "net_income": 6199000000.0,
+      "gross_profit": 15362000000.0,
+      "operating_income": 8105000000.0
+    }
+  },
+  "LIN_balance_2024-02-15": {
+    "metrics": {
+      "total_assets": 80811000000.0,
+      "total_liabilities": 39716000000.0,
+      "stockholders_equity": 39720000000.0,
+      "cash": 4664000000.0
+    }
+  },
+  "LIN_cashflow_2024-02-15": {
+    "metrics": {
+      "operating_cf": 9305000000.0,
+      "capital_expenditures": -3787000000.0,
+      "free_cash_flow": 5518000000.0
+    }
+  },
+  "APD_income_2022-02-15": {
+    "metrics": {
+      "total_revenue": null,
+      "net_income": null,
+      "gross_profit": null,
+      "operating_income": null
+    }
+  },
+  "APD_balance_2022-02-15": {
+    "metrics": {
+      "total_assets": null,
+      "total_liabilities": null,
+      "stockholders_equity": null,
+      "cash": null
+    }
+  },
+  "APD_cashflow_2022-02-15": {
+    "metrics": {
+      "operating_cf": null,
+      "capital_expenditures": null,
+      "free_cash_flow": null
+    }
+  },
+  "APD_income_2022-08-15": {
+    "metrics": {
+      "total_revenue": null,
+      "net_income": null,
+      "gross_profit": null,
+      "operating_income": null
+    }
+  },
+  "APD_balance_2022-08-15": {
+    "metrics": {
+      "total_assets": null,
+      "total_liabilities": null,
+      "stockholders_equity": null,
+      "cash": null
+    }
+  },
+  "APD_cashflow_2022-08-15": {
+    "metrics": {
+      "operating_cf": null,
+      "capital_expenditures": null,
+      "free_cash_flow": null
+    }
+  },
+  "APD_income_2023-02-15": {
+    "metrics": {
+      "total_revenue": 12698600000.0,
+      "net_income": 2256100000.0,
+      "gross_profit": 3360100000.0,
+      "operating_income": 2412500000.0
+    }
+  },
+  "APD_balance_2023-02-15": {
+    "metrics": {
+      "total_assets": 27192600000.0,
+      "total_liabilities": 13490200000.0,
+      "stockholders_equity": 13144000000.0,
+      "cash": 2711000000.0
+    }
+  },
+  "APD_cashflow_2023-02-15": {
+    "metrics": {
+      "operating_cf": 3230200000.0,
+      "capital_expenditures": -2926500000.0,
+      "free_cash_flow": 303700000.0
+    }
+  },
+  "APD_income_2024-02-15": {
+    "metrics": {
+      "total_revenue": 12600000000.0,
+      "net_income": 2300200000.0,
+      "gross_profit": 3767000000.0,
+      "operating_income": 2739200000.0
+    }
+  },
+  "APD_balance_2024-02-15": {
+    "metrics": {
+      "total_assets": 32002500000.0,
+      "total_liabilities": 16342200000.0,
+      "stockholders_equity": 14312900000.0,
+      "cash": 1617000000.0
+    }
+  },
+  "APD_cashflow_2024-02-15": {
+    "metrics": {
+      "operating_cf": 3206300000.0,
+      "capital_expenditures": -4626400000.0,
+      "free_cash_flow": -1420100000.0
+    }
+  },
+  "ECL_income_2022-02-15": {
+    "metrics": {
+      "total_revenue": null,
+      "net_income": null,
+      "gross_profit": null,
+      "operating_income": null
+    }
+  },
+  "ECL_balance_2022-02-15": {
+    "metrics": {
+      "total_assets": null,
+      "total_liabilities": null,
+      "stockholders_equity": null,
+      "cash": null
+    }
+  },
+  "ECL_cashflow_2022-02-15": {
+    "metrics": {
+      "operating_cf": null,
+      "capital_expenditures": null,
+      "free_cash_flow": null
+    }
+  },
+  "ECL_income_2022-08-15": {
+    "metrics": {
+      "total_revenue": null,
+      "net_income": null,
+      "gross_profit": null,
+      "operating_income": null
+    }
+  },
+  "ECL_balance_2022-08-15": {
+    "metrics": {
+      "total_assets": null,
+      "total_liabilities": null,
+      "stockholders_equity": null,
+      "cash": null
+    }
+  },
+  "ECL_cashflow_2022-08-15": {
+    "metrics": {
+      "operating_cf": null,
+      "capital_expenditures": null,
+      "free_cash_flow": null
+    }
+  },
+  "ECL_income_2023-02-15": {
+    "metrics": {
+      "total_revenue": 14187800000.0,
+      "net_income": 1091700000.0,
+      "gross_profit": 5356800000.0,
+      "operating_income": 1703000000.0
+    }
+  },
+  "ECL_balance_2023-02-15": {
+    "metrics": {
+      "total_assets": 21464300000.0,
+      "total_liabilities": 14205700000.0,
+      "stockholders_equity": 7236100000.0,
+      "cash": 598600000.0
+    }
+  },
+  "ECL_cashflow_2023-02-15": {
+    "metrics": {
+      "operating_cf": 1788400000.0,
+      "capital_expenditures": -712800000.0,
+      "free_cash_flow": 1075600000.0
+    }
+  },
+  "ECL_income_2024-02-15": {
+    "metrics": {
+      "total_revenue": 15320200000.0,
+      "net_income": 1372300000.0,
+      "gross_profit": 6165300000.0,
+      "operating_income": 2103700000.0
+    }
+  },
+  "ECL_balance_2024-02-15": {
+    "metrics": {
+      "total_assets": 21846600000.0,
+      "total_liabilities": 13774400000.0,
+      "stockholders_equity": 8044700000.0,
+      "cash": 919500000.0
+    }
+  },
+  "ECL_cashflow_2024-02-15": {
+    "metrics": {
+      "operating_cf": 2411800000.0,
+      "capital_expenditures": -774800000.0,
+      "free_cash_flow": 1637000000.0
+    }
+  },
+  "DD_income_2022-02-15": {
+    "metrics": {
+      "total_revenue": null,
+      "net_income": null,
+      "gross_profit": null,
+      "operating_income": null
+    }
+  },
+  "DD_balance_2022-02-15": {
+    "metrics": {
+      "total_assets": null,
+      "total_liabilities": null,
+      "stockholders_equity": null,
+      "cash": null
+    }
+  },
+  "DD_cashflow_2022-02-15": {
+    "metrics": {
+      "operating_cf": null,
+      "capital_expenditures": null,
+      "free_cash_flow": null
+    }
+  },
+  "DD_income_2022-08-15": {
+    "metrics": {
+      "total_revenue": null,
+      "net_income": null,
+      "gross_profit": null,
+      "operating_income": null
+    }
+  },
+  "DD_balance_2022-08-15": {
+    "metrics": {
+      "total_assets": null,
+      "total_liabilities": null,
+      "stockholders_equity": null,
+      "cash": null
+    }
+  },
+  "DD_cashflow_2022-08-15": {
+    "metrics": {
+      "operating_cf": null,
+      "capital_expenditures": null,
+      "free_cash_flow": null
+    }
+  },
+  "DD_income_2023-02-15": {
+    "metrics": {
+      "total_revenue": 13017000000.0,
+      "net_income": 5868000000.0,
+      "gross_profit": 4615000000.0,
+      "operating_income": 2022000000.0
+    }
+  },
+  "DD_balance_2023-02-15": {
+    "metrics": {
+      "total_assets": 41355000000.0,
+      "total_liabilities": 14338000000.0,
+      "stockholders_equity": 26569000000.0,
+      "cash": 3662000000.0
+    }
+  },
+  "DD_cashflow_2023-02-15": {
+    "metrics": {
+      "operating_cf": 1249000000.0,
+      "capital_expenditures": -662000000.0,
+      "free_cash_flow": 587000000.0
+    }
+  },
+  "DD_income_2024-02-15": {
+    "metrics": {
+      "total_revenue": 6614000000.0,
+      "net_income": 423000000.0,
+      "gross_profit": 2172000000.0,
+      "operating_income": 822000000.0
+    }
+  },
+  "DD_balance_2024-02-15": {
+    "metrics": {
+      "total_assets": 38552000000.0,
+      "total_liabilities": 13827000000.0,
+      "stockholders_equity": 24279000000.0,
+      "cash": 2392000000.0
+    }
+  },
+  "DD_cashflow_2024-02-15": {
+    "metrics": {
+      "operating_cf": 845000000.0,
+      "capital_expenditures": -2063000000.0,
+      "free_cash_flow": -1218000000.0
+    }
+  },
+  "NEM_income_2022-02-15": {
+    "metrics": {
+      "total_revenue": null,
+      "net_income": null,
+      "gross_profit": null,
+      "operating_income": null
+    }
+  },
+  "NEM_balance_2022-02-15": {
+    "metrics": {
+      "total_assets": null,
+      "total_liabilities": null,
+      "stockholders_equity": null,
+      "cash": null
+    }
+  },
+  "NEM_cashflow_2022-02-15": {
+    "metrics": {
+      "operating_cf": null,
+      "capital_expenditures": null,
+      "free_cash_flow": null
+    }
+  },
+  "NEM_income_2022-08-15": {
+    "metrics": {
+      "total_revenue": null,
+      "net_income": null,
+      "gross_profit": null,
+      "operating_income": null
+    }
+  },
+  "NEM_balance_2022-08-15": {
+    "metrics": {
+      "total_assets": null,
+      "total_liabilities": null,
+      "stockholders_equity": null,
+      "cash": null
+    }
+  },
+  "NEM_cashflow_2022-08-15": {
+    "metrics": {
+      "operating_cf": null,
+      "capital_expenditures": null,
+      "free_cash_flow": null
+    }
+  },
+  "NEM_income_2023-02-15": {
+    "metrics": {
+      "total_revenue": 11915000000.0,
+      "net_income": -429000000.0,
+      "gross_profit": 3262000000.0,
+      "operating_income": 1605000000.0
+    }
+  },
+  "NEM_balance_2023-02-15": {
+    "metrics": {
+      "total_assets": 38482000000.0,
+      "total_liabilities": 18949000000.0,
+      "stockholders_equity": 19354000000.0,
+      "cash": 2877000000.0
+    }
+  },
+  "NEM_cashflow_2023-02-15": {
+    "metrics": {
+      "operating_cf": 3220000000.0,
+      "capital_expenditures": -2131000000.0,
+      "free_cash_flow": 1089000000.0
+    }
+  },
+  "NEM_income_2024-02-15": {
+    "metrics": {
+      "total_revenue": 11812000000.0,
+      "net_income": -2494000000.0,
+      "gross_profit": 3005000000.0,
+      "operating_income": 708000000.0
+    }
+  },
+  "NEM_balance_2024-02-15": {
+    "metrics": {
+      "total_assets": 55506000000.0,
+      "total_liabilities": 26301000000.0,
+      "stockholders_equity": 29027000000.0,
+      "cash": 3002000000.0
+    }
+  },
+  "NEM_cashflow_2024-02-15": {
+    "metrics": {
+      "operating_cf": 2763000000.0,
+      "capital_expenditures": -2666000000.0,
+      "free_cash_flow": 97000000.0
+    }
+  },
+  "AMT_income_2022-02-15": {
+    "metrics": {
+      "total_revenue": null,
+      "net_income": null,
+      "gross_profit": null,
+      "operating_income": null
+    }
+  },
+  "AMT_balance_2022-02-15": {
+    "metrics": {
+      "total_assets": null,
+      "total_liabilities": null,
+      "stockholders_equity": null,
+      "cash": null
+    }
+  },
+  "AMT_cashflow_2022-02-15": {
+    "metrics": {
+      "operating_cf": null,
+      "capital_expenditures": null,
+      "free_cash_flow": null
+    }
+  },
+  "AMT_income_2022-08-15": {
+    "metrics": {
+      "total_revenue": null,
+      "net_income": null,
+      "gross_profit": null,
+      "operating_income": null
+    }
+  },
+  "AMT_balance_2022-08-15": {
+    "metrics": {
+      "total_assets": null,
+      "total_liabilities": null,
+      "stockholders_equity": null,
+      "cash": null
+    }
+  },
+  "AMT_cashflow_2022-08-15": {
+    "metrics": {
+      "operating_cf": null,
+      "capital_expenditures": null,
+      "free_cash_flow": null
+    }
+  },
+  "AMT_income_2023-02-15": {
+    "metrics": {
+      "total_revenue": 9645400000.0,
+      "net_income": 1765800000.0,
+      "gross_profit": 7076200000.0,
+      "operating_income": 2922700000.0
+    }
+  },
+  "AMT_balance_2023-02-15": {
+    "metrics": {
+      "total_assets": 67194500000.0,
+      "total_liabilities": 54786000000.0,
+      "stockholders_equity": 5572400000.0,
+      "cash": 2028400000.0
+    }
+  },
+  "AMT_cashflow_2023-02-15": {
+    "metrics": {
+      "operating_cf": 3696200000.0,
+      "capital_expenditures": -1873600000.0,
+      "free_cash_flow": 1822600000.0
+    }
+  },
+  "AMT_income_2024-02-15": {
+    "metrics": {
+      "total_revenue": 10012200000.0,
+      "net_income": 1483300000.0,
+      "gross_profit": 7450700000.0,
+      "operating_income": 3536800000.0
+    }
+  },
+  "AMT_balance_2024-02-15": {
+    "metrics": {
+      "total_assets": 66027600000.0,
+      "total_liabilities": 55162200000.0,
+      "stockholders_equity": 4198200000.0,
+      "cash": 1753700000.0
+    }
+  },
+  "AMT_cashflow_2024-02-15": {
+    "metrics": {
+      "operating_cf": 4722400000.0,
+      "capital_expenditures": -1798100000.0,
+      "free_cash_flow": 2924300000.0
+    }
+  },
+  "PLD_income_2022-02-15": {
+    "metrics": {
+      "total_revenue": null,
+      "net_income": null,
+      "gross_profit": null,
+      "operating_income": null
+    }
+  },
+  "PLD_balance_2022-02-15": {
+    "metrics": {}
+  },
+  "PLD_cashflow_2022-02-15": {
+    "metrics": {
+      "operating_cf": null,
+      "capital_expenditures": null,
+      "free_cash_flow": null
+    }
+  },
+  "PLD_income_2022-08-15": {
+    "metrics": {
+      "total_revenue": null,
+      "net_income": null,
+      "gross_profit": null,
+      "operating_income": null
+    }
+  },
+  "PLD_balance_2022-08-15": {
+    "metrics": {}
+  },
+  "PLD_cashflow_2022-08-15": {
+    "metrics": {
+      "operating_cf": null,
+      "capital_expenditures": null,
+      "free_cash_flow": null
+    }
+  },
+  "PLD_income_2023-02-15": {
+    "metrics": {
+      "total_revenue": 5973692000.0,
+      "net_income": 3364856000.0,
+      "gross_profit": 4464598000.0,
+      "operating_income": 2280402000.0
+    }
+  },
+  "PLD_balance_2023-02-15": {
+    "metrics": {
+      "total_assets": 87897448000.0,
+      "total_liabilities": 30034355000.0,
+      "stockholders_equity": 53237282000.0,
+      "cash": 278483000.0
+    }
+  },
+  "PLD_cashflow_2023-02-15": {
+    "metrics": {
+      "operating_cf": 4126430000.0,
+      "capital_expenditures": null,
+      "free_cash_flow": 4126430000.0
+    }
+  },
+  "PLD_income_2024-02-15": {
+    "metrics": {
+      "total_revenue": 8023469000.0,
+      "net_income": 3059214000.0,
+      "gross_profit": 6013134000.0,
+      "operating_income": 3084483000.0
+    }
+  },
+  "PLD_balance_2024-02-15": {
+    "metrics": {
+      "total_assets": 93020840000.0,
+      "total_liabilities": 35197120000.0,
+      "stockholders_equity": 53181724000.0,
+      "cash": 530388000.0
+    }
+  },
+  "PLD_cashflow_2024-02-15": {
+    "metrics": {
+      "operating_cf": 5373058000.0,
+      "capital_expenditures": null,
+      "free_cash_flow": 5373058000.0
+    }
+  },
+  "CCI_income_2022-02-15": {
+    "metrics": {
+      "total_revenue": null,
+      "net_income": null,
+      "gross_profit": null,
+      "operating_income": null
+    }
+  },
+  "CCI_balance_2022-02-15": {
+    "metrics": {}
+  },
+  "CCI_cashflow_2022-02-15": {
+    "metrics": {
+      "operating_cf": null,
+      "capital_expenditures": null,
+      "free_cash_flow": null
+    }
+  },
+  "CCI_income_2022-08-15": {
+    "metrics": {
+      "total_revenue": null,
+      "net_income": null,
+      "gross_profit": null,
+      "operating_income": null
+    }
+  },
+  "CCI_balance_2022-08-15": {
+    "metrics": {}
+  },
+  "CCI_cashflow_2022-08-15": {
+    "metrics": {
+      "operating_cf": null,
+      "capital_expenditures": null,
+      "free_cash_flow": null
+    }
+  },
+  "CCI_income_2023-02-15": {
+    "metrics": {
+      "total_revenue": 6986000000.0,
+      "net_income": 1675000000.0,
+      "gross_profit": 4918000000.0,
+      "operating_income": 2433000000.0
+    }
+  },
+  "CCI_balance_2023-02-15": {
+    "metrics": {
+      "total_assets": 38921000000.0,
+      "total_liabilities": 31472000000.0,
+      "stockholders_equity": 7449000000.0,
+      "cash": 156000000.0
+    }
+  },
+  "CCI_cashflow_2023-02-15": {
+    "metrics": {
+      "operating_cf": 2878000000.0,
+      "capital_expenditures": -1310000000.0,
+      "free_cash_flow": 1568000000.0
+    }
+  },
+  "CCI_income_2024-02-15": {
+    "metrics": {
+      "total_revenue": 4734000000.0,
+      "net_income": 1502000000.0,
+      "gross_profit": 3469000000.0,
+      "operating_income": 2180000000.0
+    }
+  },
+  "CCI_balance_2024-02-15": {
+    "metrics": {
+      "total_assets": 38527000000.0,
+      "total_liabilities": 32146000000.0,
+      "stockholders_equity": 6381000000.0,
+      "cash": 105000000.0
+    }
+  },
+  "CCI_cashflow_2024-02-15": {
+    "metrics": {
+      "operating_cf": 3126000000.0,
+      "capital_expenditures": -243000000.0,
+      "free_cash_flow": 2883000000.0
+    }
+  },
+  "EQIX_income_2022-02-15": {
+    "metrics": {
+      "total_revenue": null,
+      "net_income": null,
+      "gross_profit": null,
+      "operating_income": null
+    }
+  },
+  "EQIX_balance_2022-02-15": {
+    "metrics": {
+      "total_assets": null,
+      "total_liabilities": null,
+      "stockholders_equity": null,
+      "cash": null
+    }
+  },
+  "EQIX_cashflow_2022-02-15": {
+    "metrics": {
+      "operating_cf": null,
+      "capital_expenditures": null,
+      "free_cash_flow": null
+    }
+  },
+  "EQIX_income_2022-08-15": {
+    "metrics": {
+      "total_revenue": null,
+      "net_income": null,
+      "gross_profit": null,
+      "operating_income": null
+    }
+  },
+  "EQIX_balance_2022-08-15": {
+    "metrics": {
+      "total_assets": null,
+      "total_liabilities": null,
+      "stockholders_equity": null,
+      "cash": null
+    }
+  },
+  "EQIX_cashflow_2022-08-15": {
+    "metrics": {
+      "operating_cf": null,
+      "capital_expenditures": null,
+      "free_cash_flow": null
+    }
+  },
+  "EQIX_income_2023-02-15": {
+    "metrics": {
+      "total_revenue": 7263000000.0,
+      "net_income": 705000000.0,
+      "gross_profit": 3512000000.0,
+      "operating_income": 1226000000.0
+    }
+  },
+  "EQIX_balance_2023-02-15": {
+    "metrics": {
+      "total_assets": 30310742000.0,
+      "total_liabilities": 18804910000.0,
+      "stockholders_equity": 11505966000.0,
+      "cash": 1906421000.0
+    }
+  },
+  "EQIX_cashflow_2023-02-15": {
+    "metrics": {
+      "operating_cf": 2963000000.0,
+      "capital_expenditures": -2278000000.0,
+      "free_cash_flow": 685000000.0
+    }
+  },
+  "EQIX_income_2024-02-15": {
+    "metrics": {
+      "total_revenue": 8188000000.0,
+      "net_income": 969000000.0,
+      "gross_profit": 3960000000.0,
+      "operating_income": 1451000000.0
+    }
+  },
+  "EQIX_balance_2024-02-15": {
+    "metrics": {
+      "total_assets": 32651000000.0,
+      "total_liabilities": 20137000000.0,
+      "stockholders_equity": 12489000000.0,
+      "cash": 2096000000.0
+    }
+  },
+  "EQIX_cashflow_2024-02-15": {
+    "metrics": {
+      "operating_cf": 3217000000.0,
+      "capital_expenditures": -2781000000.0,
+      "free_cash_flow": 436000000.0
+    }
+  },
+  "SPG_income_2022-02-15": {
+    "metrics": {
+      "total_revenue": null,
+      "net_income": null,
+      "gross_profit": null,
+      "operating_income": null
+    }
+  },
+  "SPG_balance_2022-02-15": {
+    "metrics": {
+      "total_assets": null,
+      "total_liabilities": null,
+      "stockholders_equity": null,
+      "cash": null
+    }
+  },
+  "SPG_cashflow_2022-02-15": {
+    "metrics": {
+      "operating_cf": null,
+      "capital_expenditures": null,
+      "free_cash_flow": null
+    }
+  },
+  "SPG_income_2022-08-15": {
+    "metrics": {
+      "total_revenue": null,
+      "net_income": null,
+      "gross_profit": null,
+      "operating_income": null
+    }
+  },
+  "SPG_balance_2022-08-15": {
+    "metrics": {
+      "total_assets": null,
+      "total_liabilities": null,
+      "stockholders_equity": null,
+      "cash": null
+    }
+  },
+  "SPG_cashflow_2022-08-15": {
+    "metrics": {
+      "operating_cf": null,
+      "capital_expenditures": null,
+      "free_cash_flow": null
+    }
+  },
+  "SPG_income_2023-02-15": {
+    "metrics": {
+      "total_revenue": 5291447000.0,
+      "net_income": 2139535000.0,
+      "gross_profit": 4290493000.0,
+      "operating_income": 2583553000.0
+    }
+  },
+  "SPG_balance_2023-02-15": {
+    "metrics": {
+      "total_assets": 33011274000.0,
+      "total_liabilities": 29187383000.0,
+      "stockholders_equity": 3138524000.0,
+      "cash": 621628000.0
+    }
+  },
+  "SPG_cashflow_2023-02-15": {
+    "metrics": {
+      "operating_cf": 3766604000.0,
+      "capital_expenditures": -650024000.0,
+      "free_cash_flow": 3116580000.0
+    }
+  },
+  "SPG_income_2024-02-15": {
+    "metrics": {
+      "total_revenue": 5658836000.0,
+      "net_income": 2283126000.0,
+      "gross_profit": 4630450000.0,
+      "operating_income": 2807022000.0
+    }
+  },
+  "SPG_balance_2024-02-15": {
+    "metrics": {
+      "total_assets": 34283495000.0,
+      "total_liabilities": 30595897000.0,
+      "stockholders_equity": 3022834000.0,
+      "cash": 1168991000.0
+    }
+  },
+  "SPG_cashflow_2024-02-15": {
+    "metrics": {
+      "operating_cf": 3930793000.0,
+      "capital_expenditures": -793283000.0,
+      "free_cash_flow": 3137510000.0
+    }
+  }
+}
