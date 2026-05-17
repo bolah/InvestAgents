@@ -47,6 +47,27 @@ ANALYST_NODE_SPECS: Dict[str, AnalystNodeSpec] = {
         tool_node="tools_fundamentals",
         report_key="fundamentals_report",
     ),
+    "valuation": AnalystNodeSpec(
+        key="valuation",
+        agent_node="Valuation Analyst",
+        clear_node="Msg Clear Valuation",
+        tool_node="tools_valuation",
+        report_key="valuation_report",
+    ),
+    "moat": AnalystNodeSpec(
+        key="moat",
+        agent_node="Moat Analyst",
+        clear_node="Msg Clear Moat",
+        tool_node="tools_moat",
+        report_key="moat_report",
+    ),
+    "macro": AnalystNodeSpec(
+        key="macro",
+        agent_node="Macro Analyst",
+        clear_node="Msg Clear Macro",
+        tool_node="tools_macro",
+        report_key="macro_report",
+    ),
 }
 
 

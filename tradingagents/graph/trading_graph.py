@@ -36,8 +36,13 @@ from tradingagents.agents.utils.agent_utils import (
     get_income_statement,
     get_news,
     get_insider_transactions,
-    get_global_news
+    get_global_news,
 )
+from tradingagents.agents.utils.core_stock_tools import (
+    get_valuation_multiples,
+    get_quality_metrics,
+)
+from tradingagents.agents.utils.web_tools import web_search_tool
 
 from .checkpointer import checkpoint_step, clear_checkpoint, get_checkpointer, thread_id
 from .conditional_logic import ConditionalLogic
@@ -52,7 +57,7 @@ class TradingAgentsGraph:
 
     def __init__(
         self,
-        selected_analysts=["market", "social", "news", "fundamentals"],
+        selected_analysts=["market", "social", "news", "fundamentals", "valuation", "moat", "macro"],
         debug=False,
         config: Dict[str, Any] = None,
         callbacks: Optional[List] = None,
@@ -187,6 +192,27 @@ class TradingAgentsGraph:
                     get_balance_sheet,
                     get_cashflow,
                     get_income_statement,
+                ]
+            ),
+            "valuation": ToolNode(
+                [
+                    get_valuation_multiples,
+                    get_income_statement,
+                    get_balance_sheet,
+                    get_cashflow,
+                ]
+            ),
+            "moat": ToolNode(
+                [
+                    get_quality_metrics,
+                    get_income_statement,
+                    get_balance_sheet,
+                    get_cashflow,
+                ]
+            ),
+            "macro": ToolNode(
+                [
+                    web_search_tool,
                 ]
             ),
         }

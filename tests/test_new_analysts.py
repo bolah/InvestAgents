@@ -87,3 +87,57 @@ def test_macro_analyst_node_returns_macro_report():
     result = node(state)
     assert "macro_report" in result
     assert result["macro_report"] == "AI infrastructure tailwind: strong secular growth."
+
+
+@pytest.mark.unit
+def test_new_analysts_exported_from_package():
+    from tradingagents.agents import (
+        create_valuation_analyst,
+        create_moat_analyst,
+        create_macro_analyst,
+    )
+    assert callable(create_valuation_analyst)
+    assert callable(create_moat_analyst)
+    assert callable(create_macro_analyst)
+
+
+@pytest.mark.unit
+def test_conditional_logic_has_new_methods():
+    from tradingagents.graph.conditional_logic import ConditionalLogic
+    cl = ConditionalLogic()
+    assert hasattr(cl, "should_continue_valuation")
+    assert hasattr(cl, "should_continue_moat")
+    assert hasattr(cl, "should_continue_macro")
+
+
+@pytest.mark.unit
+def test_conditional_logic_valuation_routes_to_tools_when_tool_calls():
+    from tradingagents.graph.conditional_logic import ConditionalLogic
+    from unittest.mock import MagicMock
+    cl = ConditionalLogic()
+    mock_msg = MagicMock()
+    mock_msg.tool_calls = [MagicMock()]
+    state = {"messages": [mock_msg]}
+    assert cl.should_continue_valuation(state) == "tools_valuation"
+
+
+@pytest.mark.unit
+def test_conditional_logic_valuation_routes_to_clear_when_no_tool_calls():
+    from tradingagents.graph.conditional_logic import ConditionalLogic
+    from unittest.mock import MagicMock
+    cl = ConditionalLogic()
+    mock_msg = MagicMock()
+    mock_msg.tool_calls = []
+    state = {"messages": [mock_msg]}
+    assert cl.should_continue_valuation(state) == "Msg Clear Valuation"
+
+
+@pytest.mark.unit
+def test_new_analyst_types_in_models():
+    from cli.models import AnalystType
+    assert hasattr(AnalystType, "VALUATION")
+    assert hasattr(AnalystType, "MOAT")
+    assert hasattr(AnalystType, "MACRO")
+    assert AnalystType.VALUATION.value == "valuation"
+    assert AnalystType.MOAT.value == "moat"
+    assert AnalystType.MACRO.value == "macro"
