@@ -34,3 +34,24 @@ def test_propagator_initial_state_has_new_fields():
     assert state["valuation_report"] == ""
     assert state["moat_report"] == ""
     assert state["macro_report"] == ""
+
+
+@pytest.mark.unit
+def test_resolve_pending_entries_skipped_when_tracking_disabled(monkeypatch):
+    """When outcome_tracking_enabled=False, _resolve_pending_entries must return early."""
+    from tradingagents.graph.trading_graph import TradingAgentsGraph
+    from unittest.mock import MagicMock, patch
+
+    config = {
+        **__import__("tradingagents.default_config", fromlist=["DEFAULT_CONFIG"]).DEFAULT_CONFIG,
+        "llm_provider": "openai",
+        "outcome_tracking_enabled": False,
+    }
+
+    with patch("tradingagents.graph.trading_graph.create_llm_client") as mock_llm:
+        mock_llm.return_value.get_llm.return_value = MagicMock()
+        graph = TradingAgentsGraph(config=config)
+        # If guard is in place, _resolve_pending_entries must not call memory_log.get_pending_entries
+        graph.memory_log = MagicMock()
+        graph._resolve_pending_entries("AAPL")
+        graph.memory_log.get_pending_entries.assert_not_called()
