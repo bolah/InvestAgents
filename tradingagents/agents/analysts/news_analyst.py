@@ -16,6 +16,8 @@ def create_news_analyst(llm):
         instrument_context = build_instrument_context(
             state["company_of_interest"], asset_type
         )
+        config = get_config()
+        lookback_days = config.get("news_lookback_days", 180)
 
         tools = [
             get_news,
@@ -23,8 +25,18 @@ def create_news_analyst(llm):
         ]
 
         system_message = (
-            f"You are a news researcher tasked with analyzing recent news and trends over the past week. Please write a comprehensive report of the current state of the world that is relevant for trading and macroeconomics. Use the available tools: get_news(query, start_date, end_date) for {asset_label}-specific or targeted news searches, and get_global_news(curr_date, look_back_days, limit) for broader macroeconomic news. Provide specific, actionable insights with supporting evidence to help traders make informed decisions."
-            + """ Make sure to append a Markdown table at the end of the report to organize key points in the report, organized and easy to read."""
+            f"You are a structural news researcher evaluating events and trends relevant to a long-term (3-5 year) investment in this {asset_label}. "
+            f"Use get_news for {asset_label}-specific news searches and get_global_news for macroeconomic context. "
+            f"Use a lookback window of approximately {lookback_days} days. "
+            "Focus exclusively on structural, durable signals: "
+            "(1) Regulatory shifts or legal developments that could affect the business model; "
+            "(2) Competitive disruptions — new entrants, M&A activity, product obsolescence risks; "
+            "(3) Macro tailwinds or headwinds — interest rate sensitivity, commodity exposure, geopolitical exposure; "
+            "(4) Management changes — CEO/CFO turnover, board composition, insider buying or selling patterns; "
+            "(5) Capital structure events — large acquisitions, spin-offs, major debt issuances. "
+            "Do NOT report on: day-to-day price moves, short-term earnings beats/misses, analyst upgrades/downgrades unless they reflect a thesis change. "
+            "Frame every finding in terms of: does this change the 3-5 year outlook for this business? "
+            "Provide a comprehensive narrative report with a Markdown summary table at the end."
             + get_language_instruction()
         )
 
@@ -54,7 +66,6 @@ def create_news_analyst(llm):
         result = chain.invoke(state["messages"])
 
         report = ""
-
         if len(result.tool_calls) == 0:
             report = result.content
 

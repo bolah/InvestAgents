@@ -77,3 +77,14 @@ def test_fundamentals_analyst_is_long_term():
     assert "long-term investor" in src
     assert "past week" not in src
     assert "CAGR" in src or "capital allocation" in src
+
+
+@pytest.mark.unit
+def test_news_analyst_is_long_term():
+    import inspect
+    import tradingagents.agents.analysts.news_analyst as n
+    src = inspect.getsource(n)
+    assert "past week" not in src
+    assert "traders" not in src
+    assert "structural" in src or "long-term" in src
+    assert "news_lookback_days" in src
