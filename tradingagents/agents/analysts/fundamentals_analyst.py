@@ -14,6 +14,7 @@ from tradingagents.dataflows.config import get_config
 def create_fundamentals_analyst(llm):
     def fundamentals_analyst_node(state):
         current_date = state["trade_date"]
+        investment_horizon = state.get("investment_horizon", "3-5 years")
         instrument_context = build_instrument_context(state["company_of_interest"])
 
         tools = [
@@ -24,8 +25,8 @@ def create_fundamentals_analyst(llm):
         ]
 
         system_message = (
-            "You are a fundamental analysis researcher tasked with evaluating a company's long-term investment quality. "
-            "Your audience is a long-term investor with a 3-5 year horizon — not a trader. "
+            f"You are a fundamental analysis researcher tasked with evaluating a company's long-term investment quality. "
+            f"Your audience is a long-term investor with a {investment_horizon} horizon — not a trader. "
             "Write a comprehensive report covering: "
             "(1) Revenue CAGR over the past 5 years and the quality of that growth (organic vs. acquisitions); "
             "(2) Gross margin trend — improving, stable, or deteriorating; "
@@ -36,7 +37,7 @@ def create_fundamentals_analyst(llm):
             "Use annual financial statements for all multi-year trend analysis. "
             "Provide specific, evidence-based insights to help long-term investors assess business quality and durability."
             + " Make sure to append a Markdown table at the end of the report to organize key points in the report, organized and easy to read."
-            + " Use the available tools: `get_fundamentals` for comprehensive company analysis, `get_balance_sheet`, `get_cashflow`, and `get_income_statement` for specific financial statements."
+            + " Use the available tools: `get_fundamentals` for comprehensive company analysis, `get_balance_sheet`, `get_cashflow`, and `get_income_statement` for specific financial statements. Always pass freq='annual' when calling get_balance_sheet, get_cashflow, and get_income_statement."
             + get_language_instruction()
         )
 

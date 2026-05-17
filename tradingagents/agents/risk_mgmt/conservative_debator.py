@@ -14,6 +14,9 @@ def create_conservative_debator(llm):
         sentiment_report = state["sentiment_report"]
         news_report = state["news_report"]
         fundamentals_report = state["fundamentals_report"]
+        valuation_report = state.get("valuation_report", "")
+        moat_report = state.get("moat_report", "")
+        macro_report = state.get("macro_report", "")
         investment_horizon = state.get("investment_horizon", "3-5 years")
 
         trader_decision = state["trader_investment_plan"]
@@ -28,6 +31,9 @@ Market Research Report: {market_research_report}
 Social Media Sentiment Report: {sentiment_report}
 Latest World Affairs Report: {news_report}
 Company Fundamentals Report: {fundamentals_report}
+Valuation Report: {valuation_report}
+Moat & Quality Report: {moat_report}
+Macro & Secular Report: {macro_report}
 Investment horizon: {investment_horizon}. At this timeframe, short-term volatility is noise. Focus your conservative case on structural risks: competitive moat erosion, regulatory headwinds, valuation vs. long-term growth potential.
 Here is the current conversation history: {history} Here is the last response from the aggressive analyst: {current_aggressive_response} Here is the last response from the neutral analyst: {current_neutral_response}. If there are no responses from the other viewpoints yet, present your own argument based on the available data.
 

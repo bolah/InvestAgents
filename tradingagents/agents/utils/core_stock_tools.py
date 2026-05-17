@@ -36,8 +36,8 @@ def get_valuation_multiples(
     try:
         t = yf.Ticker(ticker)
         info = t.info or {}
-        income = t.income_stmt  # columns = annual periods
-        cashflow = t.cashflow
+        income = _normalize_df(t.income_stmt)
+        cashflow = _normalize_df(t.cashflow)
 
         trailing_pe = info.get("trailingPE")
         market_cap = info.get("marketCap")
@@ -65,9 +65,9 @@ def get_valuation_multiples(
         lines = [
             f"## Valuation Multiples for {ticker} (as of {curr_date})",
             "",
-            f"**Trailing P/E**: {trailing_pe if trailing_pe else 'N/A'}",
-            f"**P/FCF (LTM)**: {p_fcf if p_fcf else 'N/A'}",
-            f"**EV/EBITDA**: {ev_ebitda if ev_ebitda else 'N/A'}",
+            f"**Trailing P/E**: {trailing_pe if trailing_pe is not None else 'N/A'}",
+            f"**P/FCF (LTM)**: {p_fcf if p_fcf is not None else 'N/A'}",
+            f"**EV/EBITDA**: {ev_ebitda if ev_ebitda is not None else 'N/A'}",
             "",
             f"**Market Cap**: ${market_cap / 1e9:.1f}B" if market_cap else "**Market Cap**: N/A",
             f"**Enterprise Value**: ${ev / 1e9:.1f}B" if ev else "**Enterprise Value**: N/A",

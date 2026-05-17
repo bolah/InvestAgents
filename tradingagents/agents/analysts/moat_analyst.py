@@ -14,6 +14,7 @@ from tradingagents.agents.utils.core_stock_tools import get_quality_metrics
 def create_moat_analyst(llm):
     def moat_analyst_node(state):
         current_date = state["trade_date"]
+        investment_horizon = state.get("investment_horizon", "3-5 years")
         asset_type = state.get("asset_type", "stock")
         instrument_context = build_instrument_context(state["company_of_interest"], asset_type)
 
@@ -25,15 +26,15 @@ def create_moat_analyst(llm):
         ]
 
         system_message = (
-            "You are a Moat & Quality Analyst evaluating the long-term competitive durability of a business. "
+            f"You are a Moat & Quality Analyst evaluating the long-term competitive durability of a business over a {investment_horizon} horizon. "
             "Use get_quality_metrics for gross margin trends, FCF conversion, and capex intensity. "
-            "Use get_income_statement, get_balance_sheet, and get_cashflow for annual financial data. "
+            "Use get_income_statement, get_balance_sheet, and get_cashflow for annual financial data. Always pass freq='annual' when calling these tools. "
             "Answer these questions: "
             "(1) Does this business earn above its cost of capital consistently? (Look at returns on capital, not just net income.) "
             "(2) Are gross margins improving, stable, or deteriorating — and why? "
             "(3) What structural advantage sustains this business? Identify the moat type: "
             "switching costs, network effects, cost advantage, brand/intangibles, efficient scale, or none. "
-            "(4) What are the primary threats to this moat over the next 3-5 years? "
+            f"(4) What are the primary threats to this moat over the next {investment_horizon}? "
             "(Technological disruption, competitive intensity, regulatory risk, margin pressure.) "
             "Conclude with a moat rating: Wide / Narrow / None — and a confidence level. "
             "Append a Markdown table summarizing quality metrics."

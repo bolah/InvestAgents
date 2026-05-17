@@ -884,18 +884,24 @@ def update_research_team_status(status):
 
 
 # Ordered list of analysts for status transitions
-ANALYST_ORDER = ["market", "social", "news", "fundamentals"]
+ANALYST_ORDER = ["market", "social", "news", "fundamentals", "valuation", "moat", "macro"]
 ANALYST_AGENT_NAMES = {
     "market": "Market Analyst",
     "social": "Sentiment Analyst",
     "news": "News Analyst",
     "fundamentals": "Fundamentals Analyst",
+    "valuation": "Valuation Analyst",
+    "moat": "Moat & Quality Analyst",
+    "macro": "Macro & Secular Analyst",
 }
 ANALYST_REPORT_MAP = {
     "market": "market_report",
     "social": "sentiment_report",
     "news": "news_report",
     "fundamentals": "fundamentals_report",
+    "valuation": "valuation_report",
+    "moat": "moat_report",
+    "macro": "macro_report",
 }
 
 

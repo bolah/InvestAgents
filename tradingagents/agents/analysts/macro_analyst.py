@@ -11,6 +11,7 @@ from tradingagents.agents.utils.web_tools import web_search_tool
 def create_macro_analyst(llm):
     def macro_analyst_node(state):
         current_date = state["trade_date"]
+        investment_horizon = state.get("investment_horizon", "3-5 years")
         asset_type = state.get("asset_type", "stock")
         instrument_context = build_instrument_context(
             state["company_of_interest"], asset_type
@@ -19,7 +20,7 @@ def create_macro_analyst(llm):
         tools = [web_search_tool]
 
         system_message = (
-            "You are a Macro & Secular Analyst identifying 3-5 year industry tailwinds and headwinds "
+            f"You are a Macro & Secular Analyst identifying {investment_horizon} industry tailwinds and headwinds "
             "for the company's sector. "
             "Use web_search_tool to research qualitative industry context. "
             "Focus on: "

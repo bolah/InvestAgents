@@ -16,6 +16,7 @@ from tradingagents.agents.utils.core_stock_tools import (
 def create_valuation_analyst(llm):
     def valuation_analyst_node(state):
         current_date = state["trade_date"]
+        investment_horizon = state.get("investment_horizon", "3-5 years")
         asset_type = state.get("asset_type", "stock")
         instrument_context = build_instrument_context(state["company_of_interest"], asset_type)
 
@@ -27,10 +28,10 @@ def create_valuation_analyst(llm):
         ]
 
         system_message = (
-            "You are a Valuation Analyst specializing in long-term investment analysis. "
+            f"You are a Valuation Analyst specializing in long-term investment analysis with a {investment_horizon} horizon. "
             "Your job is to assess whether a stock is cheap, fair, or expensive relative to its own historical multiples and business quality. "
             "Use get_valuation_multiples for current P/E, P/FCF, EV/EBITDA figures. "
-            "Use get_income_statement, get_balance_sheet, and get_cashflow for annual financial data to establish 5-year context. "
+            "Use get_income_statement, get_balance_sheet, and get_cashflow for annual financial data to establish 5-year context. Always pass freq='annual' when calling these tools. "
             "Answer: Is the current multiple justified by the business quality and growth trajectory? "
             "What is the primary valuation driver (earnings growth expectations, margin expansion, multiple re-rating)? "
             "Is the stock pricing in an optimistic or pessimistic scenario relative to its history? "
