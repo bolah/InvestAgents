@@ -1,3 +1,5 @@
+from datetime import datetime, timedelta
+
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from tradingagents.agents.utils.agent_utils import (
     build_instrument_context,
@@ -18,6 +20,7 @@ def create_news_analyst(llm):
         )
         config = get_config()
         lookback_days = config.get("news_lookback_days", 180)
+        start_date = (datetime.strptime(current_date, "%Y-%m-%d") - timedelta(days=lookback_days)).strftime("%Y-%m-%d")
 
         tools = [
             get_news,
@@ -27,7 +30,7 @@ def create_news_analyst(llm):
         system_message = (
             f"You are a structural news researcher evaluating events and trends relevant to a long-term (3-5 year) investment in this {asset_label}. "
             f"Use get_news for {asset_label}-specific news searches and get_global_news for macroeconomic context. "
-            f"Use a lookback window of approximately {lookback_days} days. "
+            f"Use a lookback window from {start_date} to {current_date}. "
             "Focus exclusively on structural, durable signals: "
             "(1) Regulatory shifts or legal developments that could affect the business model; "
             "(2) Competitive disruptions — new entrants, M&A activity, product obsolescence risks; "
