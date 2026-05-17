@@ -1,0 +1,2563 @@
+{
+  "summary": {
+    "total": 600,
+    "passed": 435,
+    "failed": 165,
+    "failure_rate_pct": 27.5
+  },
+  "by_sector": {
+    "Technology": {
+      "passed": 52,
+      "failed": 8,
+      "avg_deviation_pct": 67.55
+    },
+    "Healthcare": {
+      "passed": 36,
+      "failed": 24,
+      "avg_deviation_pct": 1688.5
+    },
+    "Financials": {
+      "passed": 45,
+      "failed": 15,
+      "avg_deviation_pct": 146.52
+    },
+    "Consumer_Discretionary": {
+      "passed": 36,
+      "failed": 24,
+      "avg_deviation_pct": 1011.97
+    },
+    "Consumer_Staples": {
+      "passed": 49,
+      "failed": 11,
+      "avg_deviation_pct": 57.83
+    },
+    "Energy": {
+      "passed": 45,
+      "failed": 15,
+      "avg_deviation_pct": 396.57
+    },
+    "Industrials": {
+      "passed": 41,
+      "failed": 19,
+      "avg_deviation_pct": 14755882732.55
+    },
+    "Utilities": {
+      "passed": 40,
+      "failed": 20,
+      "avg_deviation_pct": 82.64
+    },
+    "Materials": {
+      "passed": 46,
+      "failed": 14,
+      "avg_deviation_pct": 1530.76
+    },
+    "Real_Estate": {
+      "passed": 45,
+      "failed": 15,
+      "avg_deviation_pct": 14942529126.14
+    }
+  },
+  "failures": [
+    {
+      "sector": "Technology",
+      "ticker": "AAPL",
+      "date": "2023-02-15",
+      "statement": "cashflow",
+      "filing_date": "2022-10-28",
+      "status": "fail",
+      "matched": 0,
+      "comparable": 1,
+      "deviations": {
+        "capital_expenditures": 2.0
+      }
+    },
+    {
+      "sector": "Technology",
+      "ticker": "AAPL",
+      "date": "2024-02-15",
+      "statement": "cashflow",
+      "filing_date": "2023-11-03",
+      "status": "fail",
+      "matched": 0,
+      "comparable": 1,
+      "deviations": {
+        "capital_expenditures": 2.0
+      }
+    },
+    {
+      "sector": "Technology",
+      "ticker": "NVDA",
+      "date": "2023-02-15",
+      "statement": "income",
+      "filing_date": "2022-03-18",
+      "status": "fail",
+      "matched": 1,
+      "comparable": 4,
+      "deviations": {
+        "total_revenue": 0.0022,
+        "net_income": 0.5521,
+        "gross_profit": 0.5293,
+        "operating_income": 0.4446
+      }
+    },
+    {
+      "sector": "Technology",
+      "ticker": "NVDA",
+      "date": "2023-02-15",
+      "statement": "balance",
+      "filing_date": "2022-03-18",
+      "status": "fail",
+      "matched": 2,
+      "comparable": 4,
+      "deviations": {
+        "total_assets": 0.068,
+        "total_liabilities": 0.0857,
+        "stockholders_equity": 0.1695,
+        "cash": 0.8824
+      }
+    },
+    {
+      "sector": "Technology",
+      "ticker": "NVDA",
+      "date": "2023-02-15",
+      "statement": "cashflow",
+      "filing_date": "2022-03-18",
+      "status": "fail",
+      "matched": 0,
+      "comparable": 3,
+      "deviations": {
+        "operating_cf": 0.3807,
+        "capital_expenditures": 2.8781,
+        "free_cash_flow": 0.5317
+      }
+    },
+    {
+      "sector": "Technology",
+      "ticker": "NVDA",
+      "date": "2024-02-15",
+      "statement": "income",
+      "filing_date": "2023-02-24",
+      "status": "fail",
+      "matched": 0,
+      "comparable": 4,
+      "deviations": {
+        "total_revenue": 1.2585,
+        "net_income": 5.8132,
+        "gross_profit": 9.4879,
+        "operating_income": 6.8059
+      }
+    },
+    {
+      "sector": "Technology",
+      "ticker": "NVDA",
+      "date": "2024-02-15",
+      "statement": "balance",
+      "filing_date": "2023-02-24",
+      "status": "fail",
+      "matched": 0,
+      "comparable": 4,
+      "deviations": {
+        "total_assets": 0.596,
+        "total_liabilities": 0.1923,
+        "stockholders_equity": 0.9446,
+        "cash": 0.6845
+      }
+    },
+    {
+      "sector": "Technology",
+      "ticker": "NVDA",
+      "date": "2024-02-15",
+      "statement": "cashflow",
+      "filing_date": "2023-02-24",
+      "status": "fail",
+      "matched": 0,
+      "comparable": 3,
+      "deviations": {
+        "operating_cf": 3.9796,
+        "capital_expenditures": 1.5832,
+        "free_cash_flow": 6.0959
+      }
+    },
+    {
+      "sector": "Healthcare",
+      "ticker": "JNJ",
+      "date": "2023-02-15",
+      "statement": "income",
+      "filing_date": "2022-02-17",
+      "status": "fail",
+      "matched": 2,
+      "comparable": 4,
+      "deviations": {
+        "total_revenue": 0.147,
+        "net_income": 0.1407,
+        "gross_profit": 114.2802,
+        "operating_income": 43.9714
+      }
+    },
+    {
+      "sector": "Healthcare",
+      "ticker": "JNJ",
+      "date": "2024-02-15",
+      "statement": "income",
+      "filing_date": "2023-02-16",
+      "status": "fail",
+      "matched": 1,
+      "comparable": 4,
+      "deviations": {
+        "total_revenue": 0.1031,
+        "net_income": 0.9594,
+        "gross_profit": 32.3234,
+        "operating_income": 12.7632
+      }
+    },
+    {
+      "sector": "Healthcare",
+      "ticker": "UNH",
+      "date": "2023-02-15",
+      "statement": "income",
+      "filing_date": "2022-02-15",
+      "status": "fail",
+      "matched": 1,
+      "comparable": 4,
+      "deviations": {
+        "total_revenue": 4.4905,
+        "net_income": 0.1347,
+        "gross_profit": 2.3215,
+        "operating_income": 0.1863
+      }
+    },
+    {
+      "sector": "Healthcare",
+      "ticker": "UNH",
+      "date": "2023-02-15",
+      "statement": "balance",
+      "filing_date": "2022-02-15",
+      "status": "fail",
+      "matched": 1,
+      "comparable": 4,
+      "deviations": {
+        "total_assets": 0.1579,
+        "total_liabilities": 0.1741,
+        "stockholders_equity": 0.0363,
+        "cash": 0.6217
+      }
+    },
+    {
+      "sector": "Healthcare",
+      "ticker": "UNH",
+      "date": "2023-02-15",
+      "statement": "cashflow",
+      "filing_date": "2022-02-15",
+      "status": "fail",
+      "matched": 0,
+      "comparable": 1,
+      "deviations": {
+        "capital_expenditures": 2.1418
+      }
+    },
+    {
+      "sector": "Healthcare",
+      "ticker": "UNH",
+      "date": "2024-02-15",
+      "statement": "income",
+      "filing_date": "2023-02-24",
+      "status": "fail",
+      "matched": 2,
+      "comparable": 4,
+      "deviations": {
+        "total_revenue": 4.7195,
+        "net_income": 0.0844,
+        "gross_profit": 2.1988,
+        "operating_income": 0.138
+      }
+    },
+    {
+      "sector": "Healthcare",
+      "ticker": "UNH",
+      "date": "2024-02-15",
+      "statement": "cashflow",
+      "filing_date": "2023-02-24",
+      "status": "fail",
+      "matched": 0,
+      "comparable": 1,
+      "deviations": {
+        "capital_expenditures": 2.2084
+      }
+    },
+    {
+      "sector": "Healthcare",
+      "ticker": "LLY",
+      "date": "2023-02-15",
+      "statement": "income",
+      "filing_date": "2022-02-23",
+      "status": "fail",
+      "matched": 2,
+      "comparable": 4,
+      "deviations": {
+        "total_revenue": 0.0079,
+        "net_income": 0.1188,
+        "gross_profit": 109.6885,
+        "operating_income": 42.0734
+      }
+    },
+    {
+      "sector": "Healthcare",
+      "ticker": "LLY",
+      "date": "2023-02-15",
+      "statement": "balance",
+      "filing_date": "2022-02-23",
+      "status": "fail",
+      "matched": 1,
+      "comparable": 4,
+      "deviations": {
+        "total_assets": 0.014,
+        "total_liabilities": 0.2068,
+        "stockholders_equity": 0.1861,
+        "cash": 0.888
+      }
+    },
+    {
+      "sector": "Healthcare",
+      "ticker": "LLY",
+      "date": "2023-02-15",
+      "statement": "cashflow",
+      "filing_date": "2022-02-23",
+      "status": "fail",
+      "matched": 1,
+      "comparable": 3,
+      "deviations": {
+        "operating_cf": 0.0448,
+        "capital_expenditures": 3.2792,
+        "free_cash_flow": 0.2269
+      }
+    },
+    {
+      "sector": "Healthcare",
+      "ticker": "LLY",
+      "date": "2024-02-15",
+      "statement": "income",
+      "filing_date": "2023-02-22",
+      "status": "fail",
+      "matched": 0,
+      "comparable": 4,
+      "deviations": {
+        "total_revenue": 0.1956,
+        "net_income": 0.1609,
+        "gross_profit": 85.2692,
+        "operating_income": 33.1751
+      }
+    },
+    {
+      "sector": "Healthcare",
+      "ticker": "LLY",
+      "date": "2024-02-15",
+      "statement": "balance",
+      "filing_date": "2023-02-22",
+      "status": "fail",
+      "matched": 2,
+      "comparable": 4,
+      "deviations": {
+        "total_assets": 0.2933,
+        "total_liabilities": 0.0738,
+        "stockholders_equity": 0.0115,
+        "cash": 0.8437
+      }
+    },
+    {
+      "sector": "Healthcare",
+      "ticker": "LLY",
+      "date": "2024-02-15",
+      "statement": "cashflow",
+      "filing_date": "2023-02-22",
+      "status": "fail",
+      "matched": 0,
+      "comparable": 3,
+      "deviations": {
+        "operating_cf": 0.4015,
+        "capital_expenditures": 4.9864,
+        "free_cash_flow": 1.6027
+      }
+    },
+    {
+      "sector": "Healthcare",
+      "ticker": "PFE",
+      "date": "2023-02-15",
+      "statement": "income",
+      "filing_date": "2022-02-24",
+      "status": "fail",
+      "matched": 0,
+      "comparable": 4,
+      "deviations": {
+        "total_revenue": 0.2446,
+        "net_income": 0.4244,
+        "gross_profit": 12.7005,
+        "operating_income": 6.6187
+      }
+    },
+    {
+      "sector": "Healthcare",
+      "ticker": "PFE",
+      "date": "2023-02-15",
+      "statement": "balance",
+      "filing_date": "2022-02-24",
+      "status": "fail",
+      "matched": 2,
+      "comparable": 4,
+      "deviations": {
+        "total_assets": 0.0867,
+        "total_liabilities": 0.0262,
+        "stockholders_equity": 0.2391,
+        "cash": 0.993
+      }
+    },
+    {
+      "sector": "Healthcare",
+      "ticker": "PFE",
+      "date": "2024-02-15",
+      "statement": "income",
+      "filing_date": "2023-02-23",
+      "status": "fail",
+      "matched": 0,
+      "comparable": 4,
+      "deviations": {
+        "total_revenue": 0.4064,
+        "net_income": 0.9325,
+        "gross_profit": 160.447,
+        "operating_income": 20.4608
+      }
+    },
+    {
+      "sector": "Healthcare",
+      "ticker": "PFE",
+      "date": "2024-02-15",
+      "statement": "balance",
+      "filing_date": "2023-02-23",
+      "status": "fail",
+      "matched": 2,
+      "comparable": 4,
+      "deviations": {
+        "total_assets": 0.1486,
+        "total_liabilities": 0.3547,
+        "stockholders_equity": 0.0695,
+        "cash": 0.9443
+      }
+    },
+    {
+      "sector": "Healthcare",
+      "ticker": "PFE",
+      "date": "2024-02-15",
+      "statement": "cashflow",
+      "filing_date": "2023-02-23",
+      "status": "fail",
+      "matched": 0,
+      "comparable": 3,
+      "deviations": {
+        "operating_cf": 0.7027,
+        "capital_expenditures": 2.2074,
+        "free_cash_flow": 0.8159
+      }
+    },
+    {
+      "sector": "Healthcare",
+      "ticker": "ABBV",
+      "date": "2023-02-15",
+      "statement": "income",
+      "filing_date": "2022-02-18",
+      "status": "fail",
+      "matched": 2,
+      "comparable": 4,
+      "deviations": {
+        "total_revenue": 0.033,
+        "net_income": 0.0249,
+        "gross_profit": 95.0741,
+        "operating_income": 44.5509
+      }
+    },
+    {
+      "sector": "Healthcare",
+      "ticker": "ABBV",
+      "date": "2023-02-15",
+      "statement": "balance",
+      "filing_date": "2022-02-18",
+      "status": "fail",
+      "matched": 2,
+      "comparable": 4,
+      "deviations": {
+        "total_assets": 0.0527,
+        "total_liabilities": 0.1707,
+        "stockholders_equity": 0.1198,
+        "cash": 0.6705
+      }
+    },
+    {
+      "sector": "Healthcare",
+      "ticker": "ABBV",
+      "date": "2023-02-15",
+      "statement": "cashflow",
+      "filing_date": "2022-02-18",
+      "status": "fail",
+      "matched": 0,
+      "comparable": 1,
+      "deviations": {
+        "capital_expenditures": 1.8831
+      }
+    },
+    {
+      "sector": "Healthcare",
+      "ticker": "ABBV",
+      "date": "2024-02-15",
+      "statement": "income",
+      "filing_date": "2023-02-17",
+      "status": "fail",
+      "matched": 1,
+      "comparable": 4,
+      "deviations": {
+        "total_revenue": 0.0644,
+        "net_income": 0.5894,
+        "gross_profit": 606.4107,
+        "operating_income": 242.6964
+      }
+    },
+    {
+      "sector": "Healthcare",
+      "ticker": "ABBV",
+      "date": "2024-02-15",
+      "statement": "balance",
+      "filing_date": "2023-02-17",
+      "status": "fail",
+      "matched": 2,
+      "comparable": 4,
+      "deviations": {
+        "total_assets": 0.0295,
+        "total_liabilities": 0.1044,
+        "stockholders_equity": 0.3996,
+        "cash": 0.5498
+      }
+    },
+    {
+      "sector": "Healthcare",
+      "ticker": "ABBV",
+      "date": "2024-02-15",
+      "statement": "cashflow",
+      "filing_date": "2023-02-17",
+      "status": "fail",
+      "matched": 0,
+      "comparable": 1,
+      "deviations": {
+        "capital_expenditures": 2.118
+      }
+    },
+    {
+      "sector": "Financials",
+      "ticker": "JPM",
+      "date": "2023-02-15",
+      "statement": "income",
+      "filing_date": "2022-02-22",
+      "status": "fail",
+      "matched": 0,
+      "comparable": 2,
+      "deviations": {
+        "total_revenue": 8.6646,
+        "net_income": 0.2205
+      }
+    },
+    {
+      "sector": "Financials",
+      "ticker": "JPM",
+      "date": "2023-02-15",
+      "statement": "cashflow",
+      "filing_date": "2022-02-22",
+      "status": "fail",
+      "matched": 0,
+      "comparable": 1,
+      "deviations": {
+        "operating_cf": 0.3718
+      }
+    },
+    {
+      "sector": "Financials",
+      "ticker": "JPM",
+      "date": "2024-02-15",
+      "statement": "income",
+      "filing_date": "2023-02-21",
+      "status": "fail",
+      "matched": 0,
+      "comparable": 2,
+      "deviations": {
+        "total_revenue": 22.1756,
+        "net_income": 0.3152
+      }
+    },
+    {
+      "sector": "Financials",
+      "ticker": "JPM",
+      "date": "2024-02-15",
+      "statement": "cashflow",
+      "filing_date": "2023-02-21",
+      "status": "fail",
+      "matched": 0,
+      "comparable": 1,
+      "deviations": {
+        "operating_cf": 0.8789
+      }
+    },
+    {
+      "sector": "Financials",
+      "ticker": "BAC",
+      "date": "2024-02-15",
+      "statement": "cashflow",
+      "filing_date": "2023-02-22",
+      "status": "fail",
+      "matched": 0,
+      "comparable": 1,
+      "deviations": {
+        "operating_cf": 8.1095
+      }
+    },
+    {
+      "sector": "Financials",
+      "ticker": "WFC",
+      "date": "2023-02-15",
+      "statement": "cashflow",
+      "filing_date": "2022-02-22",
+      "status": "fail",
+      "matched": 0,
+      "comparable": 1,
+      "deviations": {
+        "operating_cf": 3.3469
+      }
+    },
+    {
+      "sector": "Financials",
+      "ticker": "WFC",
+      "date": "2024-02-15",
+      "statement": "cashflow",
+      "filing_date": "2023-02-21",
+      "status": "fail",
+      "matched": 0,
+      "comparable": 1,
+      "deviations": {
+        "operating_cf": 0.4921
+      }
+    },
+    {
+      "sector": "Financials",
+      "ticker": "GS",
+      "date": "2023-02-15",
+      "statement": "income",
+      "filing_date": "2022-02-25",
+      "status": "fail",
+      "matched": 0,
+      "comparable": 2,
+      "deviations": {
+        "total_revenue": 2.3431,
+        "net_income": 0.4795
+      }
+    },
+    {
+      "sector": "Financials",
+      "ticker": "GS",
+      "date": "2023-02-15",
+      "statement": "cashflow",
+      "filing_date": "2022-02-25",
+      "status": "fail",
+      "matched": 0,
+      "comparable": 3,
+      "deviations": {
+        "operating_cf": 8.4549,
+        "capital_expenditures": 1.8031,
+        "free_cash_flow": 2.3241
+      }
+    },
+    {
+      "sector": "Financials",
+      "ticker": "GS",
+      "date": "2024-02-15",
+      "statement": "income",
+      "filing_date": "2023-02-24",
+      "status": "fail",
+      "matched": 0,
+      "comparable": 2,
+      "deviations": {
+        "total_revenue": 5.2845,
+        "net_income": 0.2438
+      }
+    },
+    {
+      "sector": "Financials",
+      "ticker": "GS",
+      "date": "2024-02-15",
+      "statement": "cashflow",
+      "filing_date": "2023-02-24",
+      "status": "fail",
+      "matched": 0,
+      "comparable": 3,
+      "deviations": {
+        "operating_cf": 2.4455,
+        "capital_expenditures": 1.6179,
+        "free_cash_flow": 4.0046
+      }
+    },
+    {
+      "sector": "Financials",
+      "ticker": "MS",
+      "date": "2023-02-15",
+      "statement": "income",
+      "filing_date": "2022-02-24",
+      "status": "fail",
+      "matched": 0,
+      "comparable": 2,
+      "deviations": {
+        "total_revenue": 3.567,
+        "net_income": 0.2706
+      }
+    },
+    {
+      "sector": "Financials",
+      "ticker": "MS",
+      "date": "2023-02-15",
+      "statement": "cashflow",
+      "filing_date": "2022-02-24",
+      "status": "fail",
+      "matched": 0,
+      "comparable": 1,
+      "deviations": {
+        "operating_cf": 1.1883
+      }
+    },
+    {
+      "sector": "Financials",
+      "ticker": "MS",
+      "date": "2024-02-15",
+      "statement": "income",
+      "filing_date": "2023-02-24",
+      "status": "fail",
+      "matched": 0,
+      "comparable": 2,
+      "deviations": {
+        "total_revenue": 8.0493,
+        "net_income": 0.1871
+      }
+    },
+    {
+      "sector": "Financials",
+      "ticker": "MS",
+      "date": "2024-02-15",
+      "statement": "cashflow",
+      "filing_date": "2023-02-24",
+      "status": "fail",
+      "matched": 0,
+      "comparable": 1,
+      "deviations": {
+        "operating_cf": 4.2425
+      }
+    },
+    {
+      "sector": "Consumer_Discretionary",
+      "ticker": "AMZN",
+      "date": "2023-02-15",
+      "statement": "income",
+      "filing_date": "2023-02-03",
+      "status": "fail",
+      "matched": 2,
+      "comparable": 4,
+      "deviations": {
+        "total_revenue": 0.0,
+        "net_income": 0.0,
+        "gross_profit": 179.2676,
+        "operating_income": 10.6975
+      }
+    },
+    {
+      "sector": "Consumer_Discretionary",
+      "ticker": "AMZN",
+      "date": "2023-02-15",
+      "statement": "balance",
+      "filing_date": "2023-02-03",
+      "status": "fail",
+      "matched": 2,
+      "comparable": 4,
+      "deviations": {
+        "total_assets": 0.0,
+        "total_liabilities": 0.3156,
+        "stockholders_equity": 0.0,
+        "cash": 0.6329
+      }
+    },
+    {
+      "sector": "Consumer_Discretionary",
+      "ticker": "AMZN",
+      "date": "2024-02-15",
+      "statement": "income",
+      "filing_date": "2024-02-02",
+      "status": "fail",
+      "matched": 2,
+      "comparable": 4,
+      "deviations": {
+        "total_revenue": 0.0,
+        "net_income": 0.0,
+        "gross_profit": 353.0808,
+        "operating_income": 49.0469
+      }
+    },
+    {
+      "sector": "Consumer_Discretionary",
+      "ticker": "AMZN",
+      "date": "2024-02-15",
+      "statement": "balance",
+      "filing_date": "2024-02-02",
+      "status": "fail",
+      "matched": 2,
+      "comparable": 4,
+      "deviations": {
+        "total_assets": 0.0,
+        "total_liabilities": 0.3824,
+        "stockholders_equity": 0.0,
+        "cash": 0.5742
+      }
+    },
+    {
+      "sector": "Consumer_Discretionary",
+      "ticker": "TSLA",
+      "date": "2023-02-15",
+      "statement": "income",
+      "filing_date": "2023-01-31",
+      "status": "fail",
+      "matched": 2,
+      "comparable": 4,
+      "deviations": {
+        "total_revenue": 7.1462,
+        "net_income": 0.0003,
+        "gross_profit": 0.527,
+        "operating_income": 0.0129
+      }
+    },
+    {
+      "sector": "Consumer_Discretionary",
+      "ticker": "HD",
+      "date": "2023-02-15",
+      "statement": "balance",
+      "filing_date": "2022-03-23",
+      "status": "fail",
+      "matched": 2,
+      "comparable": 4,
+      "deviations": {
+        "total_assets": 0.0636,
+        "total_liabilities": 0.0178,
+        "stockholders_equity": 1.921,
+        "cash": 0.9051
+      }
+    },
+    {
+      "sector": "Consumer_Discretionary",
+      "ticker": "HD",
+      "date": "2023-02-15",
+      "statement": "cashflow",
+      "filing_date": "2022-03-23",
+      "status": "fail",
+      "matched": 1,
+      "comparable": 3,
+      "deviations": {
+        "operating_cf": 0.118,
+        "capital_expenditures": 2.2155,
+        "free_cash_flow": 0.1792
+      }
+    },
+    {
+      "sector": "Consumer_Discretionary",
+      "ticker": "HD",
+      "date": "2024-02-15",
+      "statement": "balance",
+      "filing_date": "2023-03-15",
+      "status": "fail",
+      "matched": 2,
+      "comparable": 4,
+      "deviations": {
+        "total_assets": 0.0011,
+        "total_liabilities": 0.0081,
+        "stockholders_equity": 0.3316,
+        "cash": 0.8842
+      }
+    },
+    {
+      "sector": "Consumer_Discretionary",
+      "ticker": "HD",
+      "date": "2024-02-15",
+      "statement": "cashflow",
+      "filing_date": "2023-03-15",
+      "status": "fail",
+      "matched": 0,
+      "comparable": 3,
+      "deviations": {
+        "operating_cf": 0.4486,
+        "capital_expenditures": 2.0343,
+        "free_cash_flow": 0.5611
+      }
+    },
+    {
+      "sector": "Consumer_Discretionary",
+      "ticker": "MCD",
+      "date": "2023-02-15",
+      "statement": "income",
+      "filing_date": "2022-02-24",
+      "status": "fail",
+      "matched": 0,
+      "comparable": 4,
+      "deviations": {
+        "total_revenue": 0.7716,
+        "net_income": 0.1813,
+        "gross_profit": 26.3267,
+        "operating_income": 20.4049
+      }
+    },
+    {
+      "sector": "Consumer_Discretionary",
+      "ticker": "MCD",
+      "date": "2023-02-15",
+      "statement": "balance",
+      "filing_date": "2022-02-24",
+      "status": "fail",
+      "matched": 2,
+      "comparable": 4,
+      "deviations": {
+        "total_assets": 0.0635,
+        "total_liabilities": 0.048,
+        "stockholders_equity": 0.3048,
+        "cash": 0.6386
+      }
+    },
+    {
+      "sector": "Consumer_Discretionary",
+      "ticker": "MCD",
+      "date": "2023-02-15",
+      "statement": "cashflow",
+      "filing_date": "2022-02-24",
+      "status": "fail",
+      "matched": 0,
+      "comparable": 1,
+      "deviations": {
+        "capital_expenditures": 1.9309
+      }
+    },
+    {
+      "sector": "Consumer_Discretionary",
+      "ticker": "MCD",
+      "date": "2024-02-15",
+      "statement": "income",
+      "filing_date": "2023-02-24",
+      "status": "fail",
+      "matched": 0,
+      "comparable": 4,
+      "deviations": {
+        "total_revenue": 0.8074,
+        "net_income": 0.371,
+        "gross_profit": 15.9589,
+        "operating_income": 13.0655
+      }
+    },
+    {
+      "sector": "Consumer_Discretionary",
+      "ticker": "MCD",
+      "date": "2024-02-15",
+      "statement": "balance",
+      "filing_date": "2023-02-24",
+      "status": "fail",
+      "matched": 1,
+      "comparable": 4,
+      "deviations": {
+        "total_assets": 0.1132,
+        "total_liabilities": 0.2066,
+        "stockholders_equity": 0.2161,
+        "cash": 0.1558
+      }
+    },
+    {
+      "sector": "Consumer_Discretionary",
+      "ticker": "MCD",
+      "date": "2024-02-15",
+      "statement": "cashflow",
+      "filing_date": "2023-02-24",
+      "status": "fail",
+      "matched": 0,
+      "comparable": 1,
+      "deviations": {
+        "capital_expenditures": 2.241
+      }
+    },
+    {
+      "sector": "Consumer_Discretionary",
+      "ticker": "NKE",
+      "date": "2022-08-15",
+      "statement": "income",
+      "filing_date": "2022-07-21",
+      "status": "fail",
+      "matched": 2,
+      "comparable": 4,
+      "deviations": {
+        "total_revenue": 0.0,
+        "net_income": 0.0,
+        "gross_profit": 117.6685,
+        "operating_income": 35.8785
+      }
+    },
+    {
+      "sector": "Consumer_Discretionary",
+      "ticker": "NKE",
+      "date": "2022-08-15",
+      "statement": "balance",
+      "filing_date": "2022-07-21",
+      "status": "fail",
+      "matched": 2,
+      "comparable": 4,
+      "deviations": {
+        "total_assets": 0.0,
+        "total_liabilities": 0.379,
+        "stockholders_equity": 0.0,
+        "cash": 0.6961
+      }
+    },
+    {
+      "sector": "Consumer_Discretionary",
+      "ticker": "NKE",
+      "date": "2022-08-15",
+      "statement": "cashflow",
+      "filing_date": "2022-07-21",
+      "status": "fail",
+      "matched": 0,
+      "comparable": 1,
+      "deviations": {
+        "capital_expenditures": 2.0
+      }
+    },
+    {
+      "sector": "Consumer_Discretionary",
+      "ticker": "NKE",
+      "date": "2023-02-15",
+      "statement": "income",
+      "filing_date": "2022-07-21",
+      "status": "fail",
+      "matched": 2,
+      "comparable": 4,
+      "deviations": {
+        "total_revenue": 0.0,
+        "net_income": 0.0,
+        "gross_profit": 117.6685,
+        "operating_income": 35.8785
+      }
+    },
+    {
+      "sector": "Consumer_Discretionary",
+      "ticker": "NKE",
+      "date": "2023-02-15",
+      "statement": "balance",
+      "filing_date": "2022-07-21",
+      "status": "fail",
+      "matched": 2,
+      "comparable": 4,
+      "deviations": {
+        "total_assets": 0.0,
+        "total_liabilities": 0.379,
+        "stockholders_equity": 0.0,
+        "cash": 0.6961
+      }
+    },
+    {
+      "sector": "Consumer_Discretionary",
+      "ticker": "NKE",
+      "date": "2023-02-15",
+      "statement": "cashflow",
+      "filing_date": "2022-07-21",
+      "status": "fail",
+      "matched": 0,
+      "comparable": 1,
+      "deviations": {
+        "capital_expenditures": 2.0
+      }
+    },
+    {
+      "sector": "Consumer_Discretionary",
+      "ticker": "NKE",
+      "date": "2024-02-15",
+      "statement": "income",
+      "filing_date": "2023-07-20",
+      "status": "fail",
+      "matched": 2,
+      "comparable": 4,
+      "deviations": {
+        "total_revenue": 0.0,
+        "net_income": 0.0,
+        "gross_profit": 78.6143,
+        "operating_income": 20.125
+      }
+    },
+    {
+      "sector": "Consumer_Discretionary",
+      "ticker": "NKE",
+      "date": "2024-02-15",
+      "statement": "balance",
+      "filing_date": "2023-07-20",
+      "status": "fail",
+      "matched": 2,
+      "comparable": 4,
+      "deviations": {
+        "total_assets": 0.0,
+        "total_liabilities": 0.3731,
+        "stockholders_equity": 0.0,
+        "cash": 0.7047
+      }
+    },
+    {
+      "sector": "Consumer_Discretionary",
+      "ticker": "NKE",
+      "date": "2024-02-15",
+      "statement": "cashflow",
+      "filing_date": "2023-07-20",
+      "status": "fail",
+      "matched": 0,
+      "comparable": 1,
+      "deviations": {
+        "capital_expenditures": 2.0
+      }
+    },
+    {
+      "sector": "Consumer_Staples",
+      "ticker": "KO",
+      "date": "2023-02-15",
+      "statement": "income",
+      "filing_date": "2022-02-22",
+      "status": "fail",
+      "matched": 2,
+      "comparable": 4,
+      "deviations": {
+        "total_revenue": 0.1125,
+        "net_income": 0.0267,
+        "gross_profit": 1.4257,
+        "operating_income": 0.1682
+      }
+    },
+    {
+      "sector": "Consumer_Staples",
+      "ticker": "KO",
+      "date": "2023-02-15",
+      "statement": "balance",
+      "filing_date": "2022-02-22",
+      "status": "fail",
+      "matched": 2,
+      "comparable": 4,
+      "deviations": {
+        "total_assets": 0.0169,
+        "total_liabilities": 0.2906,
+        "stockholders_equity": 0.0304,
+        "cash": 0.5778
+      }
+    },
+    {
+      "sector": "Consumer_Staples",
+      "ticker": "KO",
+      "date": "2023-02-15",
+      "statement": "cashflow",
+      "filing_date": "2022-02-22",
+      "status": "fail",
+      "matched": 1,
+      "comparable": 3,
+      "deviations": {
+        "operating_cf": 0.1273,
+        "capital_expenditures": 2.0856,
+        "free_cash_flow": 0.1531
+      }
+    },
+    {
+      "sector": "Consumer_Staples",
+      "ticker": "KO",
+      "date": "2024-02-15",
+      "statement": "income",
+      "filing_date": "2023-02-21",
+      "status": "fail",
+      "matched": 2,
+      "comparable": 4,
+      "deviations": {
+        "total_revenue": 0.0639,
+        "net_income": 0.1194,
+        "gross_profit": 1.4965,
+        "operating_income": 0.2007
+      }
+    },
+    {
+      "sector": "Consumer_Staples",
+      "ticker": "KO",
+      "date": "2024-02-15",
+      "statement": "balance",
+      "filing_date": "2023-02-21",
+      "status": "fail",
+      "matched": 2,
+      "comparable": 4,
+      "deviations": {
+        "total_assets": 0.0533,
+        "total_liabilities": 0.243,
+        "stockholders_equity": 0.0045,
+        "cash": 0.5854
+      }
+    },
+    {
+      "sector": "Consumer_Staples",
+      "ticker": "WMT",
+      "date": "2023-02-15",
+      "statement": "income",
+      "filing_date": "2022-03-18",
+      "status": "fail",
+      "matched": 1,
+      "comparable": 4,
+      "deviations": {
+        "total_revenue": 0.0767,
+        "net_income": 0.1621,
+        "gross_profit": 4.6884,
+        "operating_income": 0.2126
+      }
+    },
+    {
+      "sector": "Consumer_Staples",
+      "ticker": "WMT",
+      "date": "2023-02-15",
+      "statement": "balance",
+      "filing_date": "2022-03-18",
+      "status": "fail",
+      "matched": 2,
+      "comparable": 4,
+      "deviations": {
+        "total_assets": 0.0068,
+        "total_liabilities": 0.3498,
+        "stockholders_equity": 0.0788,
+        "cash": 0.8936
+      }
+    },
+    {
+      "sector": "Consumer_Staples",
+      "ticker": "WMT",
+      "date": "2023-02-15",
+      "statement": "cashflow",
+      "filing_date": "2022-03-18",
+      "status": "fail",
+      "matched": 1,
+      "comparable": 3,
+      "deviations": {
+        "operating_cf": 0.1927,
+        "capital_expenditures": 2.2862,
+        "free_cash_flow": 0.0821
+      }
+    },
+    {
+      "sector": "Consumer_Staples",
+      "ticker": "WMT",
+      "date": "2024-02-15",
+      "statement": "income",
+      "filing_date": "2023-03-17",
+      "status": "fail",
+      "matched": 1,
+      "comparable": 4,
+      "deviations": {
+        "total_revenue": 0.0697,
+        "net_income": 0.3736,
+        "gross_profit": 6.7336,
+        "operating_income": 0.3223
+      }
+    },
+    {
+      "sector": "Consumer_Staples",
+      "ticker": "WMT",
+      "date": "2024-02-15",
+      "statement": "balance",
+      "filing_date": "2023-03-17",
+      "status": "fail",
+      "matched": 2,
+      "comparable": 4,
+      "deviations": {
+        "total_assets": 0.0378,
+        "total_liabilities": 0.3346,
+        "stockholders_equity": 0.0935,
+        "cash": 0.8696
+      }
+    },
+    {
+      "sector": "Consumer_Staples",
+      "ticker": "WMT",
+      "date": "2024-02-15",
+      "statement": "cashflow",
+      "filing_date": "2023-03-17",
+      "status": "fail",
+      "matched": 0,
+      "comparable": 3,
+      "deviations": {
+        "operating_cf": 0.2387,
+        "capital_expenditures": 2.2224,
+        "free_cash_flow": 0.2617
+      }
+    },
+    {
+      "sector": "Energy",
+      "ticker": "XOM",
+      "date": "2023-02-15",
+      "statement": "income",
+      "filing_date": "2022-02-23",
+      "status": "fail",
+      "matched": 0,
+      "comparable": 4,
+      "deviations": {
+        "total_revenue": 0.4409,
+        "net_income": 1.3621,
+        "gross_profit": 43.9878,
+        "operating_income": 26.9476
+      }
+    },
+    {
+      "sector": "Energy",
+      "ticker": "XOM",
+      "date": "2023-02-15",
+      "statement": "cashflow",
+      "filing_date": "2022-02-23",
+      "status": "fail",
+      "matched": 0,
+      "comparable": 3,
+      "deviations": {
+        "operating_cf": 0.5956,
+        "capital_expenditures": 2.5243,
+        "free_cash_flow": 0.6196
+      }
+    },
+    {
+      "sector": "Energy",
+      "ticker": "XOM",
+      "date": "2024-02-15",
+      "statement": "income",
+      "filing_date": "2023-02-22",
+      "status": "fail",
+      "matched": 0,
+      "comparable": 2,
+      "deviations": {
+        "total_revenue": 0.1909,
+        "net_income": 0.3746
+      }
+    },
+    {
+      "sector": "Energy",
+      "ticker": "XOM",
+      "date": "2024-02-15",
+      "statement": "cashflow",
+      "filing_date": "2023-02-22",
+      "status": "fail",
+      "matched": 0,
+      "comparable": 3,
+      "deviations": {
+        "operating_cf": 0.279,
+        "capital_expenditures": 2.1908,
+        "free_cash_flow": 0.4271
+      }
+    },
+    {
+      "sector": "Energy",
+      "ticker": "CVX",
+      "date": "2023-02-15",
+      "statement": "income",
+      "filing_date": "2022-02-24",
+      "status": "fail",
+      "matched": 0,
+      "comparable": 4,
+      "deviations": {
+        "total_revenue": 0.5148,
+        "net_income": 1.2605,
+        "gross_profit": 60.5491,
+        "operating_income": 32.2363
+      }
+    },
+    {
+      "sector": "Energy",
+      "ticker": "CVX",
+      "date": "2023-02-15",
+      "statement": "cashflow",
+      "filing_date": "2022-02-24",
+      "status": "fail",
+      "matched": 0,
+      "comparable": 3,
+      "deviations": {
+        "operating_cf": 0.6995,
+        "capital_expenditures": 2.4863,
+        "free_cash_flow": 0.7807
+      }
+    },
+    {
+      "sector": "Energy",
+      "ticker": "CVX",
+      "date": "2024-02-15",
+      "statement": "income",
+      "filing_date": "2023-02-23",
+      "status": "fail",
+      "matched": 0,
+      "comparable": 4,
+      "deviations": {
+        "total_revenue": 0.1646,
+        "net_income": 0.3999,
+        "gross_profit": 29.9697,
+        "operating_income": 12.4508
+      }
+    },
+    {
+      "sector": "Energy",
+      "ticker": "CVX",
+      "date": "2024-02-15",
+      "statement": "cashflow",
+      "filing_date": "2023-02-23",
+      "status": "fail",
+      "matched": 0,
+      "comparable": 3,
+      "deviations": {
+        "operating_cf": 0.2821,
+        "capital_expenditures": 2.3219,
+        "free_cash_flow": 0.4743
+      }
+    },
+    {
+      "sector": "Energy",
+      "ticker": "COP",
+      "date": "2023-02-15",
+      "statement": "income",
+      "filing_date": "2022-02-17",
+      "status": "fail",
+      "matched": 0,
+      "comparable": 4,
+      "deviations": {
+        "total_revenue": 0.7128,
+        "net_income": 1.3122,
+        "gross_profit": 23.9485,
+        "operating_income": 20.1654
+      }
+    },
+    {
+      "sector": "Energy",
+      "ticker": "COP",
+      "date": "2023-02-15",
+      "statement": "cashflow",
+      "filing_date": "2022-02-17",
+      "status": "fail",
+      "matched": 0,
+      "comparable": 3,
+      "deviations": {
+        "operating_cf": 0.6659,
+        "capital_expenditures": 2.9082,
+        "free_cash_flow": 0.5554
+      }
+    },
+    {
+      "sector": "Energy",
+      "ticker": "COP",
+      "date": "2024-02-15",
+      "statement": "income",
+      "filing_date": "2024-02-15",
+      "status": "fail",
+      "matched": 2,
+      "comparable": 4,
+      "deviations": {
+        "total_revenue": 0.0,
+        "net_income": 0.0,
+        "gross_profit": 36.532,
+        "operating_income": 29.9814
+      }
+    },
+    {
+      "sector": "Energy",
+      "ticker": "EOG",
+      "date": "2023-02-15",
+      "statement": "income",
+      "filing_date": "2022-02-24",
+      "status": "fail",
+      "matched": 0,
+      "comparable": 4,
+      "deviations": {
+        "total_revenue": 0.582,
+        "net_income": 0.6636,
+        "gross_profit": 2.7745,
+        "operating_income": 1.3363
+      }
+    },
+    {
+      "sector": "Energy",
+      "ticker": "EOG",
+      "date": "2023-02-15",
+      "statement": "cashflow",
+      "filing_date": "2022-02-24",
+      "status": "fail",
+      "matched": 0,
+      "comparable": 3,
+      "deviations": {
+        "operating_cf": 0.2619,
+        "capital_expenditures": 24.5849,
+        "free_cash_flow": 0.2898
+      }
+    },
+    {
+      "sector": "Energy",
+      "ticker": "EOG",
+      "date": "2024-02-15",
+      "statement": "income",
+      "filing_date": "2023-02-23",
+      "status": "fail",
+      "matched": 2,
+      "comparable": 4,
+      "deviations": {
+        "total_revenue": 0.214,
+        "net_income": 0.0213,
+        "gross_profit": 0.6673,
+        "operating_income": 0.1078
+      }
+    },
+    {
+      "sector": "Energy",
+      "ticker": "EOG",
+      "date": "2024-02-15",
+      "statement": "cashflow",
+      "filing_date": "2023-02-23",
+      "status": "fail",
+      "matched": 1,
+      "comparable": 3,
+      "deviations": {
+        "operating_cf": 0.0223,
+        "capital_expenditures": 17.2336,
+        "free_cash_flow": 0.5188
+      }
+    },
+    {
+      "sector": "Industrials",
+      "ticker": "CAT",
+      "date": "2023-02-15",
+      "statement": "income",
+      "filing_date": "2023-02-15",
+      "status": "fail",
+      "matched": 2,
+      "comparable": 4,
+      "deviations": {
+        "total_revenue": 0.0,
+        "net_income": 0.003,
+        "gross_profit": 15.3777,
+        "operating_income": 8.2488
+      }
+    },
+    {
+      "sector": "Industrials",
+      "ticker": "CAT",
+      "date": "2023-02-15",
+      "statement": "balance",
+      "filing_date": "2023-02-15",
+      "status": "fail",
+      "matched": 1,
+      "comparable": 4,
+      "deviations": {
+        "total_assets": 0.8715,
+        "total_liabilities": 0.1939,
+        "stockholders_equity": 0.0014,
+        "cash": 0.84
+      }
+    },
+    {
+      "sector": "Industrials",
+      "ticker": "CAT",
+      "date": "2023-02-15",
+      "statement": "cashflow",
+      "filing_date": "2023-02-15",
+      "status": "fail",
+      "matched": 1,
+      "comparable": 3,
+      "deviations": {
+        "operating_cf": 0.0,
+        "capital_expenditures": 3.0054,
+        "free_cash_flow": 0.2014
+      }
+    },
+    {
+      "sector": "Industrials",
+      "ticker": "CAT",
+      "date": "2024-02-15",
+      "statement": "income",
+      "filing_date": "2023-02-15",
+      "status": "fail",
+      "matched": 1,
+      "comparable": 4,
+      "deviations": {
+        "total_revenue": 0.1284,
+        "net_income": 0.546,
+        "gross_profit": 20.0993,
+        "operating_income": 11.6453
+      }
+    },
+    {
+      "sector": "Industrials",
+      "ticker": "CAT",
+      "date": "2024-02-15",
+      "statement": "balance",
+      "filing_date": "2023-02-15",
+      "status": "fail",
+      "matched": 0,
+      "comparable": 4,
+      "deviations": {
+        "total_assets": 0.9979,
+        "total_liabilities": 0.1705,
+        "stockholders_equity": 0.2267,
+        "cash": 0.8406
+      }
+    },
+    {
+      "sector": "Industrials",
+      "ticker": "CAT",
+      "date": "2024-02-15",
+      "statement": "cashflow",
+      "filing_date": "2023-02-15",
+      "status": "fail",
+      "matched": 0,
+      "comparable": 3,
+      "deviations": {
+        "operating_cf": 0.6592,
+        "capital_expenditures": 3.3858,
+        "free_cash_flow": 0.5136
+      }
+    },
+    {
+      "sector": "Industrials",
+      "ticker": "HON",
+      "date": "2023-02-15",
+      "statement": "income",
+      "filing_date": "2023-02-10",
+      "status": "fail",
+      "matched": 2,
+      "comparable": 4,
+      "deviations": {
+        "total_revenue": 0.0,
+        "net_income": 0.0002,
+        "gross_profit": 34.8443,
+        "operating_income": 16.5601
+      }
+    },
+    {
+      "sector": "Industrials",
+      "ticker": "HON",
+      "date": "2023-02-15",
+      "statement": "balance",
+      "filing_date": "2023-02-10",
+      "status": "fail",
+      "matched": 2,
+      "comparable": 4,
+      "deviations": {
+        "total_assets": 0.0,
+        "total_liabilities": 0.2782,
+        "stockholders_equity": 0.0,
+        "cash": 0.6146
+      }
+    },
+    {
+      "sector": "Industrials",
+      "ticker": "HON",
+      "date": "2024-02-15",
+      "statement": "income",
+      "filing_date": "2023-02-10",
+      "status": "fail",
+      "matched": 2,
+      "comparable": 4,
+      "deviations": {
+        "total_revenue": 0.0693,
+        "net_income": 0.1391,
+        "gross_profit": 32.8033,
+        "operating_income": 15.694
+      }
+    },
+    {
+      "sector": "Industrials",
+      "ticker": "HON",
+      "date": "2024-02-15",
+      "statement": "balance",
+      "filing_date": "2023-02-10",
+      "status": "fail",
+      "matched": 2,
+      "comparable": 4,
+      "deviations": {
+        "total_assets": 0.012,
+        "total_liabilities": 0.276,
+        "stockholders_equity": 0.0504,
+        "cash": 0.6828
+      }
+    },
+    {
+      "sector": "Industrials",
+      "ticker": "GE",
+      "date": "2023-02-15",
+      "statement": "income",
+      "filing_date": "2023-02-10",
+      "status": "fail",
+      "matched": 0,
+      "comparable": 4,
+      "deviations": {
+        "total_revenue": 0.6041,
+        "net_income": 0.1507,
+        "gross_profit": 5.1413,
+        "operating_income": 1.9212
+      }
+    },
+    {
+      "sector": "Industrials",
+      "ticker": "GE",
+      "date": "2023-02-15",
+      "statement": "cashflow",
+      "filing_date": "2023-02-10",
+      "status": "fail",
+      "matched": 0,
+      "comparable": 1,
+      "deviations": {
+        "capital_expenditures": 1.4829
+      }
+    },
+    {
+      "sector": "Industrials",
+      "ticker": "GE",
+      "date": "2024-02-15",
+      "statement": "income",
+      "filing_date": "2024-02-02",
+      "status": "fail",
+      "matched": 1,
+      "comparable": 4,
+      "deviations": {
+        "total_revenue": 0.4525,
+        "net_income": 0.0041,
+        "gross_profit": 0.3358,
+        "operating_income": 0.3383
+      }
+    },
+    {
+      "sector": "Industrials",
+      "ticker": "GE",
+      "date": "2024-02-15",
+      "statement": "cashflow",
+      "filing_date": "2024-02-02",
+      "status": "fail",
+      "matched": 0,
+      "comparable": 1,
+      "deviations": {
+        "capital_expenditures": 1.5404
+      }
+    },
+    {
+      "sector": "Industrials",
+      "ticker": "UNP",
+      "date": "2023-02-15",
+      "statement": "cashflow",
+      "filing_date": "2023-02-10",
+      "status": "fail",
+      "matched": 0,
+      "comparable": 1,
+      "deviations": {
+        "capital_expenditures": 2.0
+      }
+    },
+    {
+      "sector": "Industrials",
+      "ticker": "UNP",
+      "date": "2024-02-15",
+      "statement": "cashflow",
+      "filing_date": "2024-02-09",
+      "status": "fail",
+      "matched": 0,
+      "comparable": 1,
+      "deviations": {
+        "capital_expenditures": 2.0
+      }
+    },
+    {
+      "sector": "Industrials",
+      "ticker": "RTX",
+      "date": "2023-02-15",
+      "statement": "cashflow",
+      "filing_date": "2023-02-07",
+      "status": "fail",
+      "matched": 0,
+      "comparable": 3,
+      "deviations": {
+        "operating_cf": 7168000000.0,
+        "capital_expenditures": 2.2128,
+        "free_cash_flow": 2.92
+      }
+    },
+    {
+      "sector": "Industrials",
+      "ticker": "RTX",
+      "date": "2024-02-15",
+      "statement": "income",
+      "filing_date": "2024-02-05",
+      "status": "fail",
+      "matched": 2,
+      "comparable": 4,
+      "deviations": {
+        "total_revenue": 0.0,
+        "net_income": 0.0547,
+        "gross_profit": 139.5698,
+        "operating_income": 40.407
+      }
+    },
+    {
+      "sector": "Industrials",
+      "ticker": "RTX",
+      "date": "2024-02-15",
+      "statement": "cashflow",
+      "filing_date": "2024-02-05",
+      "status": "fail",
+      "matched": 0,
+      "comparable": 3,
+      "deviations": {
+        "operating_cf": 7883000000.0,
+        "capital_expenditures": 2.311,
+        "free_cash_flow": 2.9532
+      }
+    },
+    {
+      "sector": "Utilities",
+      "ticker": "NEE",
+      "date": "2023-02-15",
+      "statement": "income",
+      "filing_date": "2022-02-18",
+      "status": "fail",
+      "matched": 0,
+      "comparable": 4,
+      "deviations": {
+        "total_revenue": 0.2277,
+        "net_income": 0.4669,
+        "gross_profit": 2.4806,
+        "operating_income": 0.2218
+      }
+    },
+    {
+      "sector": "Utilities",
+      "ticker": "NEE",
+      "date": "2023-02-15",
+      "statement": "cashflow",
+      "filing_date": "2022-02-18",
+      "status": "fail",
+      "matched": 1,
+      "comparable": 3,
+      "deviations": {
+        "operating_cf": 0.0939,
+        "capital_expenditures": 2.4703,
+        "free_cash_flow": 2.5965
+      }
+    },
+    {
+      "sector": "Utilities",
+      "ticker": "NEE",
+      "date": "2024-02-15",
+      "statement": "income",
+      "filing_date": "2023-02-17",
+      "status": "fail",
+      "matched": 0,
+      "comparable": 4,
+      "deviations": {
+        "total_revenue": 0.3416,
+        "net_income": 1.252,
+        "gross_profit": 3.4048,
+        "operating_income": 1.4092
+      }
+    },
+    {
+      "sector": "Utilities",
+      "ticker": "NEE",
+      "date": "2024-02-15",
+      "statement": "balance",
+      "filing_date": "2023-02-17",
+      "status": "fail",
+      "matched": 2,
+      "comparable": 4,
+      "deviations": {
+        "total_assets": 0.1167,
+        "total_liabilities": 0.0819,
+        "stockholders_equity": 0.21,
+        "cash": 0.8006
+      }
+    },
+    {
+      "sector": "Utilities",
+      "ticker": "NEE",
+      "date": "2024-02-15",
+      "statement": "cashflow",
+      "filing_date": "2023-02-17",
+      "status": "fail",
+      "matched": 0,
+      "comparable": 3,
+      "deviations": {
+        "operating_cf": 0.3678,
+        "capital_expenditures": 2.053,
+        "free_cash_flow": 3.1776
+      }
+    },
+    {
+      "sector": "Utilities",
+      "ticker": "DUK",
+      "date": "2023-02-15",
+      "statement": "income",
+      "filing_date": "2022-02-24",
+      "status": "fail",
+      "matched": 0,
+      "comparable": 4,
+      "deviations": {
+        "total_revenue": 0.2889,
+        "net_income": 0.2875,
+        "gross_profit": 1.415,
+        "operating_income": 0.1956
+      }
+    },
+    {
+      "sector": "Utilities",
+      "ticker": "DUK",
+      "date": "2023-02-15",
+      "statement": "balance",
+      "filing_date": "2022-02-24",
+      "status": "fail",
+      "matched": 2,
+      "comparable": 4,
+      "deviations": {
+        "total_assets": 0.0501,
+        "total_liabilities": 0.2556,
+        "stockholders_equity": 0.0005,
+        "cash": 0.9589
+      }
+    },
+    {
+      "sector": "Utilities",
+      "ticker": "DUK",
+      "date": "2023-02-15",
+      "statement": "cashflow",
+      "filing_date": "2022-02-24",
+      "status": "fail",
+      "matched": 0,
+      "comparable": 3,
+      "deviations": {
+        "operating_cf": 0.285,
+        "capital_expenditures": 2.17,
+        "free_cash_flow": 2.8175
+      }
+    },
+    {
+      "sector": "Utilities",
+      "ticker": "DUK",
+      "date": "2024-02-15",
+      "statement": "income",
+      "filing_date": "2023-02-27",
+      "status": "fail",
+      "matched": 1,
+      "comparable": 4,
+      "deviations": {
+        "total_revenue": 0.1281,
+        "net_income": 0.1572,
+        "gross_profit": 1.2881,
+        "operating_income": 0.1815
+      }
+    },
+    {
+      "sector": "Utilities",
+      "ticker": "DUK",
+      "date": "2024-02-15",
+      "statement": "balance",
+      "filing_date": "2023-02-27",
+      "status": "fail",
+      "matched": 2,
+      "comparable": 4,
+      "deviations": {
+        "total_assets": 0.0067,
+        "total_liabilities": 0.2885,
+        "stockholders_equity": 0.0043,
+        "cash": 0.9809
+      }
+    },
+    {
+      "sector": "Utilities",
+      "ticker": "DUK",
+      "date": "2024-02-15",
+      "statement": "cashflow",
+      "filing_date": "2023-02-27",
+      "status": "fail",
+      "matched": 0,
+      "comparable": 3,
+      "deviations": {
+        "operating_cf": 0.6666,
+        "capital_expenditures": 2.1088,
+        "free_cash_flow": 0.4989
+      }
+    },
+    {
+      "sector": "Utilities",
+      "ticker": "SO",
+      "date": "2023-02-15",
+      "statement": "income",
+      "filing_date": "2022-02-17",
+      "status": "fail",
+      "matched": 0,
+      "comparable": 4,
+      "deviations": {
+        "total_revenue": 0.2668,
+        "net_income": 0.531,
+        "gross_profit": 1.8737,
+        "operating_income": 0.4521
+      }
+    },
+    {
+      "sector": "Utilities",
+      "ticker": "SO",
+      "date": "2023-02-15",
+      "statement": "cashflow",
+      "filing_date": "2022-02-17",
+      "status": "fail",
+      "matched": 1,
+      "comparable": 3,
+      "deviations": {
+        "operating_cf": 0.0216,
+        "capital_expenditures": 2.0943,
+        "free_cash_flow": 0.5135
+      }
+    },
+    {
+      "sector": "Utilities",
+      "ticker": "D",
+      "date": "2023-02-15",
+      "statement": "income",
+      "filing_date": "2022-02-24",
+      "status": "fail",
+      "matched": 2,
+      "comparable": 4,
+      "deviations": {
+        "total_revenue": 0.0019,
+        "net_income": 0.5544,
+        "gross_profit": 1.1123,
+        "operating_income": 0.0798
+      }
+    },
+    {
+      "sector": "Utilities",
+      "ticker": "D",
+      "date": "2023-02-15",
+      "statement": "cashflow",
+      "filing_date": "2022-02-24",
+      "status": "fail",
+      "matched": 1,
+      "comparable": 3,
+      "deviations": {
+        "operating_cf": 0.0835,
+        "capital_expenditures": 2.2737,
+        "free_cash_flow": 1.0234
+      }
+    },
+    {
+      "sector": "Utilities",
+      "ticker": "D",
+      "date": "2024-02-15",
+      "statement": "income",
+      "filing_date": "2023-02-21",
+      "status": "fail",
+      "matched": 0,
+      "comparable": 4,
+      "deviations": {
+        "total_revenue": 0.1619,
+        "net_income": 0.9919,
+        "gross_profit": 3.3766,
+        "operating_income": 1.3315
+      }
+    },
+    {
+      "sector": "Utilities",
+      "ticker": "D",
+      "date": "2024-02-15",
+      "statement": "cashflow",
+      "filing_date": "2023-02-21",
+      "status": "fail",
+      "matched": 1,
+      "comparable": 3,
+      "deviations": {
+        "operating_cf": 0.7762,
+        "capital_expenditures": 2.3451,
+        "free_cash_flow": 0.0648
+      }
+    },
+    {
+      "sector": "Utilities",
+      "ticker": "AEP",
+      "date": "2023-02-15",
+      "statement": "income",
+      "filing_date": "2022-02-24",
+      "status": "fail",
+      "matched": 2,
+      "comparable": 4,
+      "deviations": {
+        "total_revenue": 0.1696,
+        "net_income": 0.0727,
+        "gross_profit": 2.3102,
+        "operating_income": 0.1076
+      }
+    },
+    {
+      "sector": "Utilities",
+      "ticker": "AEP",
+      "date": "2023-02-15",
+      "statement": "cashflow",
+      "filing_date": "2022-02-24",
+      "status": "fail",
+      "matched": 0,
+      "comparable": 3,
+      "deviations": {
+        "operating_cf": 0.3771,
+        "capital_expenditures": 7.8274,
+        "free_cash_flow": 1.4831
+      }
+    },
+    {
+      "sector": "Utilities",
+      "ticker": "AEP",
+      "date": "2024-02-15",
+      "statement": "cashflow",
+      "filing_date": "2023-02-23",
+      "status": "fail",
+      "matched": 1,
+      "comparable": 3,
+      "deviations": {
+        "operating_cf": 0.0522,
+        "capital_expenditures": 7.2172,
+        "free_cash_flow": 1.6112
+      }
+    },
+    {
+      "sector": "Materials",
+      "ticker": "LIN",
+      "date": "2023-02-15",
+      "statement": "income",
+      "filing_date": "2022-02-28",
+      "status": "fail",
+      "matched": 2,
+      "comparable": 4,
+      "deviations": {
+        "total_revenue": 0.0835,
+        "net_income": 0.047,
+        "gross_profit": 536.1538,
+        "operating_income": 249.4615
+      }
+    },
+    {
+      "sector": "Materials",
+      "ticker": "LIN",
+      "date": "2024-02-15",
+      "statement": "income",
+      "filing_date": "2023-02-28",
+      "status": "fail",
+      "matched": 1,
+      "comparable": 4,
+      "deviations": {
+        "total_revenue": 0.0153,
+        "net_income": 0.448,
+        "gross_profit": 248.7742,
+        "operating_income": 131.7258
+      }
+    },
+    {
+      "sector": "Materials",
+      "ticker": "APD",
+      "date": "2023-02-15",
+      "statement": "cashflow",
+      "filing_date": "2022-11-22",
+      "status": "fail",
+      "matched": 0,
+      "comparable": 1,
+      "deviations": {
+        "capital_expenditures": 2.0
+      }
+    },
+    {
+      "sector": "Materials",
+      "ticker": "APD",
+      "date": "2024-02-15",
+      "statement": "cashflow",
+      "filing_date": "2023-11-16",
+      "status": "fail",
+      "matched": 0,
+      "comparable": 1,
+      "deviations": {
+        "capital_expenditures": 2.0
+      }
+    },
+    {
+      "sector": "Materials",
+      "ticker": "ECL",
+      "date": "2023-02-15",
+      "statement": "cashflow",
+      "filing_date": "2022-02-25",
+      "status": "fail",
+      "matched": 0,
+      "comparable": 1,
+      "deviations": {
+        "capital_expenditures": 2.1086
+      }
+    },
+    {
+      "sector": "Materials",
+      "ticker": "ECL",
+      "date": "2024-02-15",
+      "statement": "income",
+      "filing_date": "2023-02-24",
+      "status": "fail",
+      "matched": 1,
+      "comparable": 4,
+      "deviations": {
+        "total_revenue": 0.0798,
+        "net_income": 0.2375,
+        "gross_profit": 2.9458,
+        "operating_income": 0.3464
+      }
+    },
+    {
+      "sector": "Materials",
+      "ticker": "ECL",
+      "date": "2024-02-15",
+      "statement": "cashflow",
+      "filing_date": "2023-02-24",
+      "status": "fail",
+      "matched": 0,
+      "comparable": 1,
+      "deviations": {
+        "capital_expenditures": 2.087
+      }
+    },
+    {
+      "sector": "Materials",
+      "ticker": "DD",
+      "date": "2023-02-15",
+      "statement": "income",
+      "filing_date": "2023-02-15",
+      "status": "fail",
+      "matched": 2,
+      "comparable": 4,
+      "deviations": {
+        "total_revenue": 0.0,
+        "net_income": 0.0083,
+        "gross_profit": 23.1623,
+        "operating_income": 9.5864
+      }
+    },
+    {
+      "sector": "Materials",
+      "ticker": "DD",
+      "date": "2023-02-15",
+      "statement": "cashflow",
+      "filing_date": "2023-02-15",
+      "status": "fail",
+      "matched": 0,
+      "comparable": 1,
+      "deviations": {
+        "capital_expenditures": 1.891
+      }
+    },
+    {
+      "sector": "Materials",
+      "ticker": "DD",
+      "date": "2024-02-15",
+      "statement": "income",
+      "filing_date": "2024-02-15",
+      "status": "fail",
+      "matched": 1,
+      "comparable": 4,
+      "deviations": {
+        "total_revenue": 0.4519,
+        "net_income": 0.0844,
+        "gross_profit": 20.2941,
+        "operating_income": 7.0588
+      }
+    },
+    {
+      "sector": "Materials",
+      "ticker": "DD",
+      "date": "2024-02-15",
+      "statement": "cashflow",
+      "filing_date": "2024-02-15",
+      "status": "fail",
+      "matched": 0,
+      "comparable": 1,
+      "deviations": {
+        "capital_expenditures": 4.3328
+      }
+    },
+    {
+      "sector": "Materials",
+      "ticker": "NEM",
+      "date": "2024-02-15",
+      "statement": "income",
+      "filing_date": "2023-02-23",
+      "status": "fail",
+      "matched": 1,
+      "comparable": 4,
+      "deviations": {
+        "total_revenue": 0.0086,
+        "net_income": 5.2506,
+        "gross_profit": 49.4677,
+        "operating_income": 12.4194
+      }
+    },
+    {
+      "sector": "Materials",
+      "ticker": "NEM",
+      "date": "2024-02-15",
+      "statement": "balance",
+      "filing_date": "2023-02-23",
+      "status": "fail",
+      "matched": 0,
+      "comparable": 4,
+      "deviations": {
+        "total_assets": 0.4424,
+        "total_liabilities": 0.388,
+        "stockholders_equity": 0.4998,
+        "cash": 0.5392
+      }
+    },
+    {
+      "sector": "Materials",
+      "ticker": "NEM",
+      "date": "2024-02-15",
+      "statement": "cashflow",
+      "filing_date": "2023-02-23",
+      "status": "fail",
+      "matched": 1,
+      "comparable": 3,
+      "deviations": {
+        "operating_cf": 0.1419,
+        "capital_expenditures": 2.2511,
+        "free_cash_flow": 0.9109
+      }
+    },
+    {
+      "sector": "Real_Estate",
+      "ticker": "AMT",
+      "date": "2023-02-15",
+      "statement": "income",
+      "filing_date": "2022-02-25",
+      "status": "fail",
+      "matched": 2,
+      "comparable": 4,
+      "deviations": {
+        "total_revenue": 0.0308,
+        "net_income": 0.3123,
+        "gross_profit": 1.2593,
+        "operating_income": 0.0668
+      }
+    },
+    {
+      "sector": "Real_Estate",
+      "ticker": "AMT",
+      "date": "2023-02-15",
+      "statement": "balance",
+      "filing_date": "2022-02-25",
+      "status": "fail",
+      "matched": 2,
+      "comparable": 4,
+      "deviations": {
+        "total_assets": 101.2436,
+        "total_liabilities": 0.0992,
+        "stockholders_equity": 0.0967,
+        "cash": 0.4561
+      }
+    },
+    {
+      "sector": "Real_Estate",
+      "ticker": "AMT",
+      "date": "2023-02-15",
+      "statement": "cashflow",
+      "filing_date": "2022-02-25",
+      "status": "fail",
+      "matched": 0,
+      "comparable": 1,
+      "deviations": {
+        "capital_expenditures": 2.3609
+      }
+    },
+    {
+      "sector": "Real_Estate",
+      "ticker": "AMT",
+      "date": "2024-02-15",
+      "statement": "income",
+      "filing_date": "2023-02-23",
+      "status": "fail",
+      "matched": 2,
+      "comparable": 4,
+      "deviations": {
+        "total_revenue": 0.0653,
+        "net_income": 0.1258,
+        "gross_profit": 2.1674,
+        "operating_income": 0.5035
+      }
+    },
+    {
+      "sector": "Real_Estate",
+      "ticker": "AMT",
+      "date": "2024-02-15",
+      "statement": "balance",
+      "filing_date": "2023-02-23",
+      "status": "fail",
+      "matched": 1,
+      "comparable": 4,
+      "deviations": {
+        "total_assets": 90.2866,
+        "total_liabilities": 0.0069,
+        "stockholders_equity": 0.2466,
+        "cash": 0.5159
+      }
+    },
+    {
+      "sector": "Real_Estate",
+      "ticker": "AMT",
+      "date": "2024-02-15",
+      "statement": "cashflow",
+      "filing_date": "2023-02-23",
+      "status": "fail",
+      "matched": 0,
+      "comparable": 1,
+      "deviations": {
+        "capital_expenditures": 1.9597
+      }
+    },
+    {
+      "sector": "Real_Estate",
+      "ticker": "PLD",
+      "date": "2023-02-15",
+      "statement": "income",
+      "filing_date": "2023-02-14",
+      "status": "fail",
+      "matched": 2,
+      "comparable": 4,
+      "deviations": {
+        "total_revenue": 0.2159,
+        "net_income": 0.0536,
+        "gross_profit": 0.9578,
+        "operating_income": 0.0
+      }
+    },
+    {
+      "sector": "Real_Estate",
+      "ticker": "PLD",
+      "date": "2024-02-15",
+      "statement": "income",
+      "filing_date": "2024-02-13",
+      "status": "fail",
+      "matched": 2,
+      "comparable": 4,
+      "deviations": {
+        "total_revenue": 0.1767,
+        "net_income": 0.0596,
+        "gross_profit": 0.9495,
+        "operating_income": 0.0
+      }
+    },
+    {
+      "sector": "Real_Estate",
+      "ticker": "CCI",
+      "date": "2023-02-15",
+      "statement": "income",
+      "filing_date": "2022-02-22",
+      "status": "fail",
+      "matched": 0,
+      "comparable": 4,
+      "deviations": {
+        "total_revenue": 10.2496,
+        "net_income": 0.5283,
+        "gross_profit": 4918000000.0,
+        "operating_income": 2433000000.0
+      }
+    },
+    {
+      "sector": "Real_Estate",
+      "ticker": "CCI",
+      "date": "2024-02-15",
+      "statement": "income",
+      "filing_date": "2023-02-24",
+      "status": "fail",
+      "matched": 1,
+      "comparable": 4,
+      "deviations": {
+        "total_revenue": 5.792,
+        "net_income": 0.1033,
+        "gross_profit": 3469000000.0,
+        "operating_income": 2180000000.0
+      }
+    },
+    {
+      "sector": "Real_Estate",
+      "ticker": "CCI",
+      "date": "2024-02-15",
+      "statement": "cashflow",
+      "filing_date": "2023-02-24",
+      "status": "fail",
+      "matched": 1,
+      "comparable": 3,
+      "deviations": {
+        "operating_cf": 0.0862,
+        "capital_expenditures": 1.1855,
+        "free_cash_flow": 0.8386
+      }
+    },
+    {
+      "sector": "Real_Estate",
+      "ticker": "EQIX",
+      "date": "2023-02-15",
+      "statement": "income",
+      "filing_date": "2022-02-18",
+      "status": "fail",
+      "matched": 2,
+      "comparable": 4,
+      "deviations": {
+        "total_revenue": 0.0946,
+        "net_income": 0.4108,
+        "gross_profit": 2.1692,
+        "operating_income": 0.1063
+      }
+    },
+    {
+      "sector": "Real_Estate",
+      "ticker": "EQIX",
+      "date": "2023-02-15",
+      "statement": "cashflow",
+      "filing_date": "2022-02-18",
+      "status": "fail",
+      "matched": 0,
+      "comparable": 3,
+      "deviations": {
+        "operating_cf": 0.1632,
+        "capital_expenditures": 1.8279,
+        "free_cash_flow": 4.3528
+      }
+    },
+    {
+      "sector": "Real_Estate",
+      "ticker": "SPG",
+      "date": "2023-02-15",
+      "statement": "income",
+      "filing_date": "2022-02-24",
+      "status": "fail",
+      "matched": 1,
+      "comparable": 4,
+      "deviations": {
+        "total_revenue": 48.6929,
+        "net_income": 0.1671,
+        "gross_profit": 0.7779,
+        "operating_income": 0.0706
+      }
+    },
+    {
+      "sector": "Real_Estate",
+      "ticker": "SPG",
+      "date": "2024-02-15",
+      "statement": "income",
+      "filing_date": "2023-02-23",
+      "status": "fail",
+      "matched": 2,
+      "comparable": 4,
+      "deviations": {
+        "total_revenue": 47.4058,
+        "net_income": 0.069,
+        "gross_profit": 0.7923,
+        "operating_income": 0.0865
+      }
+    }
+  ]
+}
