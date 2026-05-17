@@ -552,3 +552,25 @@ def ask_output_language() -> str:
         ).ask().strip()
 
     return choice
+
+
+def ask_investment_horizon() -> str:
+    """Ask for investment horizon."""
+    choice = questionary.select(
+        "Select Investment Horizon:",
+        choices=[
+            questionary.Choice("1-3 years (medium term)", "1-3 years"),
+            questionary.Choice("3-5 years (long term — default)", "3-5 years"),
+            questionary.Choice("5-10 years (very long term)", "5-10 years"),
+        ],
+        default="3-5 years",
+        style=questionary.Style([
+            ("selected", "fg:yellow noinherit"),
+            ("highlighted", "fg:yellow noinherit"),
+            ("pointer", "fg:yellow noinherit"),
+        ]),
+    ).ask()
+
+    if not choice:
+        return "3-5 years"
+    return choice

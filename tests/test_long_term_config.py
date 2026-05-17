@@ -125,3 +125,9 @@ def test_debate_agent_prompts_include_horizon():
         src = inspect.getsource(mod)
         assert "investment_horizon" in src or "3-5 year" in src, \
             f"{mod.__name__} missing investment horizon context"
+
+
+@pytest.mark.unit
+def test_ask_investment_horizon_importable():
+    from cli.utils import ask_investment_horizon
+    assert callable(ask_investment_horizon)
