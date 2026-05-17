@@ -12,6 +12,10 @@ def create_bear_researcher(llm):
         sentiment_report = state["sentiment_report"]
         news_report = state["news_report"]
         fundamentals_report = state["fundamentals_report"]
+        valuation_report = state.get("valuation_report", "")
+        moat_report = state.get("moat_report", "")
+        macro_report = state.get("macro_report", "")
+        investment_horizon = state.get("investment_horizon", "3-5 years")
         asset_type = state.get("asset_type", "stock")
         target_label = "stock" if asset_type == "stock" else "asset"
         fundamentals_label = (
@@ -36,6 +40,11 @@ Market research report: {market_research_report}
 Social media sentiment report: {sentiment_report}
 Latest world affairs news: {news_report}
 {fundamentals_label}: {fundamentals_report}
+Valuation report: {valuation_report}
+Moat & quality report: {moat_report}
+Macro & secular report: {macro_report}
+
+Investment horizon context: The investment horizon is {investment_horizon}. Weight your bear arguments for structural risks that could materially harm the business over this timeframe. Short-term price weakness is not a bear thesis at this horizon — focus on business model deterioration, competitive displacement, or valuation excess.
 Conversation history of the debate: {history}
 Last bull argument: {current_response}
 Use this information to deliver a compelling bear argument, refute the bull's claims, and engage in a dynamic debate that demonstrates the risks and weaknesses of investing in the {target_label}.

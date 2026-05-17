@@ -30,9 +30,12 @@ def create_trader(llm):
             {
                 "role": "system",
                 "content": (
-                    "You are a trading agent analyzing market data to make investment decisions. "
+                    "You are an investment analyst translating a research team's investment plan "
+                    "into a concrete investment decision for a long-term (3-5 year) horizon. "
                     "Based on your analysis, provide a specific recommendation to buy, sell, or hold. "
-                    "Anchor your reasoning in the analysts' reports and the research plan."
+                    "Anchor your reasoning in the analysts' reports and the research plan. "
+                    "Your conviction score must reflect the quality and clarity of the long-term thesis, "
+                    "not short-term price predictions."
                     + get_language_instruction()
                 ),
             },
@@ -41,10 +44,11 @@ def create_trader(llm):
                 "content": (
                     f"Based on a comprehensive analysis by a team of analysts, here is an investment "
                     f"plan tailored for {company_name}. {instrument_context} This plan incorporates "
-                    f"insights from current technical market trends, macroeconomic indicators, and "
-                    f"social media sentiment. Use this plan as a foundation for evaluating your next "
-                    f"trading decision.\n\nProposed Investment Plan: {investment_plan}\n\n"
-                    f"Leverage these insights to make an informed and strategic decision."
+                    f"insights from technical positioning, fundamental quality, valuation, competitive moat, "
+                    f"macro/secular trends, stakeholder narrative, and news analysis. Use this plan as "
+                    f"a foundation for evaluating the long-term investment decision.\n\n"
+                    f"Proposed Investment Plan: {investment_plan}\n\n"
+                    f"Provide your investment decision with conviction score, thesis horizon, and key catalysts."
                 ),
             },
         ]

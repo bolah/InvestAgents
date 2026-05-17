@@ -38,6 +38,7 @@ def create_portfolio_manager(llm):
             if past_context
             else ""
         )
+        investment_horizon = state.get("investment_horizon", "3-5 years")
 
         prompt = f"""As the Portfolio Manager, synthesize the risk analysts' debate and deliver the final trading decision.
 
@@ -55,7 +56,7 @@ def create_portfolio_manager(llm):
 **Context:**
 - Research Manager's investment plan: **{research_plan}**
 - Trader's transaction proposal: **{trader_plan}**
-{lessons_line}
+{lessons_line}- Investment horizon: **{investment_horizon}**. The final decision should reflect this multi-year holding period. Short-term price volatility is not a relevant risk factor at this horizon.
 **Risk Analysts Debate History:**
 {history}
 

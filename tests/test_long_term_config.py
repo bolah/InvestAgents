@@ -99,3 +99,27 @@ def test_sentiment_analyst_is_long_term():
     assert "sentiment_lookback_days" in src
     assert "durable narrative" in src or "enduring narrative" in src
     assert "Short-term sentiment" in src
+
+
+@pytest.mark.unit
+def test_researcher_prompts_include_new_reports():
+    import inspect
+    import tradingagents.agents.researchers.bull_researcher as b
+    src = inspect.getsource(b)
+    assert "valuation_report" in src
+    assert "moat_report" in src
+    assert "macro_report" in src
+    assert "investment_horizon" in src
+
+
+@pytest.mark.unit
+def test_debate_agent_prompts_include_horizon():
+    import inspect
+    import tradingagents.agents.risk_mgmt.aggressive_debator as a
+    import tradingagents.agents.risk_mgmt.conservative_debator as c
+    import tradingagents.agents.risk_mgmt.neutral_debator as n
+    import tradingagents.agents.managers.portfolio_manager as pm
+    for mod in [a, c, n, pm]:
+        src = inspect.getsource(mod)
+        assert "investment_horizon" in src or "3-5 year" in src, \
+            f"{mod.__name__} missing investment horizon context"
