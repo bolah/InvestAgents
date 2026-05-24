@@ -11,7 +11,7 @@ Run the debate and synthesis stages from existing analyst files. Useful for re-r
 
 ## Steps
 
-1. Verify all 5 analyst files exist in `research/{TICKER}/`. If any are missing, tell the user to run `/analyze {TICKER}` first.
+1. Verify all 5 analyst files exist in `research/{TICKER}/`: `fundamentals.json`, `moat.json`, `valuation.json`, `macro.json`, `insider.json`. If any are missing, tell the user to run `/analyze {TICKER}` first.
 
 2. Run Stage 2 (bull + bear) in parallel.
 

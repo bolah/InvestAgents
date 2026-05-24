@@ -17,7 +17,7 @@ Check whether kill-criteria from a prior verdict have been triggered.
 
 2. If `--refresh-analysts` is passed: re-run Stage 1 (all 5 analyst agents) before proceeding.
 
-3. For each kill-criterion in `verdict.json.kill_criteria`:
+3. For each kill-criterion in the `kill_criteria` array in `research/{TICKER}/verdict.json`:
    - Read the relevant analyst file (fundamentals, moat, valuation, macro, or insider)
    - Check whether the trigger condition is met based on current data
    - Label: TRIGGERED / WATCH / OK
