@@ -1,0 +1,22 @@
+{
+  "mcpServers": {
+    "edgartools": {
+      "command": "uvx",
+      "args": ["edgartools-mcp"],
+      "description": "US SEC EDGAR filings, Form 4 insider transactions, 13F institutional holdings, DEF 14A compensation data. US tickers only."
+    },
+    "yfinance": {
+      "command": "uvx",
+      "args": ["yfinance-mcp"],
+      "description": "Price history, dividends, buybacks, basic financials. US and EU tickers. EU fundamentals are thin — use for price/multiple history only."
+    },
+    "fred": {
+      "command": "uvx",
+      "args": ["fredapi-mcp"],
+      "env": {
+        "FRED_API_KEY": "${FRED_API_KEY}"
+      },
+      "description": "FRED macro data: risk-free rates, inflation, yield curve, GDP. Requires free FRED_API_KEY env var."
+    }
+  }
+}

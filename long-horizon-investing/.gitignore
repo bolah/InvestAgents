@@ -1,0 +1,5 @@
+# Live research runs — never commit (audit trail stays local)
+research/
+
+# OS
+.DS_Store

@@ -1,0 +1,34 @@
+{
+  "name": "long-horizon-investing",
+  "version": "0.1.0",
+  "description": "Long-horizon equity research: 3/5/10-year Initiate/Add/Hold/Trim/Avoid verdicts with kill-criteria. US-first, EU degraded mode.",
+  "author": {
+    "name": "Bence Olah"
+  },
+  "commands": [
+    { "name": "analyze", "path": "commands/analyze.md" },
+    { "name": "revisit", "path": "commands/revisit.md" },
+    { "name": "debate-only", "path": "commands/debate-only.md" }
+  ],
+  "agents": [
+    { "name": "fundamentals", "path": "agents/fundamentals.md" },
+    { "name": "moat", "path": "agents/moat.md" },
+    { "name": "valuation", "path": "agents/valuation.md" },
+    { "name": "macro-secular", "path": "agents/macro-secular.md" },
+    { "name": "insider-ownership", "path": "agents/insider-ownership.md" },
+    { "name": "bull-researcher", "path": "agents/bull-researcher.md" },
+    { "name": "bear-researcher", "path": "agents/bear-researcher.md" },
+    { "name": "aggressive-debator", "path": "agents/aggressive-debator.md" },
+    { "name": "conservative-debator", "path": "agents/conservative-debator.md" },
+    { "name": "neutral-debator", "path": "agents/neutral-debator.md" },
+    { "name": "synthesizer", "path": "agents/synthesizer.md" }
+  ],
+  "skills": [
+    { "name": "citation-discipline", "path": "skills/citation-discipline/SKILL.md" },
+    { "name": "moat-assessment", "path": "skills/moat-assessment/SKILL.md" },
+    { "name": "capital-allocation-history", "path": "skills/capital-allocation-history/SKILL.md" },
+    { "name": "kill-criteria-design", "path": "skills/kill-criteria-design/SKILL.md" },
+    { "name": "long-horizon-dcf", "path": "skills/long-horizon-dcf/SKILL.md" },
+    { "name": "long-horizon-comps", "path": "skills/long-horizon-comps/SKILL.md" }
+  ]
+}

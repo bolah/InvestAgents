@@ -1,0 +1,19 @@
+long-horizon-investing — Long-Horizon Equity Research Plugin
+Copyright 2026 Bence Olah
+
+This product includes software adapted from:
+
+  financial-services — Anthropic FSI Reference Plugins
+  Copyright 2024 Anthropic
+  Licensed under the Apache License, Version 2.0
+  Source: https://github.com/anthropics/financial-services
+  Modified files: skills/long-horizon-dcf/SKILL.md,
+                  skills/long-horizon-comps/SKILL.md
+
+  InvestAgents — LangGraph Trading Agent System
+  Copyright 2024 Bence Olah
+  Licensed under the Apache License, Version 2.0
+  Source: https://github.com/bolah/InvestAgents
+  Modified files: agents/bull-researcher.md, agents/bear-researcher.md,
+                  agents/aggressive-debator.md, agents/conservative-debator.md,
+                  agents/neutral-debator.md, agents/synthesizer.md
