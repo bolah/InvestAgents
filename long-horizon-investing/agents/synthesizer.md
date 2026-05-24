@@ -40,7 +40,7 @@ research/$TICKER/risk_neutral.json
 - `Initiate` or `Add` requires `conviction ≥ 7` out of 10
 - `Initiate` or `Add` requires ≥ 1 cited moat source in moat.json
 - `Initiate` or `Add` requires insider data present (insider.json not eu_mode_degraded) OR explicit `--accept-eu-degraded` flag
-- EU degraded mode: never issue Initiate/Add without the flag being set
+- EU degraded mode: if `insider.json` shows `eu_mode_degraded: true` AND `--accept-eu-degraded` was not passed, you MUST set `verdict: "Avoid"` (or `"Hold"` if a position already exists) and write a `dissent_summary` that begins: "EU degraded mode: verdict downgraded from [intended verdict] because EDGAR insider/13F data is unavailable. Re-run with --accept-eu-degraded to override."
 
 ## What to produce
 
@@ -152,6 +152,8 @@ Write to `research/$TICKER/report.md`. Structure:
 Token cap: `report.md` must not exceed 8000 tokens.
 
 ## Append to history.md
+
+**Append-only.** Do NOT overwrite. If `history.md` does not exist, create it. If it exists, add the new run block at the bottom of the file — never truncate prior entries.
 
 After writing verdict.json and report.md, append to `research/$TICKER/history.md`:
 
