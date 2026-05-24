@@ -14,7 +14,8 @@ At a 10-year horizon, capital allocation quality compounds. A management team th
 ### 1. Reinvestment rate and ROIC (10y series)
 - Pull capex + R&D + net acquisitions as % of EBITDA or operating cash flow (EDGAR 10-K)
 - Compute ROIC each year: NOPAT / Invested Capital
-- Label each year: value-creating (ROIC > WACC), neutral, or value-destroying
+  Derive WACC from `valuation.json` if already written; otherwise estimate from FRED GS10 (risk-free rate) + 5.5% equity risk premium + yfinance 5y beta. Cite the WACC source in `citations[]`.
+- Label each year: value-creating (ROIC > WACC + 1pp), neutral (within ±1pp of WACC), or value-destroying (ROIC < WACC - 1pp)
 
 ### 2. Buyback discipline
 - Pull share count history (10y via yfinance or EDGAR)
@@ -38,7 +39,7 @@ At a 10-year horizon, capital allocation quality compounds. A management team th
 ```json
 {
   "reinvestment_rate_avg_pct": null,
-  "roic_10y_series": [],
+  "roic_10y_series": [{"year": 2015, "roic_pct": 18.3}, "..."],
   "roic_vs_wacc_verdict": "consistently_above|mixed|consistently_below|insufficient_data",
   "buyback_discipline": "counter_cyclical|neutral|pro_cyclical|no_buybacks",
   "dividend_policy": "growing|stable|variable|no_dividend|cut_history",

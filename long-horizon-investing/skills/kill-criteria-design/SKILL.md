@@ -28,16 +28,19 @@ For each of the following thesis pillars, if relevant, define a kill-criterion:
 | Capital allocation | "Company executes acquisition > 2x trailing EV at ROIC < 8% implied" | EDGAR 8-K |
 | Balance sheet | "Net debt / EBITDA > [X]x and FCF yield < [Y]% simultaneously" | EDGAR 10-Q |
 | Secular trend | "TAM growth consensus estimate revised below [X]% CAGR" | Web/analyst consensus |
-| Management | "CEO/CFO both depart within 12 months without succession plan" | Web/press |
+| Management | "CEO and CFO both depart within 12 months AND no named internal successor announced within 90 days of first departure" | Web/press |
 
 ## Output format (goes into verdict.json `kill_criteria[]`)
 
 ```json
-{
-  "trigger": "ROIC falls below WACC for 2 consecutive fiscal years",
-  "lagging_indicator": "EDGAR 10-K: NOPAT / invested capital < 8.5% (estimated WACC) in FY25 and FY26",
-  "review_cadence": "annual"
-}
+[
+  {
+    "trigger": "ROIC falls below WACC for 2 consecutive fiscal years",
+    "lagging_indicator": "EDGAR 10-K: NOPAT / invested capital < 8.5% (estimated WACC) in FY25 and FY26",
+    "review_cadence": "annual"
+  },
+  "... (repeat for each of your 3-6 criteria)"
+]
 ```
 
 Write 3–6 kill-criteria. Fewer is better if each one is precise. Vague kill-criteria are worse than none.
