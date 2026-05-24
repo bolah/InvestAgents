@@ -1,0 +1,77 @@
+{
+  "ticker": "COST",
+  "as_of_date": "2026-05-24",
+  "verdict": "Hold",
+  "conviction": 7,
+  "horizon_years": 10,
+  "thesis": "Costco is one of the highest-quality retail businesses ever constructed: a wide-moat membership flywheel with 92.9% renewal rates, 25-30% ROIC over a decade, and structural cost advantages (SKU discipline, negative working capital, supplier leverage) that have strengthened over 40 years. The fundamental business case for ownership is compelling on any 10-year horizon. However, at $952/share (48x normalized P/E, 134% premium to peer EV/EBITDA, DCF base case $535), the price already reflects a near-best-case outcome. New capital entering today earns roughly 2.1% earnings yield vs a 4.3% risk-free rate — requiring either sustained earnings compounding above market-implied 12%/yr or acceptance of index-level returns with single-name concentration risk. The verdict is Hold for existing holders and staged-entry initiation for new buyers, not a high-urgency Add.",
+  "valuation_basis": "vs normalized 10-year earnings power: normalized FCF/share $17.20 (10-year avg); DCF at 8.4% WACC — intrinsic value bear $398, base $535, bull $760 vs current $952. Normalized P/E 48.2x vs 10-year peer median 27.4x. Not TTM-driven.",
+  "sizing_guidance": "staged-tranche",
+  "kill_criteria": [
+    {
+      "trigger": "Worldwide membership renewal rate falls below 89% for two consecutive quarters",
+      "lagging_indicator": "Membership fee income growth decelerates below 3%/yr",
+      "review_cadence": "quarterly"
+    },
+    {
+      "trigger": "Gross merchandise margin declines more than 150bps from FY2024 baseline (12.7% → below 11.2%) for two consecutive years",
+      "lagging_indicator": "Management introduces promotional discounting or loyalty programs inconsistent with the always-low-price model",
+      "review_cadence": "annual"
+    },
+    {
+      "trigger": "ROIC falls below 18% for two consecutive years (from 29.4% FY2024)",
+      "lagging_indicator": "Operating income growth persistently lags revenue growth for 3+ consecutive years",
+      "review_cadence": "annual"
+    },
+    {
+      "trigger": "Two consecutive new-market international failures: warehouse closures, write-downs > $200M, or <50% target-year enrollment in new countries",
+      "lagging_indicator": "International revenue share declines as a % of total for 3 consecutive years",
+      "review_cadence": "annual"
+    },
+    {
+      "trigger": "Membership fee increase leads to renewal rate drop > 300bps in the 4 quarters following the increase",
+      "lagging_indicator": "Total active cardholders shrink YoY (currently 133M, FY2024)",
+      "review_cadence": "quarterly"
+    }
+  ],
+  "key_risks": [
+    "Multiple compression: 48x P/E to 35x P/E is a 27% price decline with no fundamental change required",
+    "Membership renewal rate mean-reversion from peak 92.9%: each 1pp decline is ~$65-130M in fee income impairment",
+    "E-commerce disruption: Amazon Fresh / Whole Foods sustained market share gains in grocery could reduce warehouse visit frequency below the value-perception threshold",
+    "International execution risk: India and next-phase China entry face regulatory and logistics challenges",
+    "Risk-free rate competition: at 4.3% risk-free vs 2.1% earnings yield, the opportunity cost of holding equities at this multiple is meaningful"
+  ],
+  "citations": [
+    {
+      "claim": "Normalized FCF/share $17.20; DCF bear $398 / base $535 / bull $760",
+      "source": "edgar",
+      "url_or_id": "CIK 0000909832 / 10-K series FY2015-FY2024; see valuation.json",
+      "retrieved_at": "2026-05-24"
+    },
+    {
+      "claim": "Wide moat score 7/10 — cost advantage (2), switching costs (2), network effects (1), intangible assets (1), efficient scale (1)",
+      "source": "edgar",
+      "url_or_id": "CIK 0000909832 / 10-K FY2024 + web research; see moat.json",
+      "retrieved_at": "2026-05-24"
+    },
+    {
+      "claim": "US/Canada renewal rate 92.9% FY2024",
+      "source": "edgar",
+      "url_or_id": "CIK 0000909832 / 10-K filed 2024-10-09",
+      "retrieved_at": "2026-05-24"
+    },
+    {
+      "claim": "Current price $952, normalized P/E 48.2x, risk-free 4.3%",
+      "source": "yfinance",
+      "url_or_id": "COST close 2026-05-23; FRED GS10 2026-05-24",
+      "retrieved_at": "2026-05-24"
+    }
+  ],
+  "confidence_gates_passed": {
+    "floor_7_for_initiate_add": true,
+    "moat_cited": true,
+    "insider_data_present_or_eu_flag": true
+  },
+  "dissent_summary": "Conservative debator argued for 25-30% initial position (not 50%) on grounds that 48x P/E leaves no cushion for multiple compression and the risk-free vs earnings yield spread is unusually punishing. This was partially accepted: the sizing guidance is staged-tranche at 50% Stage 1 rather than the 75% that the bull case would support, as a concession to conservative's valuation concern. Bear argued verdict should be Trim for existing holders at current valuations — overridden because Costco's business quality and compounding characteristics mean exiting at 48x in a business growing earnings 12%/yr would be a poor long-term decision for existing holders with a long horizon and embedded gains.",
+  "total_cost_usd_est": 4.29
+}

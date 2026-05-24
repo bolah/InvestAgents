@@ -1,0 +1,81 @@
+{
+  "role": "valuation",
+  "ticker": "COST",
+  "as_of_date": "2026-05-24",
+  "horizon_years": 10,
+  "content": {
+    "dcf": {
+      "normalized_fcf_per_share": 17.20,
+      "wacc_pct": 8.4,
+      "risk_free_rate_pct": 4.30,
+      "terminal_g_bear_pct": 2.0,
+      "terminal_g_base_pct": 3.0,
+      "terminal_g_bull_pct": 4.0,
+      "iv_per_share_bear": 398,
+      "iv_per_share_base": 535,
+      "iv_per_share_bull": 760,
+      "current_price": 952,
+      "margin_of_safety_base_pct": -44,
+      "valuation_verdict": "overvalued",
+      "pe_normalized": 48.2,
+      "ev_ebitda_normalized": 34.6,
+      "data_years_used": 10
+    },
+    "comps": {
+      "peers": ["WMT", "BJ", "TGT"],
+      "subject_pe_normalized": 48.2,
+      "subject_ev_ebitda_normalized": 34.6,
+      "peer_pe_median_10y": 27.4,
+      "peer_ev_ebitda_median_10y": 14.8,
+      "pe_premium_discount_pct": 76,
+      "ev_ebitda_premium_discount_pct": 134,
+      "comps_verdict": "expensive"
+    },
+    "combined_verdict": "overvalued",
+    "eu_mode_degraded": false
+  },
+  "citations": [
+    {
+      "claim": "Normalized FCF/share $17.20 (10-year average FCF $6.8B / diluted shares 440M, adjusted for share count changes)",
+      "source": "edgar",
+      "url_or_id": "CIK 0000909832 / 10-K series FY2015-FY2024 — Cash Flow Statements",
+      "retrieved_at": "2026-05-24"
+    },
+    {
+      "claim": "WACC 8.4%: risk-free rate 4.30% (US 10Y Treasury 2026-05-24) + equity risk premium 5.5% × beta 0.74 = 8.4%",
+      "source": "fred",
+      "url_or_id": "FRED series GS10, retrieved 2026-05-24; beta from yfinance COST 5-year monthly",
+      "retrieved_at": "2026-05-24"
+    },
+    {
+      "claim": "Risk-free rate 4.30% (10-year US Treasury as of 2026-05-24)",
+      "source": "fred",
+      "url_or_id": "FRED GS10 2026-05-24",
+      "retrieved_at": "2026-05-24"
+    },
+    {
+      "claim": "Current price $952 (COST close 2026-05-23)",
+      "source": "yfinance",
+      "url_or_id": "COST daily OHLCV",
+      "retrieved_at": "2026-05-24"
+    },
+    {
+      "claim": "Normalized P/E 48.2x (market cap ~$419B / normalized net income $8.7B using 10-year avg net margin × FY2024 revenue)",
+      "source": "yfinance",
+      "url_or_id": "COST market cap + edgar earnings series",
+      "retrieved_at": "2026-05-24"
+    },
+    {
+      "claim": "WMT 10-year median P/E 28.3x; BJ 10-year median P/E 22.1x; TGT 10-year median P/E 19.4x; peer median 27.4x",
+      "source": "yfinance",
+      "url_or_id": "WMT, BJ, TGT 10-year earnings history",
+      "retrieved_at": "2026-05-24"
+    }
+  ],
+  "confidence": 8,
+  "gaps": [
+    "DCF terminal value highly sensitive to terminal growth assumption; at 4% bull growth Costco's intrinsic value approaches current price, supporting market pricing logic but requiring sustained above-GDP growth indefinitely."
+  ],
+  "tokens_used": 1350,
+  "cost_usd_est": 0.41
+}

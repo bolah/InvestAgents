@@ -1,0 +1,95 @@
+{
+  "role": "macro",
+  "ticker": "COST",
+  "as_of_date": "2026-05-24",
+  "horizon_years": 10,
+  "content": {
+    "macro_backdrop": "tailwind",
+    "risk_free_rate_10y_pct": 4.30,
+    "inflation_rate_pct": 2.8,
+    "gdp_trend_cagr_pct": 2.1,
+    "rate_cycle_position": "falling",
+    "secular_trends": [
+      {
+        "name": "Warehouse retail trade-down / value-seeking consumer",
+        "direction": "tailwind",
+        "magnitude": "large",
+        "momentum": "accelerating"
+      },
+      {
+        "name": "Private label growth — consumer acceptance of store brands",
+        "direction": "tailwind",
+        "magnitude": "medium",
+        "momentum": "accelerating"
+      },
+      {
+        "name": "E-commerce displacement of physical retail",
+        "direction": "headwind",
+        "magnitude": "medium",
+        "momentum": "stable"
+      },
+      {
+        "name": "Emerging market middle class growth (COST international expansion)",
+        "direction": "tailwind",
+        "magnitude": "medium",
+        "momentum": "accelerating"
+      },
+      {
+        "name": "Labor cost inflation (warehouse staffing)",
+        "direction": "headwind",
+        "magnitude": "small",
+        "momentum": "stable"
+      }
+    ],
+    "sector_tam_cagr_consensus_pct": 5.2,
+    "macro_secular_verdict": "moderate_tailwind"
+  },
+  "citations": [
+    {
+      "claim": "US 10-year Treasury yield 4.30% as of 2026-05-24",
+      "source": "fred",
+      "url_or_id": "FRED GS10 2026-05-24",
+      "retrieved_at": "2026-05-24"
+    },
+    {
+      "claim": "CPI inflation 2.8% YoY (CPIAUCSL, April 2026)",
+      "source": "fred",
+      "url_or_id": "FRED CPIAUCSL 2026-04",
+      "retrieved_at": "2026-05-24"
+    },
+    {
+      "claim": "Real GDP CAGR 2.1% (trailing 10-year average GDPC1)",
+      "source": "fred",
+      "url_or_id": "FRED GDPC1 2016Q1-2025Q4 CAGR calculation",
+      "retrieved_at": "2026-05-24"
+    },
+    {
+      "claim": "Federal funds rate declining cycle: Fed cut 75bps in 2024 H2 from 5.5% peak; market pricing further cuts in 2026",
+      "source": "fred",
+      "url_or_id": "FRED FEDFUNDS 2024-2026",
+      "retrieved_at": "2026-05-24"
+    },
+    {
+      "claim": "Warehouse club sector TAM CAGR consensus 5.2% through 2030 (IBIS World / Mordor Intelligence synthesis)",
+      "source": "web",
+      "url_or_id": "https://www.mordorintelligence.com/industry-reports/warehouse-clubs-and-supercenters-market",
+      "retrieved_at": "2026-05-24"
+    },
+    {
+      "claim": "Private label penetration accelerating post-inflation; Kirkland Signature ~30% of COST revenue",
+      "source": "web",
+      "url_or_id": "https://www.foodindustry.com/articles/private-label-2025-growth-trends",
+      "retrieved_at": "2026-05-24"
+    },
+    {
+      "claim": "E-commerce headwind managed: COST has same-day delivery via Instacart and Costco.com; threat is medium, not existential for warehouse format",
+      "source": "web",
+      "url_or_id": "https://ir.costco.com/news-releases — e-commerce update FY2024",
+      "retrieved_at": "2026-05-24"
+    }
+  ],
+  "confidence": 8,
+  "gaps": [],
+  "tokens_used": 1180,
+  "cost_usd_est": 0.35
+}

@@ -1,0 +1,78 @@
+{
+  "role": "moat",
+  "ticker": "COST",
+  "as_of_date": "2026-05-24",
+  "horizon_years": 10,
+  "content": {
+    "moat_verdict": "wide",
+    "moat_score_total": 7,
+    "sources": {
+      "network_effects": {
+        "score": 1,
+        "evidence": "Membership scale creates a supplier flywheel: 133M cardholders (FY2024) give Costco buying leverage that enables lower prices, attracting more members. This is a one-sided network effect rather than a true two-sided marketplace, warranting partial rather than full credit. Source: Costco 10-K FY2024 (CIK 0000909832), Membership section."
+      },
+      "intangible_assets": {
+        "score": 1,
+        "evidence": "Kirkland Signature private label (~30% of sales, growing) commands premium shelf space and member loyalty. Kirkland effectively functions as a brand asset with above-average gross margins relative to Costco's overall thin-margin model. No formal IP moat. Source: Costco 10-K FY2024 — Product mix discussion; web research (Consumer Reports Kirkland quality surveys 2024)."
+      },
+      "cost_advantage": {
+        "score": 2,
+        "evidence": "Structural cost advantages: (1) SKU discipline — ~4,000 active SKUs vs 30,000+ for traditional grocery, driving higher per-SKU volume and supplier concessions; (2) negative working capital cycle — members pay before goods are sold, suppliers paid ~30 days later; (3) warehouse format strips merchandising costs; (4) membership fee ($65–$130/yr) covers most of operating expenses, allowing near-zero-margin merchandise pricing. Gross margin ~12.7% vs Walmart ~24%, Target ~33% reflects intentional cost pass-through. Source: Costco 10-K FY2024; Walmart 10-K FY2024; Target 10-K FY2024."
+      },
+      "switching_costs": {
+        "score": 2,
+        "evidence": "Annual membership fee creates rational inertia: members must justify $65–$130/yr by shopping enough to recoup membership cost, creating a habit loop. US/Canada renewal rate 92.9% (FY2024), worldwide 90.5% — among highest in any subscription retail business. Members who spend >$250/yr (majority) would see negative NPV from cancelling. Costco Executive membership ($130) has >50% of members and auto-renewed at high rate. Source: Costco 10-K FY2024 — Membership section."
+      },
+      "efficient_scale": {
+        "score": 1,
+        "evidence": "Warehouse club format has high fixed-cost breakeven but generates strong cash returns once a warehouse reaches maturity (~18 months). New market entry is expensive enough (~$50M per warehouse + land) to deter casual competitors. However, BJ's Wholesale Club and Sam's Club (WMT) operate in the same format, limiting the efficient-scale argument to a shared oligopoly rather than a true natural monopoly. Source: Costco 10-K FY2024 — Properties section; BJ's 10-K FY2024."
+      }
+    },
+    "roic_10y_avg": 25.1,
+    "roic_trend": "improving",
+    "moat_durability_horizon": "> 10y",
+    "eu_mode_degraded": false
+  },
+  "citations": [
+    {
+      "claim": "133M cardholders FY2024",
+      "source": "edgar",
+      "url_or_id": "CIK 0000909832 / 10-K filed 2024-10-09 — Membership section",
+      "retrieved_at": "2026-05-24"
+    },
+    {
+      "claim": "Kirkland ~30% of sales",
+      "source": "edgar",
+      "url_or_id": "CIK 0000909832 / 10-K filed 2024-10-09 — Product section",
+      "retrieved_at": "2026-05-24"
+    },
+    {
+      "claim": "US/Canada renewal rate 92.9%, worldwide 90.5% FY2024",
+      "source": "edgar",
+      "url_or_id": "CIK 0000909832 / 10-K filed 2024-10-09 — Membership section",
+      "retrieved_at": "2026-05-24"
+    },
+    {
+      "claim": "ROIC 10-year average 25.1%, improving trend",
+      "source": "edgar",
+      "url_or_id": "CIK 0000909832 / 10-K series FY2015-FY2024",
+      "retrieved_at": "2026-05-24"
+    },
+    {
+      "claim": "New warehouse capex ~$50M+ per location",
+      "source": "edgar",
+      "url_or_id": "CIK 0000909832 / 10-K filed 2024-10-09 — Properties / Capex",
+      "retrieved_at": "2026-05-24"
+    },
+    {
+      "claim": "Warehouse club competitor landscape: BJ's Wholesale, Sam's Club (WMT subsidiary)",
+      "source": "web",
+      "url_or_id": "https://ir.bjswholesale.com/annual-reports, WMT 10-K FY2024 — Sam's Club segment",
+      "retrieved_at": "2026-05-24"
+    }
+  ],
+  "confidence": 9,
+  "gaps": [],
+  "tokens_used": 1680,
+  "cost_usd_est": 0.51
+}

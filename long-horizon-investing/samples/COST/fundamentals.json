@@ -1,0 +1,96 @@
+{
+  "role": "fundamentals",
+  "ticker": "COST",
+  "as_of_date": "2026-05-24",
+  "horizon_years": 10,
+  "content": {
+    "revenue_cagr_10y_pct": 9.7,
+    "gross_margin_median_10y_pct": 12.7,
+    "ebit_margin_median_10y_pct": 3.5,
+    "fcf_margin_median_10y_pct": 2.9,
+    "fcf_conversion_ratio_median": 1.04,
+    "net_debt_ebitda_latest": -1.1,
+    "net_debt_ebitda_trough": -0.3,
+    "balance_sheet_verdict": "resilient",
+    "capital_allocation": {
+      "reinvestment_rate_avg_pct": 38,
+      "roic_10y_series": [
+        {"year": 2015, "roic_pct": 22.1},
+        {"year": 2016, "roic_pct": 20.8},
+        {"year": 2017, "roic_pct": 22.4},
+        {"year": 2018, "roic_pct": 24.0},
+        {"year": 2019, "roic_pct": 23.6},
+        {"year": 2020, "roic_pct": 20.5},
+        {"year": 2021, "roic_pct": 28.3},
+        {"year": 2022, "roic_pct": 30.1},
+        {"year": 2023, "roic_pct": 27.8},
+        {"year": 2024, "roic_pct": 29.4}
+      ],
+      "roic_vs_wacc_verdict": "consistently_above",
+      "buyback_discipline": "counter_cyclical",
+      "dividend_policy": "growing",
+      "acquisition_track_record": "no_acquisitions"
+    },
+    "eu_mode_degraded": false
+  },
+  "citations": [
+    {
+      "claim": "Revenue CAGR 9.7% over 10 years (FY2015 $113.7B → FY2024 $254.0B)",
+      "source": "edgar",
+      "url_or_id": "CIK 0000909832 / 10-K filed 2024-10-09",
+      "retrieved_at": "2026-05-24"
+    },
+    {
+      "claim": "Gross margin median 12.7% over 10 years",
+      "source": "edgar",
+      "url_or_id": "CIK 0000909832 / 10-K series FY2015-FY2024",
+      "retrieved_at": "2026-05-24"
+    },
+    {
+      "claim": "EBIT margin median 3.5% over 10 years",
+      "source": "edgar",
+      "url_or_id": "CIK 0000909832 / 10-K series FY2015-FY2024",
+      "retrieved_at": "2026-05-24"
+    },
+    {
+      "claim": "FCF conversion ratio median 1.04x (FCF slightly exceeds net income due to working capital benefits from negative cash conversion cycle)",
+      "source": "edgar",
+      "url_or_id": "CIK 0000909832 / 10-K filed 2024-10-09",
+      "retrieved_at": "2026-05-24"
+    },
+    {
+      "claim": "Net debt / EBITDA -1.1x (net cash position: cash $17.1B, long-term debt $6.5B as of Aug 2024)",
+      "source": "edgar",
+      "url_or_id": "CIK 0000909832 / 10-K filed 2024-10-09 — Balance Sheet",
+      "retrieved_at": "2026-05-24"
+    },
+    {
+      "claim": "ROIC 29.4% FY2024; consistently 20–30% range over 10 years",
+      "source": "edgar",
+      "url_or_id": "CIK 0000909832 / 10-K series — NOPAT / Invested Capital calculated",
+      "retrieved_at": "2026-05-24"
+    },
+    {
+      "claim": "Reinvestment rate avg 38% (capex / net income; new warehouse openings ~25/yr at ~$50M each)",
+      "source": "edgar",
+      "url_or_id": "CIK 0000909832 / 10-K filed 2024-10-09 — Cash Flow Statement",
+      "retrieved_at": "2026-05-24"
+    },
+    {
+      "claim": "Dividend policy: regular dividend growing ~10%/yr; three special dividends since 2012 ($7, $10, $15/share)",
+      "source": "yfinance",
+      "url_or_id": "COST dividend history",
+      "retrieved_at": "2026-05-24"
+    },
+    {
+      "claim": "No material acquisitions in 10-year period; organic growth only",
+      "source": "edgar",
+      "url_or_id": "CIK 0000909832 / 10-K filed 2024-10-09 — Business section",
+      "retrieved_at": "2026-05-24"
+    }
+  ],
+  "confidence": 9,
+  "gaps": [],
+  "tokens_used": 1420,
+  "cost_usd_est": 0.43
+}

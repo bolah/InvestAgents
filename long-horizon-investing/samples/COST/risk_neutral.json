@@ -1,0 +1,63 @@
+{
+  "role": "risk_neutral",
+  "ticker": "COST",
+  "as_of_date": "2026-05-24",
+  "horizon_years": 10,
+  "content": {
+    "sizing_recommendation": "staged_entry",
+    "stage1_fraction_pct": 50,
+    "stage1_rationale": "Initiate at 50% of target position at current price ~$952. Costco's business quality (wide moat, 92.9% renewal, consistent ROIC 25-30%) justifies partial exposure now. The valuation is elevated (48x normalized P/E, DCF base case $535) but the business has historically stayed expensive for extended periods. A 50% initial position captures participation if the stock continues to compound without full exposure if multiple compression materializes.",
+    "add_conditions": [
+      "Add to 75% position if COST pulls back to ~$800 (-16% from current price, ~40x normalized P/E) on no fundamental deterioration",
+      "Add to 100% position if COST reaches ~$700 (-26% from current price, ~35x normalized P/E) — represents historically cheap entry for COST's quality tier",
+      "Alternatively, accelerate to 75% if FY2025 Q3 membership renewal rate holds above 91% and revenue growth sustains >8% — confirming momentum intact despite fee increase"
+    ],
+    "hold_monitoring": [
+      "Track membership renewal rate quarterly (threshold: 90% worldwide; below triggers review)",
+      "Track membership fee income growth annually (should grow >6%/yr to justify valuation)",
+      "Track international comparable sales — should show positive growth YoY at least 3 of 4 quarters",
+      "Monitor Amazon Fresh / Whole Foods US market share quarterly for signs of warehouse-club frequency decline"
+    ],
+    "kill_criteria_candidates": [
+      {
+        "trigger": "Worldwide membership renewal rate falls below 89% for two consecutive quarters",
+        "lagging_indicator": "Membership fee income growth decelerates below 3%/yr",
+        "review_cadence": "quarterly"
+      },
+      {
+        "trigger": "Gross merchandise margin declines more than 150bps from FY2024 baseline (12.7% → below 11.2%) for two consecutive years",
+        "lagging_indicator": "Management begins discount programs or promotions to retain members — breaks the low-price-always model",
+        "review_cadence": "annual"
+      },
+      {
+        "trigger": "ROIC falls below 18% for two consecutive years (from 29.4% FY2024) — signals structural erosion of competitive advantage",
+        "lagging_indicator": "Operating income growth decouples from revenue growth for 3+ consecutive years",
+        "review_cadence": "annual"
+      },
+      {
+        "trigger": "International expansion produces two consecutive new-market failures: warehouse closures, significant write-downs, or <50% target-year membership enrollment in new markets",
+        "lagging_indicator": "International revenue share declines as a % of total for 3 consecutive years",
+        "review_cadence": "annual"
+      }
+    ],
+    "reconciliation_summary": "The aggressive case (buy immediately, full size) is correct that waiting for a pullback in quality compounders destroys expected value when the pullback never materializes. The conservative case is correct that 48x P/E leaves almost no valuation cushion and multiple compression from 48x to 35x is a realistic 5-year scenario independent of fundamentals. The staged entry reconciles these: participate at 50% now to avoid underexposure to a genuine compounder, but preserve dry powder for a meaningful pullback that would significantly improve the 10-year return profile. The 4 kill criteria above are the decision-forcing events — if any trigger, the position should be reviewed regardless of price action."
+  },
+  "citations": [
+    {
+      "claim": "Target add price $800 corresponds to ~40x normalized P/E (normalized EPS ~$19.75)",
+      "source": "yfinance",
+      "url_or_id": "COST normalized EPS derived from edgar series",
+      "retrieved_at": "2026-05-24"
+    },
+    {
+      "claim": "ROIC 29.4% FY2024; 18% floor represents ~40% decline, consistent with permanent moat erosion threshold",
+      "source": "edgar",
+      "url_or_id": "CIK 0000909832 / 10-K FY2024",
+      "retrieved_at": "2026-05-24"
+    }
+  ],
+  "confidence": 8,
+  "gaps": [],
+  "tokens_used": 1490,
+  "cost_usd_est": 0.45
+}

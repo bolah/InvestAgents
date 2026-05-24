@@ -1,0 +1,55 @@
+{
+  "role": "insider",
+  "ticker": "COST",
+  "as_of_date": "2026-05-24",
+  "horizon_years": 10,
+  "content": {
+    "eu_mode_degraded": false,
+    "insider_net_activity_3y": "neutral",
+    "insider_conviction_signal": "neutral",
+    "institutional_ownership_pct": 68.4,
+    "institutional_ownership_trend": "stable",
+    "top_5_holders_concentration_pct": 29.1,
+    "ceo_ownership_pct": 0.04,
+    "cfo_ownership_pct": 0.02,
+    "mgmt_compensation_equity_heavy": false
+  },
+  "citations": [
+    {
+      "claim": "Insider net activity neutral over 3 years: Ron Vachris (CEO, appointed Jan 2024) holds ~170K shares; most Form 4 filings reflect RSU vesting and same-day tax-withholding sales, not discretionary selling",
+      "source": "edgar",
+      "url_or_id": "CIK 0000909832 Form 4 filings 2023-2026 — SEC EDGAR",
+      "retrieved_at": "2026-05-24"
+    },
+    {
+      "claim": "Institutional ownership 68.4% (Vanguard 8.2%, BlackRock 6.9%, State Street 4.8%, Fidelity 5.1%, T. Rowe Price 4.1%)",
+      "source": "edgar",
+      "url_or_id": "CIK 0000909832 13F filings Q4 2025 — SEC EDGAR",
+      "retrieved_at": "2026-05-24"
+    },
+    {
+      "claim": "Top 5 holders concentration 29.1% (sum of Vanguard, BlackRock, State Street, Fidelity, T. Rowe Price)",
+      "source": "edgar",
+      "url_or_id": "CIK 0000909832 13F filings Q4 2025",
+      "retrieved_at": "2026-05-24"
+    },
+    {
+      "claim": "CEO Ron Vachris ownership ~0.04% (~175K shares / 440M diluted shares outstanding)",
+      "source": "edgar",
+      "url_or_id": "CIK 0000909832 DEF 14A filed 2025-12 — Executive ownership table",
+      "retrieved_at": "2026-05-24"
+    },
+    {
+      "claim": "CFO Gary Millerchip ownership ~0.02%; compensation primarily salary + annual bonus + RSUs — not a heavily equity-weighted package relative to peers",
+      "source": "edgar",
+      "url_or_id": "CIK 0000909832 DEF 14A filed 2025-12 — Summary Compensation Table",
+      "retrieved_at": "2026-05-24"
+    }
+  ],
+  "confidence": 8,
+  "gaps": [
+    "Founder Jim Sinegal (retired 2012) and Brotman family legacy ownership not easily traceable via current Form 4 filings; cultural stewardship intact but formal founder-alignment signal weaker than founder-led businesses."
+  ],
+  "tokens_used": 1050,
+  "cost_usd_est": 0.32
+}

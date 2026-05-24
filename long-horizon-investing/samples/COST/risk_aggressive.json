@@ -1,0 +1,44 @@
+{
+  "role": "risk_aggressive",
+  "ticker": "COST",
+  "as_of_date": "2026-05-24",
+  "horizon_years": 10,
+  "content": {
+    "sizing_recommendation": "full_position_immediately",
+    "core_argument": "The cost of waiting for a 'better entry' in a wide-moat compounder is historically higher than the cost of overpaying at initiation. Costco has compounded at ~20%/yr for 20 years while value investors waited for a cheaper entry that never came. The business is structurally harder to disrupt than the bear acknowledges: membership renewal at 92.9% is not a sign of peak optionism — it is a lagging indicator of deep customer entrenchment that takes years to erode. At a 10-year horizon, an investor entering at 48x P/E in a business growing earnings at ~12%/yr gets to ~24x P/E after 5 years even with zero multiple expansion. The multiple risk is real but manageable at a decade horizon.",
+    "cost_of_underexposure_case": "If Costco compounds earnings at 12%/yr for 10 years (consistent with its 10-year history), the stock at 40x terminal P/E (a moderate de-rating) would be worth ~$2,400 — a 2.5x from today. An investor who waits for a 20% pullback to $760 and never gets it sacrifices that entire return. The expected value of waiting is negative when the business quality is this high and the catalyst for a pullback is speculative. The 'wait for mean reversion' strategy has destroyed more wealth in quality compounders than premature entry ever did.",
+    "rebuttals_to_conservative": [
+      "Conservative will argue DCF base case shows 44% downside — but that DCF uses a 3% terminal growth rate, which is below the last 5-year FCF CAGR of 14.6%. Applying a growth-adjusted terminal rate is not aggressive; it is consistent with the company's actual track record.",
+      "Conservative will argue the risk-free rate at 4.3% makes equities generally unattractive — but Costco's earnings yield is indeed only 2.1% vs 4.3% risk-free, which is a fair concern. However, the earnings yield grows at 12%/yr, so by year 5 the earnings yield on cost (~3.3%) will exceed the risk-free rate assuming no multiple expansion.",
+      "Conservative will argue waiting for a pullback provides better risk/reward — but Costco's drawdowns are shallow compared to the market: max drawdown in the last 10 years was ~25% (COVID crash), while the S&P 500 drew down 34%. You get a smaller pullback than you hope for in quality businesses."
+    ],
+    "rebuttals_to_neutral": [
+      "Neutral's staged-entry approach assumes pullbacks occur predictably — but Costco has spent the majority of the last 10 years at or near all-time highs, meaning Stage 2 and Stage 3 tranches may never get triggered, leaving the investor underweight a compounder for years.",
+      "Dollar-cost-averaging into a quality compounder adds administrative complexity and emotional decision points (do I still add at the tranche trigger?) without meaningfully improving the 10-year outcome vs a full position today."
+    ]
+  },
+  "citations": [
+    {
+      "claim": "COST 20-year total return ~22%/yr compound",
+      "source": "yfinance",
+      "url_or_id": "COST adjusted close 2006-2026",
+      "retrieved_at": "2026-05-24"
+    },
+    {
+      "claim": "FCF CAGR 5-year 14.6%",
+      "source": "edgar",
+      "url_or_id": "CIK 0000909832 / 10-K FY2019-FY2024 FCF series",
+      "retrieved_at": "2026-05-24"
+    },
+    {
+      "claim": "Max drawdown COVID March 2020: COST ~-25%; S&P 500 ~-34%",
+      "source": "yfinance",
+      "url_or_id": "COST and SPY adjusted close Feb-Mar 2020",
+      "retrieved_at": "2026-05-24"
+    }
+  ],
+  "confidence": 7,
+  "gaps": [],
+  "tokens_used": 1240,
+  "cost_usd_est": 0.37
+}
