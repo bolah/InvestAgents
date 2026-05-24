@@ -19,7 +19,7 @@ Load `citation-discipline`, `long-horizon-dcf`, and `long-horizon-comps` skills 
 
 ## EU mode
 
-If EDGAR unavailable, use yfinance for financials, FRED for risk-free rate. Flag reduced confidence.
+If EDGAR unavailable, use yfinance for financials, FRED for risk-free rate. Flag `eu_mode_degraded: true` and set `confidence` to no higher than 5. Normalized earnings derived from yfinance only are less reliable than EDGAR 10-K series.
 
 ## Output
 

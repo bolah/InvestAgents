@@ -17,11 +17,11 @@ Load `citation-discipline` and `capital-allocation-history` skills before procee
 2. **Margin trajectory** — 10-year gross margin, EBIT margin, FCF margin series. Use median as the "normalized" figure.
 3. **Balance sheet resilience** — Current ratio, net debt / EBITDA over 10y. Flag if leverage > 3x at any trough year. Identify if balance sheet is a through-cycle strength or risk.
 4. **Cash flow quality** — FCF / net income conversion ratio over 10y. < 80% sustained = earnings quality risk.
-5. **Capital allocation** — Use the capital-allocation-history skill to assess reinvestment rate, ROIC trend, buyback discipline, and dividend policy.
+5. **Capital allocation** — Use the capital-allocation-history skill to assess reinvestment rate, ROIC trend, buyback discipline, and dividend policy. Management insider ownership is sourced from `insider.json` — do not duplicate it here.
 
 ## EU mode detection
 
-If EdgarTools returns no filings for $TICKER, set `eu_mode_degraded: true` and use yfinance only. Flag in gaps[].
+If EdgarTools returns no filings for $TICKER, set `eu_mode_degraded: true` and use yfinance only. Flag in gaps[]. In EU mode, fields sourced from yfinance (revenue CAGR, margin medians, FCF conversion) remain reliable. `capital_allocation` sub-fields and `net_debt_ebitda_*` may be incomplete or null. Cap `confidence` at 5 in EU mode.
 
 ## Output
 
@@ -47,8 +47,7 @@ Write to `research/$TICKER/fundamentals.json` using the common envelope schema:
       "roic_vs_wacc_verdict": "consistently_above|mixed|consistently_below|insufficient_data",
       "buyback_discipline": "counter_cyclical|neutral|pro_cyclical|no_buybacks",
       "dividend_policy": "growing|stable|variable|no_dividend|cut_history",
-      "acquisition_track_record": "value_additive|neutral|value_destructive|no_acquisitions",
-      "mgmt_insider_ownership_pct": null
+      "acquisition_track_record": "value_additive|neutral|value_destructive|no_acquisitions"
     },
     "eu_mode_degraded": false
   },
