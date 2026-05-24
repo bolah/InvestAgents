@@ -43,7 +43,8 @@ At a 10-year horizon, capital allocation quality compounds. A management team th
   "roic_vs_wacc_verdict": "consistently_above|mixed|consistently_below|insufficient_data",
   "buyback_discipline": "counter_cyclical|neutral|pro_cyclical|no_buybacks",
   "dividend_policy": "growing|stable|variable|no_dividend|cut_history",
-  "acquisition_track_record": "value_additive|neutral|value_destructive|no_acquisitions",
-  "mgmt_insider_ownership_pct": null
+  "acquisition_track_record": "value_additive|neutral|value_destructive|no_acquisitions"
 }
 ```
+
+> **Note:** Management insider ownership is sourced from `insider.json` — do not write this field here.

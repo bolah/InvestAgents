@@ -17,7 +17,7 @@ Follow the moat-assessment skill exactly. Pull 10-K MDA sections from EDGAR (Edg
 
 ## EU mode
 
-If EDGAR unavailable, use yfinance + web only. Flag in gaps[]. In EU mode, `roic_10y_avg` and `roic_trend` may be partially available from yfinance; moat evidence lacks 10-K MDA support and is web-only. Cap `confidence` at 5 in EU mode.
+If EDGAR unavailable, set `eu_mode_degraded: true`. Use yfinance + web only. Flag in gaps[]. In EU mode, `roic_10y_avg` and `roic_trend` may be partially available from yfinance; moat evidence lacks 10-K MDA support and is web-only. Cap `confidence` at 5 in EU mode.
 
 ## Output
 
