@@ -8,7 +8,8 @@
   "commands": [
     { "name": "analyze", "path": "commands/analyze.md" },
     { "name": "revisit", "path": "commands/revisit.md" },
-    { "name": "debate-only", "path": "commands/debate-only.md" }
+    { "name": "debate-only", "path": "commands/debate-only.md" },
+    { "name": "scan-region", "path": "commands/scan-region.md" }
   ],
   "agents": [
     { "name": "fundamentals", "path": "agents/fundamentals.md" },
@@ -21,7 +22,11 @@
     { "name": "aggressive-debator", "path": "agents/aggressive-debator.md" },
     { "name": "conservative-debator", "path": "agents/conservative-debator.md" },
     { "name": "neutral-debator", "path": "agents/neutral-debator.md" },
-    { "name": "synthesizer", "path": "agents/synthesizer.md" }
+    { "name": "synthesizer", "path": "agents/synthesizer.md" },
+    { "name": "country-macro", "path": "agents/country-macro.md" },
+    { "name": "region-scout", "path": "agents/region-scout.md" },
+    { "name": "sector-screener", "path": "agents/sector-screener.md" },
+    { "name": "region-synthesizer", "path": "agents/region-synthesizer.md" }
   ],
   "skills": [
     { "name": "citation-discipline", "path": "skills/citation-discipline/SKILL.md" },
